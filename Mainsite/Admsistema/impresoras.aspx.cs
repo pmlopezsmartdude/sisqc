@@ -48,6 +48,9 @@ namespace Mainsite.Admsistema
         }
         protected void btnagregar(object sender, EventArgs e)
         {
+            int port = 9100;
+            string ip = "";
+
         }
         protected void pruebaimp(object sender, EventArgs e)
         {

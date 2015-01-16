@@ -17,7 +17,7 @@
     <asp:Label ID="Label1" runat="server" Text="Area de trabajo principal, por favor escoja aplicación habilitada en menu lateral izquierdo." 
         Font-Names="Century Gothic"></asp:Label>
     <br />
-    <img alt="Area de trabajo" class="style1" src="../Images/4-man-puzzle.png" /></div>
+    <img alt="Area de trabajo" class="style1" src="../Images/4-man-puzzle.png" height="50%" width="50%" /></div>
 </form>
 </body>
 </html>
