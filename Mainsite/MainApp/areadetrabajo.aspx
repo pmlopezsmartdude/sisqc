@@ -7,7 +7,7 @@
         .style1
         {
             width: 758px;
-            height: 483px;
+            height: 420px;
         }
     </style>
 </head>
