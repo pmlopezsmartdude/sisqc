@@ -1,0 +1,8 @@
+D:\Proyectos\trazabilidad\Datos\bin\Debug\Datos.dll
+D:\Proyectos\trazabilidad\Datos\bin\Debug\Datos.pdb
+D:\Proyectos\trazabilidad\Datos\obj\Debug\Datos.dll
+D:\Proyectos\trazabilidad\Datos\obj\Debug\Datos.pdb
+C:\Aplicaciones Proyectos\Trazabilidad\Datos\bin\Debug\Datos.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Datos\bin\Debug\Datos.pdb
+C:\Aplicaciones Proyectos\Trazabilidad\Datos\obj\Debug\Datos.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Datos\obj\Debug\Datos.pdb

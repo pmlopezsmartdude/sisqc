@@ -1,0 +1,4 @@
+C:\Aplicaciones Proyectos\Trazabilidad\WcfServiceProceso\bin\WcfServiceProceso.dll
+C:\Aplicaciones Proyectos\Trazabilidad\WcfServiceProceso\bin\WcfServiceProceso.pdb
+C:\Aplicaciones Proyectos\Trazabilidad\WcfServiceProceso\obj\Debug\WcfServiceProceso.dll
+C:\Aplicaciones Proyectos\Trazabilidad\WcfServiceProceso\obj\Debug\WcfServiceProceso.pdb

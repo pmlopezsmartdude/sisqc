@@ -1,0 +1,268 @@
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\Mainsite.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\Mainsite.pdb
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\AjaxControlToolkit.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\AjaxMin.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\HtmlAgilityPack.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\Microsoft.Data.Edm.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\Microsoft.Data.OData.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\System.Spatial.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\HtmlAgilityPack.pdb
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\HtmlAgilityPack.xml
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\Microsoft.Data.Edm.xml
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\Microsoft.Data.OData.xml
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\System.Spatial.xml
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\ar\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\cs\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\de\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\es\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\fr\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\he\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\hi\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\it\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\ja\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\ko\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\nl\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\pl\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\pt\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\ru\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\de\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\es\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\it\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\de\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\es\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\fr\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\it\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\ja\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\ko\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\ru\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\zh-Hans\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\bin\zh-Hant\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\obj\Debug\WTCSolutions.csprojResolveAssemblyReference.cache
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\obj\Debug\Mainsite.dll
+C:\Aplicaciones Proyectos\WTCPymeERP\Mainsite\obj\Debug\Mainsite.pdb
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Mainsite.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Mainsite.pdb
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\AjaxControlToolkit.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\AjaxMin.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\HtmlAgilityPack.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Microsoft.Data.Edm.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Microsoft.Data.OData.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\System.Spatial.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\HtmlAgilityPack.pdb
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\HtmlAgilityPack.xml
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Microsoft.Data.Edm.xml
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Microsoft.Data.OData.xml
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\System.Spatial.xml
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\ar\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\cs\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\de\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\es\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\fr\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\he\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\hi\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\it\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\ja\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\ko\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\nl\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\pl\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\pt\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\ru\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\de\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\es\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\it\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\de\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\es\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\fr\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\it\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\ja\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\ko\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\ru\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\zh-Hans\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\zh-Hant\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\obj\Debug\WTCSolutions.csprojResolveAssemblyReference.cache
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\obj\Debug\Mainsite.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\obj\Debug\Mainsite.pdb
+D:\Proyectos\trazabilidad\Mainsite\bin\Mainsite.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\Mainsite.pdb
+D:\Proyectos\trazabilidad\Mainsite\bin\AjaxControlToolkit.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\AjaxMin.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\HtmlAgilityPack.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\Microsoft.Data.Edm.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\Microsoft.Data.OData.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\Microsoft.WindowsAzure.Storage.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\System.Spatial.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\HtmlAgilityPack.pdb
+D:\Proyectos\trazabilidad\Mainsite\bin\HtmlAgilityPack.xml
+D:\Proyectos\trazabilidad\Mainsite\bin\Microsoft.Data.Edm.xml
+D:\Proyectos\trazabilidad\Mainsite\bin\Microsoft.Data.OData.xml
+D:\Proyectos\trazabilidad\Mainsite\bin\Microsoft.WindowsAzure.Storage.pdb
+D:\Proyectos\trazabilidad\Mainsite\bin\Microsoft.WindowsAzure.Storage.xml
+D:\Proyectos\trazabilidad\Mainsite\bin\System.Spatial.xml
+D:\Proyectos\trazabilidad\Mainsite\bin\ar\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\cs\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\de\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\es\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\fr\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\he\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\hi\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\it\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\ja\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\ko\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\nl\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\pl\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\pt\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\ru\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\tr-TR\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\zh-CHS\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\zh-CHT\AjaxControlToolkit.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\de\Microsoft.Data.OData.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\es\Microsoft.Data.OData.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\it\Microsoft.Data.OData.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\de\System.Spatial.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\es\System.Spatial.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\fr\System.Spatial.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\it\System.Spatial.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\ja\System.Spatial.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\ko\System.Spatial.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\ru\System.Spatial.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\zh-Hans\System.Spatial.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\zh-Hant\System.Spatial.resources.dll
+D:\Proyectos\trazabilidad\Mainsite\obj\Debug\WTCSolutions.csprojResolveAssemblyReference.cache
+D:\Proyectos\trazabilidad\Mainsite\obj\Debug\Mainsite.dll
+D:\Proyectos\trazabilidad\Mainsite\obj\Debug\Mainsite.pdb
+D:\Proyectos\trazabilidad\Mainsite\bin\Datos.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\Negocio.dll
+D:\Proyectos\trazabilidad\Mainsite\bin\Datos.pdb
+D:\Proyectos\trazabilidad\Mainsite\bin\Negocio.pdb
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Datos.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Negocio.dll
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Datos.pdb
+C:\Aplicaciones Proyectos\Trazabilidad\Mainsite\bin\Negocio.pdb
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\Mainsite.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\Mainsite.pdb
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\AjaxControlToolkit.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\AjaxMin.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\Datos.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\HtmlAgilityPack.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\Microsoft.Data.Edm.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\Microsoft.Data.OData.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\Microsoft.WindowsAzure.Storage.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\Negocio.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\System.Spatial.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\Datos.pdb
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\Negocio.pdb
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\HtmlAgilityPack.pdb
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\HtmlAgilityPack.xml
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\Microsoft.Data.Edm.xml
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\Microsoft.Data.OData.xml
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\Microsoft.WindowsAzure.Storage.pdb
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\Microsoft.WindowsAzure.Storage.xml
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\System.Spatial.xml
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\ar\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\cs\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\de\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\es\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\fr\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\he\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\hi\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\it\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\ja\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\ko\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\nl\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\pl\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\pt\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\ru\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\tr-TR\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\zh-CHS\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\zh-CHT\AjaxControlToolkit.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\de\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\es\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\it\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\de\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\es\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\fr\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\it\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\ja\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\ko\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\ru\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\zh-Hans\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\zh-Hant\System.Spatial.resources.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\obj\Debug\WTCSolutions.csprojResolveAssemblyReference.cache
+C:\Aplicaciones Proyectos\sisqc\Mainsite\obj\Debug\Mainsite.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\obj\Debug\Mainsite.pdb

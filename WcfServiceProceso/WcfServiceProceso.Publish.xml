@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\publicaciones\trazabilidadwebservice" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="trazabilidad" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/WcfServiceProceso.pdb" publishTime="01/09/2015 16:32:27" />
+    <file relUrl="Service1.svc" publishTime="01/09/2015 16:30:31" />
+    <file relUrl="bin/WcfServiceProceso.dll" publishTime="01/09/2015 16:32:27" />
+    <file relUrl="Web.config" publishTime="01/09/2015 16:38:53" />
+    <file relUrl="G00021HERRAMIENTAS.ico" publishTime="01/09/2015 16:31:58" />
+  </publishProfile>
+</publishData>
