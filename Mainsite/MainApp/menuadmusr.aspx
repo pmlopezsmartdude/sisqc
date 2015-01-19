@@ -37,7 +37,7 @@
             <Nodes>
             <asp:TreeNode SelectAction="Expand" Text="Menu Principal Aplicaciones"
                 Value="Menu Principal Aplicaciones" Expanded="False">
-                <asp:TreeNode Text="Producto Terminado" Value="Producto Terminado"
+                <asp:TreeNode Text="Control Calidad Cerezas" Value="Control Calidad Cerezas"
                  Target="workingarea" NavigateUrl="~/MainApp/SisConPT.aspx"></asp:TreeNode>
                 <asp:TreeNode Text="Aplicación 2" Value="Aplicación 2"
                 Target="workingarea"></asp:TreeNode>
