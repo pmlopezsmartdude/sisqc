@@ -2,3 +2,7 @@ C:\Aplicaciones Proyectos\Trazabilidad\AuxAdmTools\bin\Debug\AuxAdmTools.dll
 C:\Aplicaciones Proyectos\Trazabilidad\AuxAdmTools\bin\Debug\AuxAdmTools.pdb
 C:\Aplicaciones Proyectos\Trazabilidad\AuxAdmTools\obj\Debug\AuxAdmTools.dll
 C:\Aplicaciones Proyectos\Trazabilidad\AuxAdmTools\obj\Debug\AuxAdmTools.pdb
+D:\Proyectos\sisqc\AuxAdmTools\bin\Debug\AuxAdmTools.dll
+D:\Proyectos\sisqc\AuxAdmTools\bin\Debug\AuxAdmTools.pdb
+D:\Proyectos\sisqc\AuxAdmTools\obj\Debug\AuxAdmTools.dll
+D:\Proyectos\sisqc\AuxAdmTools\obj\Debug\AuxAdmTools.pdb

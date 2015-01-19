@@ -12,3 +12,10 @@ C:\Aplicaciones Proyectos\Trazabilidad\Negocio\bin\Debug\Datos.pdb
 C:\Aplicaciones Proyectos\Trazabilidad\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 C:\Aplicaciones Proyectos\Trazabilidad\Negocio\obj\Debug\Negocio.dll
 C:\Aplicaciones Proyectos\Trazabilidad\Negocio\obj\Debug\Negocio.pdb
+D:\Proyectos\sisqc\Negocio\bin\Debug\Negocio.dll
+D:\Proyectos\sisqc\Negocio\bin\Debug\Negocio.pdb
+D:\Proyectos\sisqc\Negocio\bin\Debug\Datos.dll
+D:\Proyectos\sisqc\Negocio\bin\Debug\Datos.pdb
+D:\Proyectos\sisqc\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+D:\Proyectos\sisqc\Negocio\obj\Debug\Negocio.dll
+D:\Proyectos\sisqc\Negocio\obj\Debug\Negocio.pdb
