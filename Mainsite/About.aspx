@@ -8,7 +8,7 @@
         Sistema de aplicaciones informáticas White Cloud Technologies por WTC Consultores Ltda.
     </h2>
     <p>
-        &copy; WTC Consultores Limitada - <%: DateTime.Now.Year %>
+        &copy; WTC Consultores Limitada - <%: DateTime.Now.Year %>, 
         Todos los derechos reservados.
 
         La reproducción total o parcial de las aplicaciones, se encuentra penada por la ley
