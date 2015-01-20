@@ -31,12 +31,17 @@ namespace Mainsite.MainApp
                 }
                 else
                 {
-                    if (r == "usuario")
+                    if (r == "operador")
                     {
                         TreeViewAdmUsr.Visible = false;
+                        TreeViewAppsJefatura.Visible = false;
                         break;
                     }
-
+                    if (r == "Jefatura")
+                    {
+                        TreeViewAppsJefatura.Visible = true;
+                        TreeView1.Visible = false;
+                    }
                 }
 
             }

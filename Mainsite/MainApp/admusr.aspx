@@ -5,7 +5,7 @@
 <div class="mainadmusr">
 <asp:Table runat="server">
 <asp:TableRow style="vertical-align:top; height:480px;" >
-<asp:TableCell Width="15%" Height="100%">
+<asp:TableCell Width="15%"  style="height:479px;">
     <iframe id="menuadmusr" runat="server" src="menuadmusr.aspx" style="display:block; width:100%; height:100%; border:none; margin:0; padding:0;" ></iframe>
 </asp:TableCell>
 <asp:TableCell Width="100%" Height="100%">

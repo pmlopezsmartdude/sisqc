@@ -335,3 +335,5 @@ D:\Proyectos\sisqc\Mainsite\bin\zh-Hant\System.Spatial.resources.dll
 D:\Proyectos\sisqc\Mainsite\obj\Debug\WTCSolutions.csprojResolveAssemblyReference.cache
 D:\Proyectos\sisqc\Mainsite\obj\Debug\Mainsite.dll
 D:\Proyectos\sisqc\Mainsite\obj\Debug\Mainsite.pdb
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\AuxAdmTools.dll
+C:\Aplicaciones Proyectos\sisqc\Mainsite\bin\AuxAdmTools.pdb

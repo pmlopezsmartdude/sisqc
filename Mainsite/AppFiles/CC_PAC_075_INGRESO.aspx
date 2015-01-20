@@ -15,7 +15,7 @@
 
 
      <fieldset>
-        <legend>CC-PAC-075</legend>
+        <legend style="font-family:Century Gothic;">CC-PAC-075</legend>
  <asp:Panel ID="Panel1" runat="server">
    <asp:Table ID="Datos" runat="server" Width="653px" Height="50px" Font-Names="Century Gothic" Font-Size="Small" HorizontalAlign="Center">
           <asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="30">
@@ -66,7 +66,7 @@
    </asp:Panel></fieldset>
    <br />
     <fieldset>
-        <legend>Seguimiento de Descarte Comercial por Lote</legend>
+        <legend style="font-family:Century Gothic;">Seguimiento de Descarte Comercial por Lote</legend>
    <asp:Table ID="Table1" runat="server" Width="653px" Height="68px" 
             Font-Names="Century Gothic" Font-Size="x-Small"  HorizontalAlign="Center" >
      <asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="30">
@@ -98,11 +98,11 @@
            
   <fieldset>
            
-        <legend>Rangos de trabajo y porcentajes</legend>
+        <legend style="font-family:Century Gothic;">Rangos de trabajo y porcentajes</legend>
             
-<table width="700"  border="1" align="center">
+<table style="width:700px; border:1; text-align:center;">
   <tr>
-    <td width="60" rowspan="3" align="center"><asp:Label ID="Label37" runat="server" Text="PARAMETROS" Width="60" Height="20" Font-Names="Century Gothic" Font-Size="X-Small"></asp:Label></td>
+    <td  rowspan="3"  style="width:60px; text-align:center;"><asp:Label ID="Label37" runat="server" Text="PARAMETROS" Width="60" Height="20" Font-Names="Century Gothic" Font-Size="X-Small"></asp:Label></td>
    
   </tr>
   <tr>
@@ -225,9 +225,9 @@
              <asp:Table ID="Table4" runat="server" Width="653px" Height="30px" Font-Names="Century Gothic" Font-Size="x-Small" HorizontalAlign="Center">
     <asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
       <asp:TableCell Width="30" HorizontalAlign="Center">
-             <asp:Button ID="btnGrabar" runat="server" Text="Guardar y salir" onclick="Grabar_Click" Width="100"/>
+             <asp:Button ID="btnGrabar" runat="server" Text="Guardar y salir" onclick="Grabar_Click" Width="100" Font-Names="Century Gothic" Font-Size="X-Small" />
              </asp:TableCell><asp:TableCell Width="30" HorizontalAlign="Center">
-             <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" onclick="Limpiar_Click" Width="100"/>
+             <asp:Button ID="btnLimpiar" runat="server" Text="Limpiar" onclick="Limpiar_Click" Width="100" Font-Names="Century Gothic" Font-Size="X-Small" />
             
              </asp:TableCell></asp:TableRow></asp:Table></fieldset> 
     </form>

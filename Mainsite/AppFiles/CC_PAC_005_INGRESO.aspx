@@ -3,7 +3,7 @@
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc1" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html runat="server" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head runat="server">
     <title></title>
      <script type="text/javascript">
@@ -22,7 +22,7 @@
 
     <asp:ToolkitScriptManager ID="ToolkitScriptManager2" runat="server">  </asp:ToolkitScriptManager>  
    <fieldset>
-        <legend>CC-PAC-005</legend>
+        <legend style="font-family:Century Gothic;">CC-PAC-005</legend>
     <asp:Panel ID="Panel1" runat="server" DefaultButton="ButtonBuscar">
 
         <asp:Table ID="Table5" runat="server" Width="100%" Height="100%" 
@@ -50,7 +50,7 @@
     
     </asp:TableCell>
        <asp:TableCell>
-        <asp:Button ID="ButtonBuscar" runat="server" Text="Buscar" onclick="btnLoadData_click"  Width="80" Height="25px"/>
+        <asp:Button ID="ButtonBuscar" runat="server" Text="Buscar" onclick="btnLoadData_click"  Width="80" Height="25px" Font-Names="Century Gothic" />
         </asp:TableCell>
         <asp:TableCell>
       
@@ -648,7 +648,7 @@
     <ContentTemplate>
 
     <fieldset>
-        <legend>SOLIDOS SOLUBLES    :  <asp:Label ID="lbl_calibre" runat="server" Height="10"></asp:Label></legend>
+        <legend style="font-family:Century Gothic;">SOLIDOS SOLUBLES    :  <asp:Label ID="lbl_calibre" runat="server" Height="10"></asp:Label></legend>
     <asp:Table ID="Table2" runat="server" Width="100%" Height="100%"  Font-Names="Century Gothic" Font-Size="X-Small" BackColor="#CCCCCC" HorizontalAlign="Center">
    
    
@@ -749,11 +749,11 @@
           <asp:TableRow ID="TableRow17" runat="server" HorizontalAlign="Center" VerticalAlign="Middle" Height="50">
 
             <asp:TableCell>
-            <asp:Button ID="Grabar" runat="server" Text="Guardar y Salir" Enabled="False" onclick="Grabar_Click" Width="100" />
-            <asp:Button ID="Modificar" runat="server" Text="Modificar" Enabled="False" Visible="false" onclick="Modificar_Click" Width="100" />
+            <asp:Button ID="Grabar" runat="server" Text="Guardar y Salir" Enabled="False" onclick="Grabar_Click" Width="100" Font-Names="Century Gothic" Font-Size="X-Small" />
+            <asp:Button ID="Modificar" runat="server" Text="Modificar" Enabled="False" Visible="false" onclick="Modificar_Click" Width="100" Font-Names="Century Gothic" Font-Size="X-Small" />
             </asp:TableCell>
             <asp:TableCell>
-            <asp:Button ID="Limpiar" runat="server" Text="Limpiar" onclick="btn_limpiar" Enabled="False" Width="100" />
+            <asp:Button ID="Limpiar" runat="server" Text="Limpiar" onclick="btn_limpiar" Enabled="False" Width="100" Font-Names="Century Gothic" Font-Size="X-Small" />
             </asp:TableCell>
             </asp:TableRow>
             </asp:Table>

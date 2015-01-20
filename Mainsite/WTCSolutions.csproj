@@ -102,6 +102,7 @@
     <Content Include="AppFiles\CC_PAC_005_INGRESO.aspx" />
     <Content Include="AppFiles\CC_PAC_005_INGRESO_MANUAL.aspx" />
     <Content Include="AppFiles\CC_PAC_075_INGRESO.aspx" />
+    <Content Include="AppFiles\INF_PAC005_GEN.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -208,7 +209,8 @@
     <Content Include="MainApp\admusr.aspx" />
     <Content Include="MainApp\areadetrabajo.aspx" />
     <Content Include="MainApp\DropDownCC.aspx" />
-    <Content Include="MainApp\Ingreso_CC-PAC-075_proceso.aspx" />
+    <Content Include="MainApp\HeadInformeCCCereza.aspx" />
+    <Content Include="MainApp\InformesCereza.aspx" />
     <Content Include="MainApp\Mainapp.aspx" />
     <Content Include="MainApp\menuadmusr.aspx" />
     <Content Include="MainApp\SisConPT.aspx" />
@@ -372,6 +374,13 @@
     <Compile Include="AppFiles\CC_PAC_075_INGRESO.aspx.designer.cs">
       <DependentUpon>CC_PAC_075_INGRESO.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AppFiles\INF_PAC005_GEN.aspx.cs">
+      <DependentUpon>INF_PAC005_GEN.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppFiles\INF_PAC005_GEN.aspx.designer.cs">
+      <DependentUpon>INF_PAC005_GEN.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AppModules\impresion.cs" />
     <Compile Include="AppModules\ImpresorasDatos.cs" />
     <Compile Include="Default.aspx.cs">
@@ -382,6 +391,7 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="GetAllUsers.cs" />
+    <Compile Include="GetConfig.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -406,12 +416,19 @@
     <Compile Include="MainApp\DropDownCC.aspx.designer.cs">
       <DependentUpon>DropDownCC.aspx</DependentUpon>
     </Compile>
-    <Compile Include="MainApp\Ingreso_CC-PAC-075_proceso.aspx.cs">
-      <DependentUpon>Ingreso_CC-PAC-075_proceso.aspx</DependentUpon>
+    <Compile Include="MainApp\HeadInformeCCCereza.aspx.cs">
+      <DependentUpon>HeadInformeCCCereza.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="MainApp\Ingreso_CC-PAC-075_proceso.aspx.designer.cs">
-      <DependentUpon>Ingreso_CC-PAC-075_proceso.aspx</DependentUpon>
+    <Compile Include="MainApp\HeadInformeCCCereza.aspx.designer.cs">
+      <DependentUpon>HeadInformeCCCereza.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainApp\InformesCereza.aspx.cs">
+      <DependentUpon>InformesCereza.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainApp\InformesCereza.aspx.designer.cs">
+      <DependentUpon>InformesCereza.aspx</DependentUpon>
     </Compile>
     <Compile Include="MainApp\Mainapp.aspx.cs">
       <DependentUpon>Mainapp.aspx</DependentUpon>
@@ -463,6 +480,10 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AuxAdmTools\AuxAdmTools.csproj">
+      <Project>{6EE42F5B-FD3F-4F85-A4D7-087388F31C0E}</Project>
+      <Name>AuxAdmTools</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Datos\Datos.csproj">
       <Project>{3FF7D135-B157-4CF8-A0AD-9556FBA985DA}</Project>
       <Name>Datos</Name>

@@ -1,10 +1,14 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="CC_PAC_005_INGRESO_MANUAL.aspx.cs" Inherits="Mainsite.AppFiles.CC_PAC_005_INGRESO_MANUAL" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+
+<html runat="server" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width" />
     <title></title>
 </head>
 <body>
@@ -12,7 +16,7 @@
 
           <asp:ToolkitScriptManager ID="ToolkitScriptManager2" runat="server">  </asp:ToolkitScriptManager>  
    <fieldset>
-        <legend>CC-PAC-005</legend>
+        <legend style="font-family:Century Gothic;">CC-PAC-005</legend>
     <asp:Panel ID="Panel1" runat="server" >
 
         <asp:Table ID="Table_15" runat="server" Width="100%" Height="100%" 
@@ -35,7 +39,7 @@
     </asp:TableCell><asp:TableCell>
       <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="CodCaja" CssClass="failureNotification" Font-Size="x-Small"  ErrorMessage="Ingrese Código de caja"  ValidationGroup="ChangeUserPasswordValidationGroup"/>
         </asp:TableCell><asp:TableCell><asp:CheckBox ID="check_fecha" runat="server" Text="Ingresar Fecha Manual" AutoPostBack="true" oncheckedchanged="check_fecha_CheckedChanged"/> 
-      </asp:TableCell><asp:TableCell> <asp:TextBox ID="Fecha_manual" runat="server" Width="70" >
+      </asp:TableCell><asp:TableCell> <asp:TextBox ID="Fecha_manual" runat="server" Width="70" Font-Names="Century Gothic">
        </asp:TextBox><asp:ImageButton ID="imgPopup" ImageUrl="~/Images/calendar.png" ImageAlign="Bottom"
     runat="server" />
 
@@ -483,9 +487,9 @@
           <asp:TableRow ID="TableRow17" runat="server" HorizontalAlign="Center" VerticalAlign="Middle" Height="50">
 
             <asp:TableCell>
-            <asp:Button ID="Grabar" runat="server" Text="Guardar y Salir" Enabled="True" onclick="Grabar_Click" Width="100" ValidationGroup="ChangeUserPasswordValidationGroup"/>
+            <asp:Button ID="Grabar" runat="server" Text="Guardar y Salir" Enabled="True" onclick="Grabar_Click" Width="100" ValidationGroup="ChangeUserPasswordValidationGroup" Font-Names="Century Gothic" Font-Size="x-Small" />
             </asp:TableCell><asp:TableCell>
-            <asp:Button ID="Limpiar" runat="server" Text="Limpiar" onclick="btn_limpiar" Enabled="True" Width="100" />
+            <asp:Button ID="Limpiar" runat="server" Text="Limpiar" onclick="btn_limpiar" Enabled="True" Width="100" Font-Names="Century Gothic" Font-Size="X-Small" />
             </asp:TableCell></asp:TableRow></asp:Table>
     </form>
 </body>

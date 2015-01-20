@@ -25,8 +25,6 @@ namespace Mainsite.Admsistema
         protected void impresorasgrid_indexchanged(object sender, EventArgs e)
         {
             Label_nimp.Text = impresorasGrid.SelectedRow.Cells[1].Text;
-            //DropDownList1.SelectedValue = impresorasGrid.SelectedRow.Cells[2].Text;
-            //txt_marca.Text = impresorasGrid.SelectedRow.Cells[2].Text;
             lbl_marca.Text = impresorasGrid.SelectedRow.Cells[2].Text;
             txt_ip.Text = impresorasGrid.SelectedRow.Cells[3].Text;
             Lbl_puerto.Text = impresorasGrid.SelectedRow.Cells[4].Text;
@@ -49,8 +47,98 @@ namespace Mainsite.Admsistema
         protected void btnagregar(object sender, EventArgs e)
         {
             string ip = newimpip.Text;
-           
+            SqlDataReader reader;
+            object ipint = AuxAdmTools.ipconvtools.convertiptoint(newimpip.Text);
+            string strcon = GetConfig.GetConnectionStringByName("trazabilidad");
+            SqlConnection con = new SqlConnection(strcon);
+            con.Open();
+            SqlCommand cmd_existe = new SqlCommand("select * from impresoras where ip = '" + ipint.ToString() + "'", con);
+            try
+            {
+                reader = cmd_existe.ExecuteReader();
+                if (reader.Read())
+                {
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "scriptName", "alert(\"Ya existe una impresora con la direccion IP, favor ingrese otra IP\");", true);
 
+                }
+                else
+                {
+                    string strcon2 = GetConfig.GetConnectionStringByName("trazabilidad");
+                    SqlConnection con2 = new SqlConnection(strcon2);
+                    con2.Open();
+                    SqlCommand cmd_insert = new SqlCommand("insert into impresoras (nombre,marca,ip,puerto) values ('"+txtnomimpr.Text+"','"+nuevamarca.Text+"','"+ipint+"','"+newimpport.Text+"')",con2);
+                    try
+                    {
+                      
+                           cmd_insert.ExecuteNonQuery();
+                           con2.Close();
+                           ScriptManager.RegisterStartupScript(this, this.GetType(), "scriptName", "alert(\"Impresora agregada\");", true);
+                           txtnomimpr.Text = "";
+                           newimpip.Text = "";
+                           impresorasGrid.DataBind();
+    
+                    }
+                    catch
+                    { }
+                    
+                }
+
+            }
+            catch
+            { }
+            finally
+            {
+                con.Close();
+            }
+            
+
+        }
+        protected void btnGuardar(object sender, EventArgs e)
+        {
+            string ip = txt_ip.Text;
+            SqlDataReader reader;
+            object ipint = AuxAdmTools.ipconvtools.convertiptoint(txt_ip.Text);
+            string strcon = GetConfig.GetConnectionStringByName("trazabilidad");
+            SqlConnection con = new SqlConnection(strcon);
+            con.Open();
+            SqlCommand cmd_existe = new SqlCommand("select * from impresoras where ip = '" + ipint.ToString() + "'", con);
+            try
+            {
+                reader = cmd_existe.ExecuteReader();
+                if (reader.Read())
+                {
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "scriptName", "alert(\"Ya existe una impresora con la direccion IP, favor ingrese otra IP\");", true);
+
+                }
+                else
+                {
+                    string strcon2 = GetConfig.GetConnectionStringByName("trazabilidad");
+                    SqlConnection con2 = new SqlConnection(strcon2);
+                    con2.Open();
+                    SqlCommand cmd_guardar = new SqlCommand("update impresoras(ip) values(ipint) where nombre like '"+ Label_nimp.Text +"'", con2);
+                    try
+                    {
+
+                        cmd_guardar.ExecuteNonQuery();
+                        con2.Close();
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "scriptName", "alert(\"Impresora Modificada\");", true);
+
+                        impresorasGrid.DataBind();
+
+                    }
+                    catch
+                    { }
+
+                }
+
+            }
+            catch
+            { }
+            finally
+            {
+                con.Close();
+            }
+            
         }
         protected void pruebaimp(object sender, EventArgs e)
         {
@@ -59,11 +147,12 @@ namespace Mainsite.Admsistema
             switch (str)
             {
                 case "bixolon             ":
-                    AppModules.impresion.imprimebixolon(txt_ip.Text, port, "Ingles", "Español", "Variedad", "XXL", "R", "CAT 1", "X KG", "AAAAAA", "000001", "00001", "06/01/15", "000000", "88888", "RM", "PROVINCIA", "COMUNA", "88888", "Soc. ficticia solo prueba", "99999", "Packing, Ubicación, Provincia", "9_2", "T123", "14010925551234");
+                    AppModules.impresion.imprimebixolon(txt_ip.Text, port, "Ingles", "Español", "Variedad", "XXL", "R", "CAT 1", "X KG", "AAAAAA", "000001", "00001", "06/01/15", "000000", "88888", "RM", "PROVINCIA", "COMUNA", "88888", "Soc. ficticia solo prueba", "99999", "Packing, Ubicación, Provincia", "9_2", "T123", "91114111714488");
                     break;
                 default:
                     break;
             }
+            ScriptManager.RegisterStartupScript(this, this.GetType(), "scriptName", "alert(\"Etiqueta de pruebas enviada a impresora, favor verifique\");", true);
 
         }
         protected void DeleteImpresora(object sender, EventArgs e)
@@ -89,8 +178,7 @@ namespace Mainsite.Admsistema
                 {
                     con.Close();
                 }
-
-                //ImpresoraDelete(Label_nimp.Text);
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "scriptName", "alert(\"Impresora eliminada\");", true);
                 impresorasGrid.DataBind();
             }
 

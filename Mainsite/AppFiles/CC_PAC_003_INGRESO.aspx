@@ -38,7 +38,7 @@
     <asp:ToolkitScriptManager ID="ToolkitScriptManager2" runat="server">  
    </asp:ToolkitScriptManager>  
     <fieldset>
-        <legend>CC-PAC-003</legend>
+        <legend style="font-family:Century Gothic;">CC-PAC-003</legend>
  <asp:Panel ID="Panel1" runat="server">
    <asp:Table ID="Datos" runat="server" Width="653px" Height="50px" Font-Names="Century Gothic" Font-Size="Small" HorizontalAlign="Center">
           <asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="30">
@@ -112,7 +112,7 @@
    
    </fieldset>
    <fieldset>
-        <legend>DESCARTE COMERCIAL</legend>
+        <legend style="font-family:Century Gothic;">DESCARTE COMERCIAL</legend>
         <asp:Table ID="Table1" runat="server" Width="700px" Height="30px" Font-Names="Century Gothic" Font-Size="Small" HorizontalAlign="Center">
      <asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
              <asp:TableCell Width="30">
@@ -644,8 +644,10 @@
     </asp:TabContainer>
 
 
-    <center><asp:Button ID="guardar" runat="server" Text="Guardar" Enabled="true" OnClick="Click_guardar" />
-    <asp:Button ID="limpiar" runat="server" Text="Limpiar" Enabled="true" OnClick="Click_limpiar" />
+    <center><asp:Button ID="guardar" runat="server" Text="Guardar" Enabled="true" 
+            OnClick="Click_guardar" Font-Names="Century Gothic" Font-Size="X-Small" />
+    <asp:Button ID="limpiar" runat="server" Text="Limpiar" Enabled="true" 
+            OnClick="Click_limpiar" Font-Names="Century Gothic" Font-Size="X-Small" />
 
         
           

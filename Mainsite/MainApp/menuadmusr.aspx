@@ -32,15 +32,38 @@
                 </asp:TreeNode>
             </Nodes>
         </asp:TreeView>
-        <asp:TreeView ID="TreeViewApps" runat="server" Font-Names="Century Gothic"
+        <asp:TreeView ID="TreeViewAppsJefatura" runat="server" Font-Names="Century Gothic"
             Font-Size="X-Small" ShowLines="true" LineImagesFolder="~/TreeLineImages" Visible="true">
             <Nodes>
             <asp:TreeNode SelectAction="Expand" Text="Menu Principal Aplicaciones"
                 Value="Menu Principal Aplicaciones" Expanded="False">
-                <asp:TreeNode Text="Control Calidad Cerezas" Value="Control Calidad Cerezas"
-                 Target="workingarea" NavigateUrl="~/MainApp/SisConPT.aspx"></asp:TreeNode>
-                <asp:TreeNode Text="Aplicación 2" Value="Aplicación 2"
-                Target="workingarea"></asp:TreeNode>
+                <asp:TreeNode Text="Control Calidad" Value="Control Calidad Cerezas" 
+                    Expanded="False" SelectAction="Expand">
+                    <asp:TreeNode NavigateUrl="~/MainApp/SisConPT.aspx" Target="workingarea" 
+                        Text="Cerezas" Value="Cerezas"></asp:TreeNode>
+                </asp:TreeNode>
+                <asp:TreeNode Text="Informes" Value="Aplicación 2" Expanded="False" 
+                    SelectAction="Expand">
+                    <asp:TreeNode Expanded="False" SelectAction="Expand" Text="Control Calidad" 
+                        Value="Control Calidad">
+                        <asp:TreeNode Target="workingarea" Text="Cerezas" Value="Cerezas" 
+                            NavigateUrl="~/MainApp/InformesCereza.aspx">
+                        </asp:TreeNode>
+                    </asp:TreeNode>
+                </asp:TreeNode>
+                </asp:TreeNode>
+            </Nodes>
+            </asp:TreeView>
+                    <asp:TreeView ID="TreeView1" runat="server" Font-Names="Century Gothic"
+            Font-Size="X-Small" ShowLines="true" LineImagesFolder="~/TreeLineImages" Visible="true">
+            <Nodes>
+            <asp:TreeNode SelectAction="Expand" Text="Menu Principal Aplicaciones"
+                Value="Menu Principal Aplicaciones" Expanded="False">
+                <asp:TreeNode Text="Control Calidad" Value="Control Calidad Cerezas" 
+                    Expanded="False" SelectAction="Expand">
+                    <asp:TreeNode NavigateUrl="~/MainApp/SisConPT.aspx" Target="workingarea" 
+                        Text="Cerezas" Value="Cerezas"></asp:TreeNode>
+                </asp:TreeNode>
                 </asp:TreeNode>
             </Nodes>
             </asp:TreeView>

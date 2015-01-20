@@ -10,7 +10,7 @@
 namespace Mainsite.MainApp {
     
     
-    public partial class menuadmusr {
+    public partial class InformesCereza {
         
         /// <summary>
         /// Control form1.
@@ -22,30 +22,30 @@ namespace Mainsite.MainApp {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Control TreeViewAdmUsr.
+        /// Control Table1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TreeView TreeViewAdmUsr;
+        protected global::System.Web.UI.WebControls.Table Table1;
         
         /// <summary>
-        /// Control TreeViewAppsJefatura.
+        /// Control DropDown.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TreeView TreeViewAppsJefatura;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl DropDown;
         
         /// <summary>
-        /// Control TreeView1.
+        /// Control idframe.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TreeView TreeView1;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl idframe;
     }
 }

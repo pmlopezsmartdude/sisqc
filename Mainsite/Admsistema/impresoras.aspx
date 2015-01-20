@@ -246,7 +246,7 @@ ValidationExpression="^[0-9]*$" />
 <asp:Label ID="Label6" runat="server" Height="20">:</asp:Label>
 </asp:TableCell>
 <asp:TableCell>
-<asp:TextBox runat="server" ID="txt_ip" Width="80" Height="20" Enabled="true" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox>
+<asp:TextBox runat="server" ID="txt_ip" Width="80" Height="20" Enabled="false" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox>
 <asp:RegularExpressionValidator ID="vldRejex" runat="server"
 ControlToValidate="txt_ip"
 ErrorMessage="Por favor ingrese una Dirección IP válida" ForeColor="Red"
@@ -278,7 +278,7 @@ ValidationExpression="^(([01]?\d\d?|2[0-4]\d|25[0-5])\.){3}([01]?\d\d?|25[0-5]|2
 
 </asp:TableCell>
 <asp:TableCell>
-<asp:Button ID="Guardar" runat="server" Font-Names="Century Gothic" Font-Size="X-Small" Text="Guardar" />
+<asp:Button ID="Guardar" runat="server" Font-Names="Century Gothic" Font-Size="X-Small" Text="Guardar" onclick="btnGuardar" Visible="false"/>
 </asp:TableCell>
 <asp:TableCell>
 <asp:Button ID="Cancelar" runat="server" Font-Names="Century Gothic" Font-Size="X-Small" Text="Cancelar" onclick="btnClose_Click" CausesValidation="false"/>
