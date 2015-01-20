@@ -149,7 +149,8 @@ namespace Mainsite.Account
                 }
                 else
                 {
-                    Response.Write("<script language=javascript > alert('reset fail'); </script>");
+                    ScriptManager.RegisterStartupScript(this, this.GetType(), "scriptName", "alert(\"reset fail\");", true);
+                    //Response.Write("<script language=javascript > alert('reset fail'); </script>");
                     //lbl_anterior.Text = "Password reset failed. Please re-enter your values and try again.";
                 }
 
@@ -159,18 +160,21 @@ namespace Mainsite.Account
                 {
                     if (u.ChangePassword(lbl_anterior.Text, NewPassword.Text))
                     {
-                        Response.Write("<script language=javascript > alert('Password changed'); </script>");
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "scriptName", "alert(\"Password changed\");", true);
+                       // Response.Write("<script language=javascript > alert('Password changed'); </script>");
                         //  lbl_listo.Text = "Password changed.";
                     }
                     else
                     {
-                        Response.Write("<script language=javascript > alert('Password change failed'); </script>");
+                        ScriptManager.RegisterStartupScript(this, this.GetType(), "scriptName", "alert(\"Password change failed\");", true);
+                        //Response.Write("<script language=javascript > alert('Password change failed'); </script>");
                         //lbl_listo.Text = "Password change failed. Please re-enter your values and try again.";
                     }
                 }
                 catch (Exception eu)
                 {
                     // lbl_listo.Text = "An exception occurred: " + Server.HtmlEncode(eu.Message) + ". Please re-enter your values and try again.";
+                    
                     Response.Write("<script language=javascript > alert('" + Server.HtmlEncode(eu.Message) + "'); </script>");
                 }
 
