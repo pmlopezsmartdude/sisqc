@@ -16,23 +16,27 @@ namespace Mainsite.AppFiles
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            try
+                {
+                System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
             System.Configuration.ConnectionStringSettings connStringmain;
             System.Configuration.ConnectionStringSettings connStringLM;
             if (Session["PlantaName"] != null)
             {
-                connStringmain = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
-                string PlantaNombre = Session["PlantaName"].ToString();
-                string comando = "SELECT convert(varchar(10),placodigo) as placodigo FROM planta WHERE pladescri ='" + PlantaNombre + "'";
-                SqlConnection conexion = new SqlConnection(connStringmain.ToString());
-                conexion.Open();
-                SqlCommand sql = new SqlCommand(comando, conexion);
-                using (SqlDataReader reader = sql.ExecuteReader())
-                {
-                    reader.Read();
-                    txt_cod_plan.Text = reader.GetString(0);
-                }
-                conexion.Close();
+                
+                    connStringmain = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
+                    string PlantaNombre = Session["PlantaName"].ToString();
+                    string comando = "SELECT convert(varchar(10),placodigo) as placodigo FROM planta WHERE pladescri ='" + PlantaNombre + "'";
+                    SqlConnection conexion = new SqlConnection(connStringmain.ToString());
+                    conexion.Open();
+                    SqlCommand sql = new SqlCommand(comando, conexion);
+                    using (SqlDataReader reader = sql.ExecuteReader())
+                    {
+                        reader.Read();
+                        txt_cod_plan.Text = reader.GetString(0);
+                    }
+                    conexion.Close();
+                
 
             }
             if (Session["PlantaName"].ToString() == "Planta Mostazal")
@@ -46,10 +50,19 @@ namespace Mainsite.AppFiles
 
             }
 
+                }
+            catch
+            {
+            }
             if (!IsPostBack)
             {
                 DropLinea();
+                DropVariedad();
+                DDL_prodreal();
             }
+            lbl_fecha.Text = DateTime.Now.ToString("yyyy-MM-dd");
+            lbl_hora.Text = DateTime.Now.ToString("HH:mm:ss");
+
 
 
         }
@@ -82,7 +95,7 @@ namespace Mainsite.AppFiles
         protected void lote_SelectedIndexChanged(object sender, EventArgs e)
         {
 
-            txtDescarte.Focus();
+         //   txtDescarte.Focus();
 
         }
 
@@ -211,33 +224,20 @@ namespace Mainsite.AppFiles
 
         protected void Limpiar_Click(object sender, EventArgs e)
         {
-            txtDescarte.Text = "0";
-            txtCAT_Valor.Text = "0";
-            txt_global_v.Text = "0";
-            txt_global_p.Text = "0";
-            txt_global_exp.Text = "0";
-            txt_puntual_v.Text = "0";
-            txt_puntual_p.Text = "0";
-            txt_puntual_exp.Text = "0";
-            txt_externo_v.Text = "0";
-            txt_externo_p.Text = "0";
-            txt_externo_exp.Text = "0";
-            txt_ptoneg_v.Text = "0";
-            txt_ptoneg_p.Text = "0";
-            txt_ptoneg_exp.Text = "0";
-            txt_ptomar_v.Text = "0";
-            txt_ptomar_p.Text = "0";
-            txt_ptomar_exp.Text = "0";
-            txt_mancha_v.Text = "0";
-            txt_mancha_p.Text = "0";
-            txt_mancha_exp.Text = "0";
+            txt_exp_est.Text = "0";
+            txt_exp_desc.Text = "0";
+            txt_desc_2.Text = "0";
+            txt_desc_3.Text = "0";
+            txt_1desecho.Text = "0";
+            txt_2_exp.Text = "0";
+            txt_3_exp.Text = "0";
+            txt_desc_mesa.Text = "0";
+            txt_desc_manual.Text = "0";
+            txt_obser.Text = "0";
+            lbl_fecha.Text = DateTime.Now.ToString("yyyy-MM-dd");
+            lbl_hora.Text = DateTime.Now.ToString("HH:mm:ss");
 
-
-            KilosLote.Text = "0";
-            NTotes.Text = "0";
-            porc_exp.Text = "0";
-
-            txtDescarte.Focus();
+            txt_exp_est.Focus();
             btnGrabar.Enabled = true;
             btnLimpiar.Enabled = true;
         }
@@ -246,93 +246,66 @@ namespace Mainsite.AppFiles
         {
             string numeroctrl = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss.fffffffzzz");
             string username = HttpContext.Current.User.Identity.Name;
+            string planta = txt_cod_plan.Text;
             string CodProc = drop_proc_d.SelectedValue;
             string Linea = drop_linea_d.SelectedValue;
             string Turno = drop_turno_d.SelectedValue;
             string Lote = drop_lote_d.SelectedValue;
-            string tipo_cat;
-            if (CAT_II.Checked) { tipo_cat = "CAT II"; }
-            else { if (CAT_III.Checked) { tipo_cat = "CAT III"; } else { tipo_cat = "SIN INFO"; } }
-
-            if (txtDescarte.Text == "") { txtDescarte.Text = "0"; }
-            if (txtCAT_Valor.Text == "") { txtCAT_Valor.Text = "0"; }
-            if (txt_global_v.Text == "") { txt_global_v.Text = "0"; }
-            if (txt_global_p.Text == "") { txt_global_p.Text = "0"; }
-            if (txt_global_exp.Text == "") { txt_global_exp.Text = "0"; }
-            if (txt_puntual_v.Text == "") { txt_puntual_v.Text = "0"; }
-            if (txt_puntual_p.Text == "") { txt_puntual_p.Text = "0"; }
-            if (txt_puntual_exp.Text == "") { txt_puntual_exp.Text = "0"; }
-            if (txt_externo_v.Text == "") { txt_externo_v.Text = "0"; }
-            if (txt_externo_p.Text == "") { txt_externo_p.Text = "0"; }
-            if (txt_externo_exp.Text == "") { txt_externo_exp.Text = "0"; }
-            if (txt_ptoneg_v.Text == "") { txt_ptoneg_v.Text = "0"; }
-            if (txt_ptoneg_p.Text == "") { txt_ptoneg_p.Text = "0"; }
-            if (txt_ptoneg_exp.Text == "") { txt_ptoneg_exp.Text = "0"; }
-            if (txt_ptomar_v.Text == "") { txt_ptomar_v.Text = "0"; }
-            if (txt_ptomar_p.Text == "") { txt_ptomar_p.Text = "0"; }
-            if (txt_ptomar_exp.Text == "") { txt_ptomar_exp.Text = "0"; }
-            if (txt_mancha_v.Text == "") { txt_mancha_v.Text = "0"; }
-            if (txt_mancha_p.Text == "") { txt_mancha_p.Text = "0"; }
-            if (txt_mancha_exp.Text == "") { txt_mancha_exp.Text = "0"; }
-            if (KilosLote.Text == "") { KilosLote.Text = "0"; }
-            if (NTotes.Text == "") { NTotes.Text = "0"; }
-            if (porc_exp.Text == "") { porc_exp.Text = "0"; }
-
-            string comando = "INSERT INTO [CC_PAC_075] (Ctrl_id,Ctrl_CodProc,Ctrl_CodPlan,Ctrl_Lin,Ctrl_Usuario,Ctrl_Turno,Ctrl_Lote,Ctrl_RefAjuste," +
-            " Ctrl_CAT,Ctrl_CAT_valor,Ctrl_desacrte,Ctrl_global_valor,Ctrl_global_porc,Ctrl_global_prueba,Ctrl_puntual_valor,Ctrl_puntual_porc," +
-            " Ctrl_puntual_prueba,Ctrl_externo_valor,Ctrl_externo_porc,Ctrl_externo_prueba,Ctrl_ptonegro_valor,Ctrl_ptonegro_porc,Ctrl_ptonegro_prueba," +
-            " Ctrl_ptomarron_valor,Ctrl_ptomarron_porc,Ctrl_ptomarron_prueba,Ctrl_marchablanca_valor,Ctrl_marchablanca_porc,Ctrl_marchablanca_prueba," +
-            " Ctrl_KilosLote,Ctrl_NumTotes,Ctrl_PorcExp,Ctrl_FecHora, Ctrl_obs) VALUES ('" + numeroctrl + "','" + CodProc + "','" + txt_cod_plan.Text + "'," +
-            " '" + Linea + "','" + username + "','" + Turno + "','" + Lote + "','" + txt_ref.Text + "','" + tipo_cat + "'," + txtCAT_Valor.Text + "," +
-            " " + txtDescarte.Text + "," + txt_global_v.Text + "," + txt_global_p.Text + "," + txt_global_exp.Text + "," + txt_puntual_v.Text + "," +
-            " " + txt_puntual_p.Text + "," + txt_puntual_exp.Text + "," + txt_externo_v.Text + "," + txt_externo_p.Text + "," + txt_externo_exp.Text + "," +
-            " " + txt_ptoneg_v.Text + "," + txt_ptoneg_p.Text + "," + txt_ptoneg_exp.Text + "," + txt_ptomar_v.Text + "," + txt_ptomar_p.Text + "," +
-            " " + txt_ptomar_exp.Text + "," + txt_mancha_v.Text + "," + txt_mancha_p.Text + "," + txt_mancha_exp.Text + "," + KilosLote.Text + "," +
-            " " + NTotes.Text + "," + porc_exp.Text + ",'" + numeroctrl + "', '" + txt_obser.Text + "')";
+            string fecha = DateTime.Now.ToString("yyyy-MM-dd");
+            string hora = DateTime.Now.ToString("HH:mm:ss");
+            string productor = DDL_prodreal_d.SelectedValue;
+            string variedad = DDL_variedad_d.SelectedValue;
+            if (txt_exp_est.Text == "") { txt_exp_est.Text = "0"; };
+            if (txt_exp_desc.Text == "") { txt_exp_desc.Text = "0"; };
+            if (txt_desc_2.Text == "") { txt_desc_2.Text = "0"; };
+            if (txt_desc_3.Text == "") { txt_desc_3.Text = "0"; };
+            if (txt_1desecho.Text == "") { txt_1desecho.Text = "0"; };
+            if (txt_2_exp.Text == "") { txt_2_exp.Text = "0"; };
+            if (txt_3_exp.Text == "") { txt_3_exp.Text = "0"; };
+            if (txt_desc_mesa.Text == "") { txt_desc_mesa.Text = "0"; };
+            if (txt_desc_manual.Text == "") { txt_desc_manual.Text = "0"; };
+            if (txt_obser.Text == "") { txt_obser.Text = "0"; };
+            
 
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
             System.Configuration.ConnectionStringSettings connStringmain;
             connStringmain = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
 
-            SqlConnection conexion = new SqlConnection(connStringmain.ToString());
-            conexion.Open();
-            using (SqlCommand sql = new SqlCommand(comando, conexion))
+            string comando = "insert into CC_PAC_075_V2 (cptnumero,	username,	planta,	CodProc,	Linea,	Turno,	Lote,	fecha,	hora,	productor,	variedad,	txt_exp_est,	txt_exp_desc,	txt_desc_2,	txt_desc_3,	txt_1desecho,	txt_2_exp,	txt_3_exp,	txt_desc_mesa,	txt_desc_manual,	txt_obser)" +
+            " values ('" + numeroctrl + "','" + username + "','" + planta + "','" + CodProc + "','" + Linea + "','" + Turno + "','" + Lote + "','" + fecha + "','" + hora + "','" + productor + "','" + variedad + "','" + txt_exp_est.Text + "','" + txt_exp_desc.Text + "','" + txt_desc_2.Text + "','" + txt_desc_3.Text + "','" + txt_1desecho.Text + "','" + txt_2_exp.Text + "','" + txt_3_exp.Text + "','" + txt_desc_mesa.Text + "','" + txt_desc_manual.Text + "','" + txt_obser.Text + "')";
+
+            try
             {
-                sql.ExecuteNonQuery();
-                conexion.Close();
+                SqlConnection conexion = new SqlConnection(connStringmain.ToString());
+                conexion.Open();
+
+
+                using (SqlCommand sql = new SqlCommand(comando, conexion))
+                {
+                    sql.ExecuteNonQuery();
+                    conexion.Close();
+                }
+
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "scriptName", "alert(\"Registro guardado OK\");", true);
+                txt_exp_est.Text = "0";
+                txt_exp_desc.Text = "0";
+                txt_desc_2.Text = "0";
+                txt_desc_3.Text = "0"; 
+                txt_1desecho.Text = "0";
+                txt_2_exp.Text = "0";
+                txt_3_exp.Text = "0"; 
+                txt_desc_mesa.Text = "0";
+                txt_desc_manual.Text = "0";
+                txt_obser.Text = "0";
+                lbl_fecha.Text = DateTime.Now.ToString("yyyy-MM-dd");
+                lbl_hora.Text = DateTime.Now.ToString("HH:mm:ss");
+
             }
-
-            string error = "Registro guardado OK";
-            Response.Write("<script language=javascript > alert('" + error + "'); </script>");
-
-            txtDescarte.Text = "0";
-            txtCAT_Valor.Text = "0";
-            txt_global_v.Text = "0";
-            txt_global_p.Text = "0";
-            txt_global_exp.Text = "0";
-            txt_puntual_v.Text = "0";
-            txt_puntual_p.Text = "0";
-            txt_puntual_exp.Text = "0";
-            txt_externo_v.Text = "0";
-            txt_externo_p.Text = "0";
-            txt_externo_exp.Text = "0";
-            txt_ptoneg_v.Text = "0";
-            txt_ptoneg_p.Text = "0";
-            txt_ptoneg_exp.Text = "0";
-            txt_ptomar_v.Text = "0";
-            txt_ptomar_p.Text = "0";
-            txt_ptomar_exp.Text = "0";
-            txt_mancha_v.Text = "0";
-            txt_mancha_p.Text = "0";
-            txt_mancha_exp.Text = "0";
-
-            KilosLote.Text = "0";
-            NTotes.Text = "0";
-            porc_exp.Text = "0";
-
-            txt_obser.Text = "";
-
-            txtDescarte.Focus();
+            catch
+            {
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "scriptName", "alert(\"Registro no guardado\");", true);
+            }
+            
             btnGrabar.Enabled = true;
             btnLimpiar.Enabled = true;
         }
@@ -341,5 +314,63 @@ namespace Mainsite.AppFiles
         {
 
         }
+
+
+        private void DropVariedad()
+        {
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.ConnectionStringSettings connStringLM;
+            connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
+            SqlConnection con = new SqlConnection(connStringLM.ToString());
+            try
+            {
+                con.Open();
+                //linea
+                SqlCommand cmd_proc = new SqlCommand("select COD_VARIEDAD, VARDESC from VARIEDAD where CODESPECIE='21' order by vardesc asc", con);
+                SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
+                DataSet ds_proc = new DataSet();
+                sda_proc.Fill(ds_proc);
+                DDL_variedad_d.DataSourceID = "";
+                DDL_variedad_d.DataSource = ds_proc;
+                DDL_variedad_d.DataBind();
+                con.Close();
+            }
+            catch
+            {
+                DDL_variedad_d.DataSourceID = "";
+                DDL_variedad_d.DataSource = "";
+                DDL_variedad_d.DataBind();
+            }
+
+
+        }
+
+        private void DDL_prodreal()
+        {
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.ConnectionStringSettings connStringLM;
+            connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
+            SqlConnection con = new SqlConnection(connStringLM.ToString());
+            try
+            {
+                con.Open();
+                SqlCommand cmd_proc = new SqlCommand("select CODPRODUCTOR, ALIAS, DESCRIPCION from [dbo].[PRODUCTORES] group by CODPRODUCTOR, ALIAS, DESCRIPCION order by DESCRIPCION asc", con);
+                SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
+                DataSet ds_proc = new DataSet();
+                sda_proc.Fill(ds_proc);
+                DDL_prodreal_d.DataSourceID = "";
+                DDL_prodreal_d.DataSource = ds_proc;
+                DDL_prodreal_d.DataBind();
+                con.Close();
+            }
+            catch
+            {
+                DDL_prodreal_d.DataSourceID = "";
+                DDL_prodreal_d.DataSource = "";
+                DDL_prodreal_d.DataBind();
+            }
+
+        }
+
     }
 }

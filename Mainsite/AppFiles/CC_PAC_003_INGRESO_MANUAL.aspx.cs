@@ -15,6 +15,7 @@ namespace Mainsite.AppFiles
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            try{
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
             System.Configuration.ConnectionStringSettings connStringmain;
             if (Session["PlantaName"] != null)
@@ -33,7 +34,10 @@ namespace Mainsite.AppFiles
                 conexion.Close();
 
             }
-
+            }
+            catch
+            {
+            }
             if (!IsPostBack)
             {
                 DropTurno();
@@ -179,8 +183,7 @@ namespace Mainsite.AppFiles
             if (txt_ramaleo.Text == "") { txt_ramaleo.Text = "0"; }
             if (txt_desgarros.Text == "") { txt_desgarros.Text = "0"; }
             if (txt_sierras.Text == "") { txt_sierras.Text = "0"; }
-            if (txt_defcalidad.Text == "") { txt_defcalidad.Text = "0"; }
-            if (txt_defcondicion.Text == "") { txt_defcondicion.Text = "0"; }
+            
             if (txt_qc_pudricion.Text == "") { txt_qc_pudricion.Text = "0"; }
             if (txt_comp_pudricion.Text == "") { txt_comp_pudricion.Text = "0"; }
             if (txt_qc_deshechos.Text == "") { txt_qc_deshechos.Text = "0"; }
@@ -207,7 +210,7 @@ namespace Mainsite.AppFiles
             " " + txt_dobles.Text + "," + txt_guatablanca.Text + "," + txt_heri_abiertas.Text + "," + txt_machucon.Text + "," + txt_heri_cica.Text + "," +
             " " + txt_manchas.Text + "," + txt_part_cica.Text + "," + txt_pitting.Text + "," + txt_medluna.Text + "," + txt_lagarto.Text + "," + txt_pudricion.Text + "," +
             " " + txt_part_agua.Text + "," + txt_russet.Text + "," + txt_sutura.Text + "," + txt_pardas.Text + "," + txt_pajaro.Text + "," + txt_faltocolor.Text + "," +
-            " " + txt_ramaleo.Text + "," + txt_desgarros.Text + "," + txt_sierras.Text + "," + txt_defcalidad.Text + "," + txt_defcondicion.Text + "," +
+            " " + txt_ramaleo.Text + "," + txt_desgarros.Text + "," + txt_sierras.Text + ",0,0," +
             " " + txt_qc_pudricion.Text + "," + txt_comp_pudricion.Text + "," + txt_qc_deshechos.Text + "," + txt_comp_deshechos.Text + "," + txt_qc_exportable.Text + "," +
             " " + txt_comp_exportable.Text + "," + txt_qc_deshecho_com.Text + "," + txt_comp_deshecho_com.Text + "," + txt_num_frutos.Text + "," + txt_exportable_2.Text + "," +
             " " + txt_comercial_5.Text + ",'" + txt_obser.Text + "', '" + productor + "', '" + Variedad + "', '" + txt_pedicelo.Text + "','" + txt_sut_exp.Text + "')";
@@ -255,8 +258,7 @@ namespace Mainsite.AppFiles
             txt_desgarros.Text = "";
             txt_sierras.Text = "";
             txt_pedicelo.Text = "";
-            txt_defcalidad.Text = "";
-            txt_defcondicion.Text = "";
+           
             txt_qc_pudricion.Text = "";
             txt_comp_pudricion.Text = "";
             txt_qc_deshechos.Text = "";
@@ -304,8 +306,7 @@ namespace Mainsite.AppFiles
             txt_ramaleo.Text = "";
             txt_desgarros.Text = "";
             txt_sierras.Text = "";
-            txt_defcalidad.Text = "";
-            txt_defcondicion.Text = "";
+
             txt_qc_pudricion.Text = "";
             txt_comp_pudricion.Text = "";
             txt_qc_deshechos.Text = "";

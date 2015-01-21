@@ -129,11 +129,12 @@
             </asp:TableCell><asp:TableCell Width="60">
     
         </asp:TableCell><asp:TableCell Width="60">
-                <asp:Label ID="Label22" runat="server" Text="Cajas Vaciadas" Width="80" Height="20"></asp:Label>
-            </asp:TableCell><asp:TableCell Width="60"> <asp:TextBox  MaxLength="4"    runat="server" ID="txt_cajasvaciadas"  Width="60" Height="20" Enabled="true" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox>
-                <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender34" TargetControlID="txt_cajasvaciadas" FilterType="numbers"  runat="server" />
+               <asp:Label ID="Label24" runat="server" Text="Peso Neto" Width="80" Height="20"></asp:Label>
+            </asp:TableCell><asp:TableCell Width="60"> 
+         
                 </asp:TableCell><asp:TableCell Width="120">
-                
+                   <asp:TextBox MaxLength="7"  runat="server" ID="txt_peso_neto" Width="180" Height="20" Enabled="true" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox>
+            <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender35" TargetControlID="txt_peso_neto" FilterType="numbers, Custom" Validchars="." runat="server" />
             </asp:TableCell></asp:TableRow><asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
              
             <asp:TableCell Width="60">
@@ -143,9 +144,11 @@
             </asp:TableCell><asp:TableCell Width="60">
     
         </asp:TableCell><asp:TableCell Width="60">
-                <asp:Label ID="Label24" runat="server" Text="Peso Neto" Width="80" Height="20"></asp:Label>
-            </asp:TableCell><asp:TableCell Width="60"> <asp:TextBox MaxLength="7"  runat="server" ID="txt_peso_neto" Width="60" Height="20" Enabled="true" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox>
-            <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender35" TargetControlID="txt_peso_neto" FilterType="numbers, Custom" Validchars="." runat="server" /></asp:TableCell><asp:TableCell Width="120">
+              <asp:Label ID="Label13" runat="server" Text="Caja Aceptada/Rechazada" Width="80" Height="20"></asp:Label>
+            </asp:TableCell><asp:TableCell Width="60" >   </asp:TableCell><asp:TableCell Width="120">
+             <asp:DropDownList ID="DDL_caja_d"  runat="server" Width="180" DataSourceID="DDL_caja" DataTextField="AcepRech" DataValueField="AcepRech" Height="26"  Font-Names="Century Gothic"> </asp:DropDownList>
+             
+            
                 
             </asp:TableCell></asp:TableRow></asp:Table></fieldset> 
             <asp:TabContainer ID="TabContainer1" runat="server" ActiveTabIndex="0">

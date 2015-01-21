@@ -535,31 +535,31 @@ namespace Mainsite.AppFiles {
         protected global::System.Web.UI.WebControls.TextBox txt_calisificacion;
         
         /// <summary>
-        /// Control Label14.
+        /// Control Label20.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label14;
+        protected global::System.Web.UI.WebControls.Label Label20;
         
         /// <summary>
-        /// Control txt_cajasvaciadas.
+        /// Control txt_peso_neto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_cajasvaciadas;
+        protected global::System.Web.UI.WebControls.TextBox txt_peso_neto;
         
         /// <summary>
-        /// Control FilteredTextBoxExtender34.
+        /// Control FilteredTextBoxExtender35.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::AjaxControlToolkit.FilteredTextBoxExtender FilteredTextBoxExtender34;
+        protected global::AjaxControlToolkit.FilteredTextBoxExtender FilteredTextBoxExtender35;
         
         /// <summary>
         /// Control TableRow21.
@@ -589,31 +589,22 @@ namespace Mainsite.AppFiles {
         protected global::System.Web.UI.WebControls.TextBox txt_destino;
         
         /// <summary>
-        /// Control Label20.
+        /// Control Label1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label20;
+        protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// Control txt_peso_neto.
+        /// Control DDL_caja_d.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txt_peso_neto;
-        
-        /// <summary>
-        /// Control FilteredTextBoxExtender35.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::AjaxControlToolkit.FilteredTextBoxExtender FilteredTextBoxExtender35;
+        protected global::System.Web.UI.WebControls.DropDownList DDL_caja_d;
         
         /// <summary>
         /// Control lbl_cptnumero.
