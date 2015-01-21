@@ -19,3 +19,10 @@ D:\Proyectos\sisqc\Negocio\bin\Debug\Datos.pdb
 D:\Proyectos\sisqc\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
 D:\Proyectos\sisqc\Negocio\obj\Debug\Negocio.dll
 D:\Proyectos\sisqc\Negocio\obj\Debug\Negocio.pdb
+C:\Aplicaciones Proyectos\sisqc\Negocio\bin\Debug\Negocio.dll
+C:\Aplicaciones Proyectos\sisqc\Negocio\bin\Debug\Negocio.pdb
+C:\Aplicaciones Proyectos\sisqc\Negocio\bin\Debug\Datos.dll
+C:\Aplicaciones Proyectos\sisqc\Negocio\bin\Debug\Datos.pdb
+C:\Aplicaciones Proyectos\sisqc\Negocio\obj\Debug\Negocio.csprojResolveAssemblyReference.cache
+C:\Aplicaciones Proyectos\sisqc\Negocio\obj\Debug\Negocio.dll
+C:\Aplicaciones Proyectos\sisqc\Negocio\obj\Debug\Negocio.pdb
