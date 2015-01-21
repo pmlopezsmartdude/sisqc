@@ -48,7 +48,7 @@
     <meta name="viewport" content="width=device-width" />
 
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
-
+    
       </asp:ContentPlaceHolder>
 </head>
 <body>
@@ -59,7 +59,7 @@
         <p class="site-title"><a runat="server" href="~/">
             <img runat="server" src="~/Images/LogoWCTChico.png" alt="" title="WTC Software"/></a></p>
         </div>
-   <div class="clock" style="font-family: LCD;" >
+   <div class="clock" style="font-family: Century Gothic; font-size: Small;" >
    <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
    <ContentTemplate>

@@ -473,7 +473,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Anteriores\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>

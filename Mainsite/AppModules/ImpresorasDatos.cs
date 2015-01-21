@@ -20,7 +20,7 @@ namespace Mainsite.AppModules
         {
             if (!String.IsNullOrEmpty(ip))
             {
-                System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/trazabilidad");
+                System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
                 System.Configuration.ConnectionStringSettings trazabilidadconnstring;
                 trazabilidadconnstring = rootWebConfig.ConnectionStrings.ConnectionStrings["trazabilidad"];
                 SqlConnection con = new SqlConnection(trazabilidadconnstring.ToString());

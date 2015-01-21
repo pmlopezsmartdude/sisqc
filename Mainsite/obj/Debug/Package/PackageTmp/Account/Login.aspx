@@ -36,7 +36,7 @@
                              ValidationGroup="LoginUserValidationGroup">*</asp:RequiredFieldValidator>
                     </p>
                     <p>
-                        <asp:CheckBox ID="RememberMe" runat="server"/>
+                        <asp:CheckBox ID="RememberMe" runat="server" Checked="True"/>
                         <asp:Label ID="RememberMeLabel" runat="server" AssociatedControlID="RememberMe" CssClass="inline">Mantenerme conectado</asp:Label>
                     </p>
                 </fieldset>

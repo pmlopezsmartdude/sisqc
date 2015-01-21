@@ -16,7 +16,7 @@ namespace Mainsite.AppFiles
         protected void Page_Load(object sender, EventArgs e)
         {
             try{
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringmain;
             if (Session["PlantaName"] != null)
             {
@@ -68,7 +68,7 @@ namespace Mainsite.AppFiles
         }
         private void DropVariedad()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -89,7 +89,7 @@ namespace Mainsite.AppFiles
         }
         private void DDL_prodreal()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -109,7 +109,7 @@ namespace Mainsite.AppFiles
         }
         private void DDL_linea()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -128,7 +128,7 @@ namespace Mainsite.AppFiles
         }
         private void DropTurno()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -215,7 +215,7 @@ namespace Mainsite.AppFiles
             " " + txt_comp_exportable.Text + "," + txt_qc_deshecho_com.Text + "," + txt_comp_deshecho_com.Text + "," + txt_num_frutos.Text + "," + txt_exportable_2.Text + "," +
             " " + txt_comercial_5.Text + ",'" + txt_obser.Text + "', '" + productor + "', '" + Variedad + "', '" + txt_pedicelo.Text + "','" + txt_sut_exp.Text + "')";
 
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringmain;
             connStringmain = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
 

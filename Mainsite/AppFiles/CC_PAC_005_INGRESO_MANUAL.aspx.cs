@@ -125,7 +125,7 @@ namespace Mainsite.AppFiles
             string salida = Convert.ToString(DDL_salida_d.SelectedValue);
             string aceptrecha = DDL_caja_d.SelectedValue;
 
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringmain;
             connStringmain = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
 
@@ -364,7 +364,7 @@ namespace Mainsite.AppFiles
         {
             try
             {
-                System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+                System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
                 System.Configuration.ConnectionStringSettings connStringLM;
                 connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
                 SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -392,7 +392,7 @@ namespace Mainsite.AppFiles
 
         private void DropSalida()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -429,7 +429,7 @@ namespace Mainsite.AppFiles
 
         private void DropEspecie()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -491,7 +491,7 @@ namespace Mainsite.AppFiles
         {
             string envase = Convert.ToString(DDL_envase_d.SelectedItem.Value);
             txt_envase_cod.Text = envase;
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -554,7 +554,7 @@ namespace Mainsite.AppFiles
         }
         private void DropVariedad(string especie)
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -575,7 +575,7 @@ namespace Mainsite.AppFiles
         }
         private void DDL_embalaje(string especie)
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -594,7 +594,7 @@ namespace Mainsite.AppFiles
         }
         private void DDL_envase(string especie)
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -613,7 +613,7 @@ namespace Mainsite.AppFiles
         }
         private void DDL_marca()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -634,7 +634,7 @@ namespace Mainsite.AppFiles
 
         private void DDL_prodreal()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -654,7 +654,7 @@ namespace Mainsite.AppFiles
         }
         private void DDL_prodetiq()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -675,7 +675,7 @@ namespace Mainsite.AppFiles
 
         private void DDL_linea()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -695,7 +695,7 @@ namespace Mainsite.AppFiles
 
         private void DDL_clasi()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -715,7 +715,7 @@ namespace Mainsite.AppFiles
 
         private void DDL_calibre()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());

@@ -21,7 +21,7 @@ namespace Mainsite.AppFiles
             try {
             this.CodCaja.Attributes.Add("onkeypress", "button_click(this,'" + this.btnLoadData.ClientID + "')");
             CodCaja.Focus();
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringmain;
             System.Configuration.ConnectionStringSettings connStringLM;
             if (Session["PlantaName"] != null)
@@ -76,7 +76,7 @@ namespace Mainsite.AppFiles
             " [Confeccion],[PesoTimbrado],[codMarca] ,[Marca] ,[ClaseCalibreColor],[CalibreTimbrado],[CAT] ,[codProductorReal],[ProductorReal],[ComunaReal],[ProvinciaReal]," +
             " [RegionReal],[codProductorTimbrado],[ProductorTimbrado],[ComunaTimbrada],[ProvinciaTimbrada],[RegionTimbrada],[CondicionEmbarque],[NumeroPalet],[FechaPaletizaje] " +
             " FROM DatosCajas WHERE codCaja ='" + codigocaja + "'";
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             System.Configuration.ConnectionStringSettings connStringmain;
             if (Session["PlantaName"].ToString() == "Planta Mostazal")
@@ -477,7 +477,7 @@ namespace Mainsite.AppFiles
             if (TextBox1obs.Text == "") { TextBox1obs.Text = "0"; }
             string aceptrecha = DDL_caja_d.SelectedValue;
 
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringmain;
             connStringmain = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
 
@@ -683,7 +683,7 @@ namespace Mainsite.AppFiles
             if (txt_sut_exp.Text == "") { txt_sut_exp.Text = "0"; }
             string aceptrecha = DDL_caja_d.SelectedValue;
 
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringmain;
             connStringmain = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
             SqlConnection conexion = new SqlConnection(connStringmain.ToString());
@@ -862,7 +862,7 @@ namespace Mainsite.AppFiles
 
         protected void guardar_obs(object sender, EventArgs e)
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringmain;
             connStringmain = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
 

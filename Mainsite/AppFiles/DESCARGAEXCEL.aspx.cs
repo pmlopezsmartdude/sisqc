@@ -26,7 +26,7 @@ namespace Mainsite.AppFiles
 
         private void DDL_linea()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -49,7 +49,7 @@ namespace Mainsite.AppFiles
         }
         private void DDL_turno()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -93,7 +93,7 @@ namespace Mainsite.AppFiles
                 where = "where ((SUBSTRING(ctrl_fechora,1,10))>='" + inicio + "' and (SUBSTRING(ctrl_fechora,1,10))<='" + fin + "') and Ctrl_Lin = '" + linea + "'";
             }
 
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringmain;
             connStringmain = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
             string PlantaNombre = Session["PlantaName"].ToString();
@@ -184,7 +184,7 @@ namespace Mainsite.AppFiles
                 where = "where (cl.cptfechor>='" + inicio + "' and cl.cptfechor<='" + fin + "') and cl.lincodigo = '" + linea + "'";
             }
 
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringmain;
             connStringmain = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
             string PlantaNombre = Session["PlantaName"].ToString();
@@ -292,7 +292,7 @@ namespace Mainsite.AppFiles
                 where = "where ([fecha]>='" + inicio + "' and [fecha]<='" + fin + "') and Linea = '" + linea + "'";
             }
 
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringmain;
             connStringmain = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
             string PlantaNombre = Session["PlantaName"].ToString();

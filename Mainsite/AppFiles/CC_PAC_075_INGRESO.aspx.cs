@@ -18,7 +18,7 @@ namespace Mainsite.AppFiles
         {
             try
                 {
-                System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+                System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringmain;
             System.Configuration.ConnectionStringSettings connStringLM;
             if (Session["PlantaName"] != null)
@@ -101,7 +101,7 @@ namespace Mainsite.AppFiles
 
         private void DDLProcesos(int linea, string turno)
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             if (Session["PlantaName"].ToString() == "Planta Mostazal")
             {
@@ -133,7 +133,7 @@ namespace Mainsite.AppFiles
 
         private void DropLinea()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             if (Session["PlantaName"].ToString() == "Planta Mostazal")
             {
@@ -164,7 +164,7 @@ namespace Mainsite.AppFiles
 
         private void BuscaTurno(int linea)
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             if (Session["PlantaName"].ToString() == "Planta Mostazal")
             {
@@ -197,7 +197,7 @@ namespace Mainsite.AppFiles
 
         private void DropLote(string proceso)
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             if (Session["PlantaName"].ToString() == "Planta Mostazal")
             {
@@ -267,7 +267,7 @@ namespace Mainsite.AppFiles
             if (txt_obser.Text == "") { txt_obser.Text = "0"; };
             
 
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringmain;
             connStringmain = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
 
@@ -318,7 +318,7 @@ namespace Mainsite.AppFiles
 
         private void DropVariedad()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
@@ -347,7 +347,7 @@ namespace Mainsite.AppFiles
 
         private void DDL_prodreal()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
             connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
             SqlConnection con = new SqlConnection(connStringLM.ToString());
