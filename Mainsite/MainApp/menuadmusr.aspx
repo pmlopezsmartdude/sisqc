@@ -22,14 +22,14 @@
                 <asp:TreeNode Text="Administración de Roles" Value="Administración de Roles"
                         Target="workingarea" NavigateUrl="~/Account/RoleEditor.aspx">
                 </asp:TreeNode>
-                <asp:TreeNode SelectAction="Expand" Text="Administración Sistema"
+ <%--               <asp:TreeNode SelectAction="Expand" Text="Administración Sistema"
                     Value="Administracion Sistema" Expanded="False">
                     <asp:TreeNode Text="Administrar Impresoras" Value="Administrar Impresoras"
                     Target="workingarea" NavigateUrl="~/Admsistema/impresoras.aspx" />
                     <asp:TreeNode Text="Ingresar Nuevo Trabajador" Value="Ingresar Nuevo"
                     Target="workingarea" NavigateUrl="~/Admsistema/IngresoEmpleados.aspx"></asp:TreeNode>
                     
-                </asp:TreeNode>
+                </asp:TreeNode>--%>
             </Nodes>
         </asp:TreeView>
         <asp:TreeView ID="TreeViewAppsJefatura" runat="server" Font-Names="Century Gothic"

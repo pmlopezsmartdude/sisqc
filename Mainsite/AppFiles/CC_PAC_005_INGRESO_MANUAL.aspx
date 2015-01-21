@@ -146,7 +146,7 @@
         </asp:TableCell><asp:TableCell Width="60">
               <asp:Label ID="Label13" runat="server" Text="Caja Aceptada/Rechazada" Width="80" Height="20"></asp:Label>
             </asp:TableCell><asp:TableCell Width="60" >   </asp:TableCell><asp:TableCell Width="120">
-             <asp:DropDownList ID="DDL_caja_d"  runat="server" Width="180" DataSourceID="DDL_caja" DataTextField="AcepRech" DataValueField="AcepRech" Height="26"  Font-Names="Century Gothic"> </asp:DropDownList>
+             <asp:DropDownList ID="DDL_caja_d"  runat="server" Width="180" DataSourceID="DDL_caja" DataTextField="AcepRech" DataValueField="AcepRech" Height="26"  Font-Names="Century Gothic" Font-Size="X-Small"> </asp:DropDownList>
              
             
                 
