@@ -400,27 +400,7 @@
 
              
    </asp:Table>
-       <asp:Table ID="Table2" runat="server" Width="700px" Height="30px" Font-Names="Century Gothic" Font-Size="Small" HorizontalAlign="Center">
-     <asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
-             <asp:TableCell Width="30">
-             <asp:Label ID="Label9" runat="server" Text="TOTAL DEFECTOS DE CALIDAD" Width="250" Height="20"></asp:Label>
-             </asp:TableCell>
-          <asp:TableCell>
-                <asp:TextBox  MaxLength="3" runat="server" ID="txt_defcalidad"  Width="30" Height="20" Enabled="true" Font-Size="X-Small" Font-Names="Century Gothic">0</asp:TextBox>
-                <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender31" TargetControlID="txt_defcalidad"  FilterType="numbers"   runat="server" />
-             </asp:TableCell>
-
-             <asp:TableCell Width="30">
-             <asp:Label ID="Label16" runat="server" Text="TOTAL DEFECTOS DE CONDICIÓN" Width="250" Height="20"></asp:Label>
-             </asp:TableCell>
-             
-              <asp:TableCell>
-                <asp:TextBox  MaxLength="3" runat="server" ID="txt_defcondicion"  Width="30" Height="20" Enabled="true" Font-Size="X-Small" Font-Names="Century Gothic">0</asp:TextBox>
-                <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender32" TargetControlID="txt_defcondicion"  FilterType="numbers"   runat="server" />
-             </asp:TableCell>
-            
-       </asp:TableRow>
-       </asp:Table>
+      <br />
              </fieldset>
     <asp:TabContainer ID="TabContainer1" runat="server">
 
@@ -455,9 +435,6 @@
                 <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender35" TargetControlID="txt_comp_pudricion"  FilterType="numbers"   runat="server" />
              </asp:TableCell>
 
-
-
-             
             
        </asp:TableRow>
           <asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="30">

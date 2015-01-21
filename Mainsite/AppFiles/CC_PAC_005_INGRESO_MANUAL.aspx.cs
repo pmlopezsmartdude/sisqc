@@ -16,6 +16,7 @@ namespace Mainsite.AppFiles
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            try{
             lbl_planta_nombre.Text = Session["PlantaName"].ToString();
             if (check_fecha.Checked == true)
             {
@@ -37,6 +38,11 @@ namespace Mainsite.AppFiles
 
                 DDL_prodetiq();
                 DDL_clasi();
+                DropAcept();
+            }
+            }
+            catch
+            {
             }
         }
 
@@ -93,7 +99,6 @@ namespace Mainsite.AppFiles
             if (txtpartiduracicatrizada.Text == "") { txtpartiduracicatrizada.Text = "0"; }
             if (txtpiellagarto.Text == "") { txtpiellagarto.Text = "0"; }
             if (txtpitting.Text == "") { txtpitting.Text = "0"; }
-            if (txt_cajasvaciadas.Text == "") { txt_cajasvaciadas.Text = "0"; }
             if (txt_peso_neto.Text == "") { txt_peso_neto.Text = "0"; }
             if (txt_sut_exp.Text == "") { txt_sut_exp.Text = "0"; }
             if (txt_f1.Text == "") { txt_f1.Text = "0"; }
@@ -118,23 +123,7 @@ namespace Mainsite.AppFiles
             string calibre = Convert.ToString(DDL_calibre_d.SelectedItem.Text);
             string clasificacion = Convert.ToString(DDL_clasi_d.SelectedItem.Text);
             string salida = Convert.ToString(DDL_salida_d.SelectedValue);
-
-
-            //    string linea_2 = Convert.ToString(DDL_linea_d.SelectedItem.Value);
-
-
-            //string turno_2 = Convert.ToString(DDL_turno_d.SelectedItem.Value);
-            //string especie_2 = Convert.ToString(DDL_cod_especie_d.SelectedItem.Value);
-            //string variedad_2 = Convert.ToString(DDL_variedad_d.SelectedItem.Value);
-            //string marca_2 = Convert.ToString(DDL_marca_d.SelectedItem.Value);
-            //string embalaje_2 = Convert.ToString(DDL_embalaje_d.SelectedItem.Value);
-            //string envase_2 = Convert.ToString(DDL_envase_d.SelectedItem.Value);
-            //string prodreal_2 = Convert.ToString(DDL_prodreal_d.SelectedItem.Value);
-            //string prodreal_3 = Convert.ToString(DDL_prodreal_d.SelectedItem.Text);
-            //string prodetiq_2 = Convert.ToString(DDL_prodetiq_d.SelectedItem.Value);
-            //string calibre_2 = Convert.ToString(DDL_calibre_d.SelectedItem.Value);
-            //string clasificacion_2 = Convert.ToString(DDL_clasi_d.SelectedItem.Value);
-
+            string aceptrecha = DDL_caja_d.SelectedValue;
 
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
             System.Configuration.ConnectionStringSettings connStringmain;
@@ -160,7 +149,7 @@ namespace Mainsite.AppFiles
             }
             else
             {
-                comprueba = "select cptcodcja from CONTROLPT where cptcodcja='" + CodCaja.Text + "' group by cptcodcja";
+                comprueba = "select cptcodcja from CONTROLPT where cptcodcja='" + CodCaja.Text + "' and placodigo='" + planta + "' group by cptcodcja";
             }
 
             SqlCommand cmd_proc = new SqlCommand(comprueba, conexion);
@@ -175,11 +164,11 @@ namespace Mainsite.AppFiles
 
                     string comando = "INSERT INTO controlpt (cptnumero,placodigo,turcodigo,cptfechor,usurutusu,lincodigo,cptproces,cptnulote,cptrutprr,cptnompre,cptrutpet," +
                     " cptnompet,cptespcod,cptespdes,cptvarcod,cptvardes,cptcalibr,cptmarcod,cptmardes,cptembcod,cptembdes,cptenvcod,cptenvdes,cptpesone,cptsalida,cptcodcja," +
-                    " cptclasificacion,cptdestino,cptcajasvaciadas) VALUES ('" + numeroctrl + "','" + planta + "','" + turno + "','" + fecha + "','" + username + "'," +
+                    " cptclasificacion,cptdestino,cptcajasvaciadas,AceptRecha) VALUES ('" + numeroctrl + "','" + planta + "','" + turno + "','" + fecha + "','" + username + "'," +
                     " '" + linea + "','" + NroProceso.Text + "','" + Lote.Text + "','" + txt_prodreal_cod.Text + "','" + prodreal + "','" + txt_prodetiq_cod.Text + "'," +
                     " '" + prodetiq + "','" + especietext.Text + "','" + especie + "','" + txt_variedad_cod.Text + "','" + variedad + "','" + calibre + "'," +
                     " '" + txt_marca_cod.Text + "','" + marca + "','" + txt_embalaje_cod.Text + "','" + embalaje + "','" + txt_envase_cod.Text + "','" + envase + "','" + Peso.Text + "'," +
-                    " " + salida + ",'" + CodCaja.Text + "','" + clasificacion + "','" + txt_destino.Text + "'," + txt_cajasvaciadas.Text + ")";
+                    " " + salida + ",'" + CodCaja.Text + "','" + clasificacion + "','" + txt_destino.Text + "',0, '" + aceptrecha + "')";
 
                     string comando_2 = "INSERT INTO defecto (cptnumero,defcalbaj,defcalnor,defcalsob,defprecal,defdanotr,defescama,deffrutode,deffrutodo,defguatab,defherida," +
                     " defmancha,defmedial,defpiella,defrusset,defsutura,deffaltoc,deframole,defsinped,defadhesi,defdesfru,defdesped,defblando,defherabi,defmachuc,defpartid," +
@@ -229,7 +218,7 @@ namespace Mainsite.AppFiles
                     Lote.Text = "";
 
                     Peso.Text = "";
-                    txt_cajasvaciadas.Text = "";
+                   
                     TextBox1obs.Text = "";
                     txt_peso_neto.Text = "";
                     txtbajo.Text = "";
@@ -352,7 +341,7 @@ namespace Mainsite.AppFiles
             txtpartiduracicatrizada.Text = "";
             txtpiellagarto.Text = "";
             txtpitting.Text = "";
-            txt_cajasvaciadas.Text = "";
+            
             txt_destino.Text = "";
 
 
@@ -373,22 +362,32 @@ namespace Mainsite.AppFiles
 
         private void DropTurno()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
-            System.Configuration.ConnectionStringSettings connStringLM;
-            connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
-            SqlConnection con = new SqlConnection(connStringLM.ToString());
-            con.Open();
-            //linea
-            SqlCommand cmd_proc = new SqlCommand("select tur_nombre as turno from turno_sat", con);
-            SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
-            DataSet ds_proc = new DataSet();
-            sda_proc.Fill(ds_proc);
+            try
+            {
+                System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
+                System.Configuration.ConnectionStringSettings connStringLM;
+                connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
+                SqlConnection con = new SqlConnection(connStringLM.ToString());
+                con.Open();
+                //linea
+                SqlCommand cmd_proc = new SqlCommand("select tur_nombre as turno from turno_sat", con);
+                SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
+                DataSet ds_proc = new DataSet();
+                sda_proc.Fill(ds_proc);
 
-            DDL_turno_d.DataSourceID = "";
-            DDL_turno_d.DataSource = ds_proc;
-            DDL_turno_d.DataBind();
+                DDL_turno_d.DataSourceID = "";
+                DDL_turno_d.DataSource = ds_proc;
+                DDL_turno_d.DataBind();
+                con.Close();
+            }
+            catch
+            {
+                DDL_turno_d.DataSourceID = "";
+                DDL_turno_d.DataSource = "";
+                DDL_turno_d.DataBind();
+            }
 
-            con.Close();
+            
         }
 
         private void DropSalida()
@@ -409,6 +408,23 @@ namespace Mainsite.AppFiles
             DDL_salida_d.DataBind();
 
             con.Close();
+        }
+
+        private void DropAcept()
+        {
+            DDL_caja_d.DataSourceID = "";
+            DDL_caja_d.DataSource = "";
+            DDL_caja_d.DataBind();
+            try
+            {
+                DDL_caja_d.Items.Add("Aceptada");
+                DDL_caja_d.Items.Add("Rechazada");
+
+            }
+            catch
+            {
+            }
+
         }
 
         private void DropEspecie()

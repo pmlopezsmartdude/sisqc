@@ -205,11 +205,11 @@
                <asp:TextBox  runat="server" ID="txt_calisificacion"  Width="80" Height="20"  ReadOnly="true" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox>
             </asp:TableCell>
             <asp:TableCell Width="60">
-                <asp:Label ID="Label14" runat="server" Text="Cajas Vaciadas" Width="80" Height="20"></asp:Label>
+                <asp:Label ID="Label20" runat="server" Text="Peso Neto" Width="80" Height="20"></asp:Label>
             </asp:TableCell>
             <asp:TableCell Width="60">
-                <asp:TextBox  MaxLength="5"    runat="server" ID="txt_cajasvaciadas"  Width="80" Height="20"  Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox>
-                <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender34" TargetControlID="txt_cajasvaciadas" FilterType="numbers"  runat="server" />
+                <asp:TextBox runat="server" ID="txt_peso_neto" Width="80" Height="20" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox>
+            <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender35" TargetControlID="txt_peso_neto" FilterType="numbers"  runat="server" />
             </asp:TableCell>
             <asp:TableCell Width="60">
                 
@@ -223,11 +223,10 @@
                  <asp:TextBox   runat="server" ID="txt_destino"  Width="80" Height="20" Enabled="true" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox>
             </asp:TableCell>
             <asp:TableCell Width="60">
-                <asp:Label ID="Label20" runat="server" Text="Peso Neto" Width="80" Height="20"></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text="Caja Aprobada/Rechazada" Width="80" Height="20"></asp:Label>
             </asp:TableCell>
             <asp:TableCell Width="60">
-                         <asp:TextBox runat="server" ID="txt_peso_neto" Width="80" Height="20" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox>
-            <cc1:FilteredTextBoxExtender ID="FilteredTextBoxExtender35" TargetControlID="txt_peso_neto" FilterType="numbers"  runat="server" />
+                         <asp:DropDownList ID="DDL_caja_d"  runat="server" Width="85" DataSourceID="DDL_caja" DataTextField="AcepRech" DataValueField="AcepRech" Height="26"  Font-Names="Century Gothic"> </asp:DropDownList>
             </asp:TableCell>
             <asp:TableCell Width="60">
                 <asp:Label ID="lbl_cptnumero" runat="server" Visible="false"></asp:Label>

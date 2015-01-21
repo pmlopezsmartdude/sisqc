@@ -31,6 +31,11 @@
                      
        
          </asp:TableCell>
+          <asp:TableCell>
+ <asp:hyperlink id="link_descarga" runat="server" NavigateUrl="~/AppFiles/DESCARGAEXCEL.aspx" target="idframe"><asp:Image id="Image5" runat="server" ImageUrl="~/Images/exportar_excel.png" Height="26px"></asp:Image></asp:hyperlink>
+                     
+       
+         </asp:TableCell>
     </asp:TableRow>
     
     </asp:Table>

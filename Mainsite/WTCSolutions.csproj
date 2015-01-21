@@ -102,6 +102,7 @@
     <Content Include="AppFiles\CC_PAC_005_INGRESO.aspx" />
     <Content Include="AppFiles\CC_PAC_005_INGRESO_MANUAL.aspx" />
     <Content Include="AppFiles\CC_PAC_075_INGRESO.aspx" />
+    <Content Include="AppFiles\DESCARGAEXCEL.aspx" />
     <Content Include="AppFiles\INF_PAC005_GEN.aspx" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -169,8 +170,12 @@
     <Content Include="Images\CCPAC003.png" />
     <Content Include="Images\CCPAC005.png" />
     <Content Include="Images\CCPAC075.png" />
+    <Content Include="Images\Descargar_Descarte_Comercial.png" />
+    <Content Include="Images\Descargar_Mesa_de_seleccion.png" />
+    <Content Include="Images\Descargar_Producto_Terminado.png" />
     <Content Include="Images\down.png" />
     <Content Include="Images\EDIT.png" />
+    <Content Include="Images\exportar_excel.png" />
     <Content Include="Images\form-4.png" />
     <Content Include="Images\heroAccent.png" />
     <Content Include="Images\INGRESOMANUAL.png" />
@@ -374,6 +379,13 @@
     <Compile Include="AppFiles\CC_PAC_075_INGRESO.aspx.designer.cs">
       <DependentUpon>CC_PAC_075_INGRESO.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AppFiles\DESCARGAEXCEL.aspx.cs">
+      <DependentUpon>DESCARGAEXCEL.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppFiles\DESCARGAEXCEL.aspx.designer.cs">
+      <DependentUpon>DESCARGAEXCEL.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AppFiles\INF_PAC005_GEN.aspx.cs">
       <DependentUpon>INF_PAC005_GEN.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -461,6 +473,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Anteriores\" />
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>

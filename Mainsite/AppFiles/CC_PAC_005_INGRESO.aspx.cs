@@ -9,6 +9,8 @@ using System.Web.UI.WebControls;
 using System.Web.UI.HtmlControls;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;
+using System.Web.Security;
 
 namespace Mainsite.AppFiles
 {
@@ -16,6 +18,7 @@ namespace Mainsite.AppFiles
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            try {
             this.CodCaja.Attributes.Add("onkeypress", "button_click(this,'" + this.btnLoadData.ClientID + "')");
             CodCaja.Focus();
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
@@ -53,6 +56,14 @@ namespace Mainsite.AppFiles
             TabPanel3.Enabled = true;
             guardar_obs_bt.Visible = false;
             guardar_obs_bt.Enabled = false;
+            }
+            catch
+            {
+            }
+            if (!IsPostBack)
+            {
+                DropAcept();
+            }
 
 
         }
@@ -89,7 +100,7 @@ namespace Mainsite.AppFiles
             if (ds_existe_caja.Tables[0].Rows.Count.ToString() == "0")
             {
                 ScriptManager.RegisterStartupScript(this, this.GetType(), "scriptName", "alert(\"No se encuentra caja\");", true);
-                Response.Redirect("~/AppFiles/CC_PAC_005_INGRESO.aspx");
+                //Response.Redirect("~/AppFiles/CC_PAC_005_INGRESO.aspx");
 
             }
             else
@@ -157,7 +168,7 @@ namespace Mainsite.AppFiles
             " convert(varchar(15),defdesgar) as [defdesgar],convert(varchar(15),defcorsie) as [defcorsie]," +
             " convert(varchar(15),solsolub) as solsolub,convert(varchar(15),defcalbaj)as defcalbaj ," +
             " convert(varchar(15),defcalnor) as defcalnor,convert(varchar(15),defcalsob) as defcalsob, observac, " +
-            " cptclasificacion,cptdestino,convert(varchar(4),cptcajasvaciadas) as cptcajasvaciadas, convert(varchar(15),pesoneto) as pesoneto, convert(varchar(15),defsutura_exp) as defsutura_exp, cl.cptnumero as cptnumero  " +
+            " cptclasificacion,cptdestino,convert(varchar(4),cptcajasvaciadas) as cptcajasvaciadas, convert(varchar(15),pesoneto) as pesoneto, convert(varchar(15),defsutura_exp) as defsutura_exp, cl.cptnumero as cptnumero , cl.AceptRecha as AceptRecha " +
             " from defecto as def inner join controlpt as cl on cl.cptnumero=def.cptnumero where cl.cptcodcja='" + CodCaja.Text + "'", con_existe_caja);
             SqlDataAdapter sda_existe = new SqlDataAdapter(cmd__existe);
             DataSet ds_existe = new DataSet();
@@ -254,10 +265,13 @@ namespace Mainsite.AppFiles
                     TextBox1obs.Text = reader.GetString(34);
                     txt_calisificacion.Text = reader.GetString(35);
                     txt_destino.Text = reader.GetString(36);
-                    txt_cajasvaciadas.Text = reader.GetString(37);
                     txt_peso_neto.Text = reader.GetString(38);
                     txt_sut_exp.Text = reader.GetString(39);
                     lbl_cptnumero.Text = reader.GetString(40);
+                    
+                    DDL_caja_d.SelectedIndex = -1;
+                    DDL_caja_d.Items.FindByText(reader.GetString(41)).Selected = true;
+
 
                     txt_peso_neto.Enabled = false;
                     txtbajo.Enabled = false;
@@ -298,7 +312,6 @@ namespace Mainsite.AppFiles
                     txtpitting.Enabled = false;
                     txt_calisificacion.Enabled = false;
                     txt_destino.Enabled = false;
-                    txt_cajasvaciadas.Enabled = false;
                     txt_sut_exp.Enabled = false;
 
                     con_existe_caja.Close();
@@ -309,8 +322,24 @@ namespace Mainsite.AppFiles
                     TabPanel2.Enabled = true;
                     TabPanel2.Visible = true;
                     Grabar.Visible = false;
+
+
+                    string[] roles = Roles.GetRolesForUser();
+            
+            foreach (string r in roles)
+            {
+                if (r == "Jefatura" || r =="Administrador")
+                {
                     Editar005.Visible = true;
                     link_ing005_manual.Visible = false;
+                    
+                }
+            }
+
+
+
+
+                   
 
 
                 }
@@ -380,6 +409,23 @@ namespace Mainsite.AppFiles
             Limpiar_Click();
         }
 
+        private void DropAcept()
+        {
+            DDL_caja_d.DataSourceID = "";
+            DDL_caja_d.DataSource = "";
+            DDL_caja_d.DataBind();
+            try
+            {
+                DDL_caja_d.Items.Add("Aceptada");
+                DDL_caja_d.Items.Add("Rechazada");
+                
+            }
+            catch
+            {
+            }
+         
+        }
+
         protected void Grabar_Click(object sender, EventArgs e)
         {
             string numeroctrl = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss.fffffffzzz");
@@ -421,7 +467,6 @@ namespace Mainsite.AppFiles
             if (txtpartiduracicatrizada.Text == "") { txtpartiduracicatrizada.Text = "0"; }
             if (txtpiellagarto.Text == "") { txtpiellagarto.Text = "0"; }
             if (txtpitting.Text == "") { txtpitting.Text = "0"; }
-            if (txt_cajasvaciadas.Text == "") { txt_cajasvaciadas.Text = "0"; }
             if (txt_peso_neto.Text == "") { txt_peso_neto.Text = "0"; }
             if (txt_sut_exp.Text == "") { txt_sut_exp.Text = "0"; }
             if (txt_f1.Text == "") { txt_f1.Text = "0"; }
@@ -430,6 +475,7 @@ namespace Mainsite.AppFiles
             if (txt_f4.Text == "") { txt_f4.Text = "0"; }
             if (txt_f5.Text == "") { txt_f5.Text = "0"; }
             if (TextBox1obs.Text == "") { TextBox1obs.Text = "0"; }
+            string aceptrecha = DDL_caja_d.SelectedValue;
 
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
             System.Configuration.ConnectionStringSettings connStringmain;
@@ -438,7 +484,7 @@ namespace Mainsite.AppFiles
             SqlConnection conexion = new SqlConnection(connStringmain.ToString());
             conexion.Open();
 
-            SqlCommand cmd_proc = new SqlCommand("select cptcodcja from CONTROLPT where cptcodcja='" + CodCaja.Text + "' group by cptcodcja", conexion);
+            SqlCommand cmd_proc = new SqlCommand("select cptcodcja from CONTROLPT where cptcodcja='" + CodCaja.Text + "'  and placodigo='" + CodPta.Text + "' group by cptcodcja", conexion);
             SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
             DataSet ds_proc = new DataSet();
             try
@@ -450,11 +496,11 @@ namespace Mainsite.AppFiles
 
                     string comando = "INSERT INTO controlpt (cptnumero,placodigo,turcodigo,cptfechor,usurutusu,lincodigo,cptproces,cptnulote,cptrutprr,cptnompre,cptrutpet," +
                     " cptnompet,cptespcod,cptespdes,cptvarcod,cptvardes,cptcalibr,cptmarcod,cptmardes,cptembcod,cptembdes,cptenvcod,cptenvdes,cptpesone,cptsalida,cptcodcja," +
-                    " cptclasificacion,cptdestino,cptcajasvaciadas) VALUES ('" + numeroctrl + "','" + CodPta.Text + "','" + Turno.Text + "','" + fecha + "','" + username + "'," +
+                    " cptclasificacion,cptdestino,cptcajasvaciadas,AceptRecha) VALUES ('" + numeroctrl + "','" + CodPta.Text + "','" + Turno.Text + "','" + fecha + "','" + username + "'," +
                     " '" + Linea.Text + "','" + NroProceso.Text + "','" + Lote.Text + "','" + ProdReal.Text + "','" + ProdRealtxt.Text + "','" + ProdEtiq.Text + "'," +
                     " '" + ProdEtiqtxt.Text + "','" + especieid.Text + "','" + especietext.Text + "','" + Variedad.Text + "','" + VariedadText.Text + "','" + Calibre.Text + "'," +
                     " '" + Marca.Text + "','" + MarcaTxt.Text + "','" + Embalaje.Text + "','" + Embalajetx.Text + "','" + Envase.Text + "','" + Envasetxt.Text + "','" + Peso.Text + "'," +
-                    " " + Salida.Text + ",'" + CodCaja.Text + "','" + txt_calisificacion.Text + "','" + txt_destino.Text + "'," + txt_cajasvaciadas.Text + ")";
+                    " " + Salida.Text + ",'" + CodCaja.Text + "','" + txt_calisificacion.Text + "','" + txt_destino.Text + "',0, '" + aceptrecha + "')";
 
                     string comando1 = "INSERT INTO defecto (cptnumero,defcalbaj,defcalnor,defcalsob,defprecal,defdanotr,defescama,deffrutode,deffrutodo,defguatab,defherida," +
                     " defmancha,defmedial,defpiella,defrusset,defsutura,deffaltoc,deframole,defsinped,defadhesi,defdesfru,defdesped,defblando,defherabi,defmachuc,defpartid," +
@@ -561,6 +607,7 @@ namespace Mainsite.AppFiles
                     txt_f5.Text = "";
                     CodCaja.Focus();
                     ScriptManager.RegisterStartupScript(this, this.GetType(), "scriptName", "alert(\"Registro guardado ok...\");", true);
+                    Limpiar_Click();
 
                 }
                 else
@@ -583,7 +630,7 @@ namespace Mainsite.AppFiles
 
             TabContainer1.ActiveTab = TabPanel1;
 
-            Response.Redirect("~/AppFiles/CC_PAC_005_INGRESO.aspx");
+            
 
         }
 
@@ -626,7 +673,6 @@ namespace Mainsite.AppFiles
             if (txtpartiduracicatrizada.Text == "") { txtpartiduracicatrizada.Text = "0"; }
             if (txtpiellagarto.Text == "") { txtpiellagarto.Text = "0"; }
             if (txtpitting.Text == "") { txtpitting.Text = "0"; }
-            if (txt_cajasvaciadas.Text == "") { txt_cajasvaciadas.Text = "0"; }
             if (txt_peso_neto.Text == "") { txt_peso_neto.Text = "0"; }
             if (txt_f1.Text == "") { txt_f1.Text = "0"; }
             if (txt_f2.Text == "") { txt_f2.Text = "0"; }
@@ -635,13 +681,14 @@ namespace Mainsite.AppFiles
             if (txt_f5.Text == "") { txt_f5.Text = "0"; }
             if (TextBox1obs.Text == "") { TextBox1obs.Text = "0"; }
             if (txt_sut_exp.Text == "") { txt_sut_exp.Text = "0"; }
+            string aceptrecha = DDL_caja_d.SelectedValue;
 
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisconpt");
             System.Configuration.ConnectionStringSettings connStringmain;
             connStringmain = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
             SqlConnection conexion = new SqlConnection(connStringmain.ToString());
 
-            string update_controlpt = "update controlpt set cptdestino = '" + txt_destino.Text + "', cptcajasvaciadas= '" + txt_cajasvaciadas.Text + "' where cptnumero = '" + lbl_cptnumero.Text + "';";
+            string update_controlpt = "update controlpt set cptdestino = '" + txt_destino.Text + "', cptcajasvaciadas= '0', AceptRecha='" + aceptrecha + "' where cptnumero = '" + lbl_cptnumero.Text + "';";
 
             string update_defecto = "update defecto set" +
                 " defcalbaj = '" + txtbajo.Text + "'," +
@@ -785,7 +832,7 @@ namespace Mainsite.AppFiles
             txtpartiduracicatrizada.Text = "";
             txtpiellagarto.Text = "";
             txtpitting.Text = "";
-            txt_cajasvaciadas.Text = "";
+           
             txt_destino.Text = "";
             txt_calisificacion.Text = "";
             txt_sut_exp.Text = "";
@@ -798,7 +845,7 @@ namespace Mainsite.AppFiles
             txt_f5.Text = "";
 
             txt_destino.Enabled = true;
-            txt_cajasvaciadas.Enabled = true;
+            
             txt_peso_neto.Enabled = true;
             txt_calisificacion.Enabled = true;
 
@@ -842,7 +889,6 @@ namespace Mainsite.AppFiles
 
         }
 
-
         protected void EditarClick(object sender, EventArgs e)
         {
             txt_peso_neto.Enabled = true;
@@ -884,7 +930,7 @@ namespace Mainsite.AppFiles
             txtpitting.Enabled = true;
             txt_calisificacion.Enabled = true;
             txt_destino.Enabled = true;
-            txt_cajasvaciadas.Enabled = true;
+            
             txt_sut_exp.Enabled = true;
 
             txt_f1.Enabled = true;
