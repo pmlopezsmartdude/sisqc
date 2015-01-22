@@ -149,7 +149,7 @@ first child of the left and right table columns */
     background-color: #C0C0C0;
     color: #000000;
     position: fixed;
-    width: 140px;
+    width: 180px;
     z-index: inherit;
     table-layout: fixed;
     vertical-align: middle;

@@ -44,11 +44,13 @@
                 </asp:TreeNode>
                 <asp:TreeNode Text="Informes" Value="Aplicación 2" Expanded="False" 
                     SelectAction="Expand">
+                  
+
                     <asp:TreeNode Expanded="False" SelectAction="Expand" Text="Control Calidad" 
                         Value="Control Calidad">
-<%--                        <asp:TreeNode Target="workingarea" Text="Cerezas" Value="Cerezas" 
+                        <asp:TreeNode Target="workingarea" Text="Cerezas" Value="Cerezas" 
                             NavigateUrl="~/MainApp/InformesCereza.aspx">
-                        </asp:TreeNode>--%>
+                        </asp:TreeNode>
                     </asp:TreeNode>
                 </asp:TreeNode>
                 </asp:TreeNode>
