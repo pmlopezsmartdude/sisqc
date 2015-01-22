@@ -39,13 +39,13 @@
         </asp:DropDownList>
         </asp:TableCell>
         <asp:TableCell>
-        <asp:TextBox ID="txt_fechainicio" runat="server" Width="70"  >
+        <asp:TextBox ID="txt_fechainicio" runat="server" Width="70"  Font-Names="Century Gothic">
        </asp:TextBox><asp:ImageButton ID="imgPopup" ImageUrl="~/Images/calendar.png" ImageAlign="Bottom"
     runat="server" /><cc1:CalendarExtender ID="Calendar1" PopupButtonID="imgPopup" runat="server" TargetControlID="txt_fechainicio"
     Format="yyyy-MM-dd"></cc1:CalendarExtender>
         </asp:TableCell>
         <asp:TableCell>
-         <asp:TextBox ID="txt_fechafin" runat="server" Width="70"   ></asp:TextBox><asp:ImageButton ID="imgPopup_fin" ImageUrl="~/Images/calendar.png" ImageAlign="Bottom"
+         <asp:TextBox ID="txt_fechafin" runat="server" Width="70"   Font-Names="Century Gothic"></asp:TextBox><asp:ImageButton ID="imgPopup_fin" ImageUrl="~/Images/calendar.png" ImageAlign="Bottom"
     runat="server" />
 
    <cc1:CalendarExtender ID="CalendarExtender1" PopupButtonID="imgPopup_fin" runat="server" TargetControlID="txt_fechafin"
