@@ -40,6 +40,15 @@ namespace Mainsite.MainApp {
         protected global::System.Web.UI.WebControls.TreeView TreeViewAppsJefatura;
         
         /// <summary>
+        /// Control TreeViewPruebas.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TreeView TreeViewPruebas;
+        
+        /// <summary>
         /// Control TreeView1.
         /// </summary>
         /// <remarks>

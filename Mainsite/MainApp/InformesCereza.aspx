@@ -20,7 +20,7 @@
 </asp:TableRow>
 <asp:TableRow style="vertical-align:top; height:410px;" >
 <asp:TableCell Width="100%" Height="410px">
-<iframe id="idframe" name="idframe" src="/Reporte/ReporteCCPAC075Prueba1.aspx" runat="server" style="display:block; width:100%; height:100%; border:none; margin:0; padding:0;" ></iframe>
+<iframe id="idframe" name="idframe" runat="server" style="display:block; width:100%; height:100%; border:none; margin:0; padding:0;" ></iframe>
 </asp:TableCell>
 </asp:TableRow>
 </asp:Table>

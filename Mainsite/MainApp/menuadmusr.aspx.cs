@@ -20,12 +20,13 @@ namespace Mainsite.MainApp
         {
             TreeViewAdmUsr.Visible = false;
             string[] roles = Roles.GetRolesForUser();
-           
+            TreeViewPruebas.Visible = false;
             foreach (string r in roles)
             {
                 if (r == "Administrador")
                 {
                     TreeViewAdmUsr.Visible = true;
+                    TreeViewPruebas.Visible = false;
 
                     break;
                 }
@@ -35,12 +36,19 @@ namespace Mainsite.MainApp
                     {
                         TreeViewAdmUsr.Visible = false;
                         TreeViewAppsJefatura.Visible = false;
+                        TreeViewPruebas.Visible = false;
                         break;
                     }
                     if (r == "Jefatura")
                     {
                         TreeViewAppsJefatura.Visible = true;
                         TreeView1.Visible = false;
+                        TreeViewPruebas.Visible = false;
+                    }
+                    if (r == "wtc")
+                    {
+                        TreeViewPruebas.Visible = true;
+
                     }
                 }
 
