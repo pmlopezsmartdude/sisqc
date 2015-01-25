@@ -25,7 +25,7 @@ namespace Mainsite.Reporte
             ds.Tables[0].Merge(dt);
 
             // Your .rpt file path will be below
-            rptDoc.Load(Server.MapPath("../CC_PAC_075_prueba1rpt.rpt"));
+            rptDoc.Load(Server.MapPath("~/Reporte/CC_PAC_075_prueba1rpt.rpt"));
 
             //set dataset to the report viewer.
             rptDoc.SetDataSource(ds);

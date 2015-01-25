@@ -15,7 +15,7 @@
      <%--<asp:DropDownList ID="DropPlanta_d"  runat="server" DataSourceID="DropPlanta" DataTextField="pladescri" DataValueField="pladescri" Height="20px" Width="310px" Font-Names="Century Gothic"  AutoPostBack="True" onselectedindexchanged="planta_SelectedIndexChanged"></asp:DropDownList>--%>
     </asp:TableCell>
         <asp:TableCell>
- <asp:hyperlink id="link_ing005" runat="server" NavigateUrl="~/AppFiles/INF_PAC005_GEN.aspx" target="idframe" ><asp:Image id="img" runat="server" ImageUrl="~/Images/CCPAC005.png" Height="26px"></asp:Image></asp:hyperlink>
+ <asp:hyperlink id="link_ing005" runat="server" NavigateUrl="~/Reporte/ReporteCCPAC075Prueba1.aspx" target="newwindows" ><asp:Image id="img" runat="server" ImageUrl="~/Images/CCPAC005.png" Height="26px"></asp:Image></asp:hyperlink>
  <%--<asp:hyperlink id="link_ing005_manual" runat="server" NavigateUrl="~/AppFiles/CC_PAC_005_INGRESO_MANUAL.aspx" target="idframe" ><asp:Image id="Image3" runat="server" ImageUrl="~/Images/CCPAC005.png"  Height="26px"></asp:Image></asp:hyperlink>--%>
                
        

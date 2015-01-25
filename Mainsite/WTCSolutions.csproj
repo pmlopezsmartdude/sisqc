@@ -402,7 +402,7 @@
     </Compile>
     <Compile Include="AppModules\impresion.cs" />
     <Compile Include="AppModules\ImpresorasDatos.cs" />
-    <Compile Include="CC_PAC_075_prueba1rpt.cs">
+    <Compile Include="Reporte\CC_PAC_075_prueba1rpt.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CC_PAC_075_prueba1rpt.rpt</DependentUpon>
@@ -542,7 +542,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="CC_PAC_075_prueba1rpt.rpt">
+    <EmbeddedResource Include="Reporte\CC_PAC_075_prueba1rpt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CC_PAC_075_prueba1rpt.cs</LastGenOutput>
     </EmbeddedResource>
