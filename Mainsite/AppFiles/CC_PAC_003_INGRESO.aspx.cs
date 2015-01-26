@@ -59,7 +59,6 @@ namespace Mainsite.AppFiles
 
 
         }
-
         protected void proc_SelectedIndexChanged(object sender, EventArgs e)
         {
             string proceso = Convert.ToString(drop_proc_d.SelectedValue);
@@ -67,7 +66,6 @@ namespace Mainsite.AppFiles
             DropLote(proceso);
 
         }
-
         protected void linea_SelectedIndexChanged(object sender, EventArgs e)
         {
             string linea = Convert.ToString(drop_linea_d.SelectedValue);
@@ -75,7 +73,6 @@ namespace Mainsite.AppFiles
             BuscaTurno(linea);
 
         }
-
         protected void turno_SelectedIndexChanged(object sender, EventArgs e)
         {
             string linea = Convert.ToString(drop_linea_d.SelectedValue);
@@ -84,20 +81,17 @@ namespace Mainsite.AppFiles
             DDLProcesos(linea, turno);
 
         }
-
         protected void lote_SelectedIndexChanged(object sender, EventArgs e)
         {
 
             datos();
 
         }
-
         protected void variedad_SelectedIndexChanged(object sender, EventArgs e)
         {
 
 
         }
-
         private void DDLProcesos(string linea, string turno)
         {
 
@@ -132,7 +126,6 @@ namespace Mainsite.AppFiles
 
             con.Close();
         }
-
         private void DropLinea()
         {
 
@@ -165,7 +158,6 @@ namespace Mainsite.AppFiles
 
             con.Close();
         }
-
         private void BuscaTurno(string linea)
         {
 
@@ -199,7 +191,6 @@ namespace Mainsite.AppFiles
 
             con.Close();
         }
-
         protected void datos()
         {
             string proceso = Convert.ToString(drop_proc_d.SelectedValue);
@@ -251,7 +242,6 @@ namespace Mainsite.AppFiles
             }
             con.Close();
         }
-
         private void DropLote(string proceso)
         {
 
@@ -285,7 +275,6 @@ namespace Mainsite.AppFiles
             datos();
 
         }
-
         protected void Click_guardar(object sender, EventArgs e)
         {
             string numeroctrl = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss.fffffffzzz");
@@ -413,7 +402,6 @@ namespace Mainsite.AppFiles
             txt_precalibre.Focus();
 
         }
-
         protected void Click_limpiar(object sender, EventArgs e)
         {
             txt_precalibre.Text = "";

@@ -48,7 +48,6 @@ namespace Mainsite.AppFiles
 
 
         }
-
         protected void prodreal_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -275,7 +274,6 @@ namespace Mainsite.AppFiles
             txt_precalibre.Focus();
 
         }
-
         protected void Click_limpiar(object sender, EventArgs e)
         {
             txt_precalibre.Text = "";

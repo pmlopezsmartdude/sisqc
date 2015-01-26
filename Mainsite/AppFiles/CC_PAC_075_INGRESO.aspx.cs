@@ -66,7 +66,6 @@ namespace Mainsite.AppFiles
 
 
         }
-
         protected void proc_SelectedIndexChanged(object sender, EventArgs e)
         {
             string proceso = Convert.ToString(drop_proc_d.SelectedValue);
@@ -74,7 +73,6 @@ namespace Mainsite.AppFiles
             DropLote(proceso);
 
         }
-
         protected void linea_SelectedIndexChanged(object sender, EventArgs e)
         {
             int linea = Convert.ToInt32(drop_linea_d.SelectedValue);
@@ -82,7 +80,6 @@ namespace Mainsite.AppFiles
             BuscaTurno(linea);
 
         }
-
         protected void turno_SelectedIndexChanged(object sender, EventArgs e)
         {
             int linea = Convert.ToInt32(drop_linea_d.SelectedValue);
@@ -91,14 +88,12 @@ namespace Mainsite.AppFiles
             DDLProcesos(linea, turno);
 
         }
-
         protected void lote_SelectedIndexChanged(object sender, EventArgs e)
         {
 
          //   txtDescarte.Focus();
 
         }
-
         private void DDLProcesos(int linea, string turno)
         {
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -130,7 +125,6 @@ namespace Mainsite.AppFiles
             DropLote(proceso);
             con.Close();
         }
-
         private void DropLinea()
         {
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -161,7 +155,6 @@ namespace Mainsite.AppFiles
 
             con.Close();
         }
-
         private void BuscaTurno(int linea)
         {
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -194,7 +187,6 @@ namespace Mainsite.AppFiles
 
             con.Close();
         }
-
         private void DropLote(string proceso)
         {
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -221,7 +213,6 @@ namespace Mainsite.AppFiles
 
             con.Close();
         }
-
         protected void Limpiar_Click(object sender, EventArgs e)
         {
             txt_exp_est.Text = "0";
@@ -241,7 +232,6 @@ namespace Mainsite.AppFiles
             btnGrabar.Enabled = true;
             btnLimpiar.Enabled = true;
         }
-
         protected void Grabar_Click(object sender, EventArgs e)
         {
             string numeroctrl = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss.fffffffzzz");
@@ -309,13 +299,10 @@ namespace Mainsite.AppFiles
             btnGrabar.Enabled = true;
             btnLimpiar.Enabled = true;
         }
-
         protected void btnLoadData_click(object senders, EventArgs e)
         {
 
         }
-
-
         private void DropVariedad()
         {
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -344,7 +331,6 @@ namespace Mainsite.AppFiles
 
 
         }
-
         private void DDL_prodreal()
         {
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -371,6 +357,5 @@ namespace Mainsite.AppFiles
             }
 
         }
-
     }
 }
