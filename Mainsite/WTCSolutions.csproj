@@ -205,6 +205,7 @@
     <Content Include="Images\right.png" />
     <Content Include="Images\right2.png" />
     <Content Include="Images\search.png" />
+    <Content Include="Images\SFG.png" />
     <Content Include="Images\stars\1.png" />
     <Content Include="Images\stars\2.png" />
     <Content Include="Images\stars\3.png" />
@@ -226,6 +227,7 @@
     <Content Include="MainApp\menuadmusr.aspx" />
     <Content Include="MainApp\SisConPT.aspx" />
     <Content Include="Reporte\ReporteCCPAC075Prueba1.aspx" />
+    <Content Include="Reporte\ResumenProductoTerminado.aspx" />
     <Content Include="Scripts\jquery-1.4.2.min.js" />
     <Content Include="Scripts\jquery-2.1.1-vsdoc.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
@@ -489,12 +491,39 @@
     <Compile Include="Reporte\ReporteCCPAC075Prueba1.aspx.designer.cs">
       <DependentUpon>ReporteCCPAC075Prueba1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Reporte\ResumenProductoTerminado.aspx.cs">
+      <DependentUpon>ResumenProductoTerminado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\ResumenProductoTerminado.aspx.designer.cs">
+      <DependentUpon>ResumenProductoTerminado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ProductoTerminadoReporte.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductoTerminadoReporte.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\RPTProductoTerminado.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPTProductoTerminado.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="xsd\ProductoTerminado.cs">
+      <DependentUpon>ProductoTerminado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="xsd\ProductoTerminado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProductoTerminado.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -523,6 +552,17 @@
     </None>
     <None Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-2.1.1.min.map" />
+    <None Include="xsd\ProductoTerminado.xsc">
+      <DependentUpon>ProductoTerminado.xsd</DependentUpon>
+    </None>
+    <None Include="xsd\ProductoTerminado.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductoTerminado.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="xsd\ProductoTerminado.xss">
+      <DependentUpon>ProductoTerminado.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -545,6 +585,14 @@
     <EmbeddedResource Include="Reporte\CC_PAC_075_prueba1rpt.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CC_PAC_075_prueba1rpt.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\ProductoTerminadoReporte.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProductoTerminadoReporte.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\RPTProductoTerminado.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPTProductoTerminado.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -23,7 +23,6 @@ namespace Mainsite.AppFiles
             }
 
         }
-
         private void DDL_linea()
         {
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -69,7 +68,6 @@ namespace Mainsite.AppFiles
 
             con.Close();
         }
-
         protected void Click_003(object sender, ImageClickEventArgs e)
         {
             string turno = drop_turno_d.SelectedValue;
@@ -160,7 +158,6 @@ namespace Mainsite.AppFiles
             da.Fill(dt);
             this.ExportToExcel(dt, "MesaDeSeleccion.xls");
         }
-
         protected void Click_005(object sender, ImageClickEventArgs e)
         {
             string turno = drop_turno_d.SelectedValue;
@@ -217,49 +214,47 @@ namespace Mainsite.AppFiles
                "  ,cl.cptcodcja as [CODIGO CAJA]" +
                "  ,cl.cptclasificacion as [CLASIFICACION]" +
                "  ,cl.cptdestino as [DESTINO]" +
-               "  ,def.pesoneto as [PESO NETO II]" +
+               "  ,cl.pesoneto as [PESO NETO II]" +
                "  ,cl.AceptRecha as [RESULTADO CAJA]" +
-               "  ,CONVERT(VARCHAR(10),def.defcalbaj) as [CALIBRE BAJO < 10%]" +
-               "  ,CONVERT(VARCHAR(10),def.defcalnor) as [CALIBRE OK]" +
-               "  ,CONVERT(VARCHAR(10),def.defcalsob) as [CALIBRE SOBRE < 20%]" +
-               "  ,CONVERT(VARCHAR(10),def.defprecal) as [PRE CALIBRE]" +
-               "  ,CONVERT(VARCHAR(10),def.defdanotr) as [DAÑO TRIPS]" +
-               "  ,CONVERT(VARCHAR(10),def.defescama) as [ESCAMA]" +
-               "  ,CONVERT(VARCHAR(10),def.deffrutode) as [FRUTOS DEFORMES]" +
-               "  ,CONVERT(VARCHAR(10),def.deffrutodo) as [FRUTOS DOBLES]" +
-               "  ,CONVERT(VARCHAR(10),def.defguatab) as [GUATA BLANCA]" +
-               "  ,CONVERT(VARCHAR(10),def.defherida) as [HERIDAS]" +
-               "  ,CONVERT(VARCHAR(10),def.defmancha) as [MANCHAS]" +
-               "  ,CONVERT(VARCHAR(10),def.defmedial) as [MEDIA LUNA]" +
-               "  ,CONVERT(VARCHAR(10),def.defpiella) as [PIEL DE LAGARTO]" +
-               "  ,CONVERT(VARCHAR(10),def.defrusset) as [RUSSET]" +
-               "  ,CONVERT(VARCHAR(10),def.defsutura) as [SUTURA]" +
-               "  ,CONVERT(VARCHAR(10),def.deffaltoc) as [FALTO DE COLOR]" +
-               "  ,CONVERT(VARCHAR(10),def.deframole) as [RAMALEO]" +
-               "  ,CONVERT(VARCHAR(10),def.defsinped) as [SIN PEDICELO]" +
+               "  ,CONVERT(VARCHAR(10),cl.defcalbaj) as [CALIBRE BAJO < 10%]" +
+               "  ,CONVERT(VARCHAR(10),cl.defcalnor) as [CALIBRE OK]" +
+               "  ,CONVERT(VARCHAR(10),cl.defcalsob) as [CALIBRE SOBRE < 20%]" +
+               "  ,CONVERT(VARCHAR(10),cl.defprecal) as [PRE CALIBRE]" +
+               "  ,CONVERT(VARCHAR(10),cl.defdanotr) as [DAÑO TRIPS]" +
+               "  ,CONVERT(VARCHAR(10),cl.defescama) as [ESCAMA]" +
+               "  ,CONVERT(VARCHAR(10),cl.deffrutode) as [FRUTOS DEFORMES]" +
+               "  ,CONVERT(VARCHAR(10),cl.deffrutodo) as [FRUTOS DOBLES]" +
+               "  ,CONVERT(VARCHAR(10),cl.defguatab) as [GUATA BLANCA]" +
+               "  ,CONVERT(VARCHAR(10),cl.defherida) as [HERIDAS]" +
+               "  ,CONVERT(VARCHAR(10),cl.defmancha) as [MANCHAS]" +
+               "  ,CONVERT(VARCHAR(10),cl.defmedial) as [MEDIA LUNA]" +
+               "  ,CONVERT(VARCHAR(10),cl.defpiella) as [PIEL DE LAGARTO]" +
+               "  ,CONVERT(VARCHAR(10),cl.defrusset) as [RUSSET]" +
+               "  ,CONVERT(VARCHAR(10),cl.defsutura) as [SUTURA]" +
+               "  ,CONVERT(VARCHAR(10),cl.deffaltoc) as [FALTO DE COLOR]" +
+               "  ,CONVERT(VARCHAR(10),cl.deframole) as [RAMALEO]" +
+               "  ,CONVERT(VARCHAR(10),cl.defsinped) as [SIN PEDICELO]" +
                "  ,CONVERT(VARCHAR(10),(defprecal+defdanotr+defescama+deffrutode+deffrutodo+defguatab+defherida+defmancha+defmedial+defpiella+defrusset+defsutura+deffaltoc+deframole+defsinped)) as [SUMA CALIDAD]" +
-               "  ,CONVERT(VARCHAR(10),def.defadhesi) as [ADHESIÓN]" +
-               "  ,CONVERT(VARCHAR(10),def.defdesfru) as [DESHIDRATACIÓN DE FRUTOS]" +
-               "  ,CONVERT(VARCHAR(10),def.defdesped) as [DESHIDRATACIÓN PEDICELAR]" +
-               "  ,CONVERT(VARCHAR(10),def.defblando) as [BLANDOS]" +
-               "  ,CONVERT(VARCHAR(10),def.defherabi) as [HERIDAS ABIERTAS]" +
-               "  ,CONVERT(VARCHAR(10),def.defmachuc) as [MACHUNÓN]" +
-               "  ,CONVERT(VARCHAR(10),def.defpartid) as [PARTIDURAS]" +
-               "  ,CONVERT(VARCHAR(10),def.defparagu) as [PARTIDURAS POR AGUA]" +
-               "  ,CONVERT(VARCHAR(10),def.defparcic) as [PARTIDURA CICATRIZADA]" +
-               "  ,CONVERT(VARCHAR(10),def.defpittin) as [PITTING]" +
-               "  ,CONVERT(VARCHAR(10),def.defpudric) as [PUDRICION]" +
-               "  ,CONVERT(VARCHAR(10),def.defmanpar) as [MANCHAS PARDAS]" +
-               "  ,CONVERT(VARCHAR(10),def.defdanopa) as [DAÑO DE PAJARO]" +
-               "  ,CONVERT(VARCHAR(10),def.defdesgar) as [DESGARRO]" +
-               "  ,CONVERT(VARCHAR(10),def.defcorsie) as [CORTE DE SIERRA]" +
-               "  ,CONVERT(VARCHAR(10),def.defsutura_exp) as [SUTURA EXPUESTA]" +
-               "  ,def.observac as [OBSERVACIONES]" +
+               "  ,CONVERT(VARCHAR(10),cl.defadhesi) as [ADHESIÓN]" +
+               "  ,CONVERT(VARCHAR(10),cl.defdesfru) as [DESHIDRATACIÓN DE FRUTOS]" +
+               "  ,CONVERT(VARCHAR(10),cl.defdesped) as [DESHIDRATACIÓN PEDICELAR]" +
+               "  ,CONVERT(VARCHAR(10),cl.defblando) as [BLANDOS]" +
+               "  ,CONVERT(VARCHAR(10),cl.defherabi) as [HERIDAS ABIERTAS]" +
+               "  ,CONVERT(VARCHAR(10),cl.defmachuc) as [MACHUNÓN]" +
+               "  ,CONVERT(VARCHAR(10),cl.defpartid) as [PARTIDURAS]" +
+               "  ,CONVERT(VARCHAR(10),cl.defparagu) as [PARTIDURAS POR AGUA]" +
+               "  ,CONVERT(VARCHAR(10),cl.defparcic) as [PARTIDURA CICATRIZADA]" +
+               "  ,CONVERT(VARCHAR(10),cl.defpittin) as [PITTING]" +
+               "  ,CONVERT(VARCHAR(10),cl.defpudric) as [PUDRICION]" +
+               "  ,CONVERT(VARCHAR(10),cl.defmanpar) as [MANCHAS PARDAS]" +
+               "  ,CONVERT(VARCHAR(10),cl.defdanopa) as [DAÑO DE PAJARO]" +
+               "  ,CONVERT(VARCHAR(10),cl.defdesgar) as [DESGARRO]" +
+               "  ,CONVERT(VARCHAR(10),cl.defcorsie) as [CORTE DE SIERRA]" +
+               "  ,CONVERT(VARCHAR(10),cl.defsutura_exp) as [SUTURA EXPUESTA]" +
+               "  ,cl.observac as [OBSERVACIONES]" +
                "  ,CONVERT(VARCHAR(10),(defadhesi+defdesfru+defdesped+defblando+defherabi+defmachuc+defpartid+defparagu+defparcic+defpittin+defpudric+defmanpar+defdanopa+defdesgar+defcorsie+defsutura_exp)) as [SUMA CONDICIÓN]" +
                "  ,CONVERT(VARCHAR(10),CONVERT(decimal(18, 2),(f1+f2+f3+f4+f5)/5.0)) as [PROMEDIO SOLIDOS SOLUBLES]" +
-               "  from controlpt as cl inner join defecto as def on cl.cptnumero=def.cptnumero inner join solidossolubles as sol on cl.cptnumero=sol.cptnumero ";
-
-
+               "  from controlpt as cl ";
 
             SqlCommand command = new SqlCommand(sql+where, con);
             con.Open();
@@ -268,7 +263,6 @@ namespace Mainsite.AppFiles
             da.Fill(dt);
             this.ExportToExcel(dt, "ProductoTerminado.xls");
         }
-
         protected void Click_075(object sender, ImageClickEventArgs e)
         {
             string turno = drop_turno_d.SelectedValue;
@@ -330,7 +324,6 @@ namespace Mainsite.AppFiles
             da.Fill(dt);
             this.ExportToExcel(dt, "DescarteComercial.xls");
         }
-
         public void ExportToExcel(DataTable dt, string filename)
         {
             if (dt.Rows.Count > 0)

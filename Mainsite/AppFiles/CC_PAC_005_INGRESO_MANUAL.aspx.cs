@@ -45,7 +45,6 @@ namespace Mainsite.AppFiles
             {
             }
         }
-
         protected void Grabar_Click(object sender, EventArgs e)
         {
             string numeroctrl = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss.fffffffzzz");
@@ -164,54 +163,28 @@ namespace Mainsite.AppFiles
 
                     string comando = "INSERT INTO controlpt (cptnumero,placodigo,turcodigo,cptfechor,usurutusu,lincodigo,cptproces,cptnulote,cptrutprr,cptnompre,cptrutpet," +
                     " cptnompet,cptespcod,cptespdes,cptvarcod,cptvardes,cptcalibr,cptmarcod,cptmardes,cptembcod,cptembdes,cptenvcod,cptenvdes,cptpesone,cptsalida,cptcodcja," +
-                    " cptclasificacion,cptdestino,cptcajasvaciadas,AceptRecha) VALUES ('" + numeroctrl + "','" + planta + "','" + turno + "','" + fecha + "','" + username + "'," +
+                    " cptclasificacion,cptdestino,cptcajasvaciadas,AceptRecha,defcalbaj,defcalnor,defcalsob,defprecal,defdanotr,defescama,deffrutode,deffrutodo,defguatab,defherida," +
+                    " defmancha,defmedial,defpiella,defrusset,defsutura,deffaltoc,deframole,defsinped,defadhesi,defdesfru,defdesped,defblando,defherabi,defmachuc,defpartid," +
+                    " defparagu,defparcic,defpittin,defpudric,defmanpar,defdanopa,defdesgar,defcorsie,observac,pesoneto,defsutura_exp,f1,f2,f3,f4,f5) VALUES ('" + numeroctrl + "','" + planta + "','" + turno + "','" + fecha + "','" + username + "'," +
                     " '" + linea + "','" + NroProceso.Text + "','" + Lote.Text + "','" + txt_prodreal_cod.Text + "','" + prodreal + "','" + txt_prodetiq_cod.Text + "'," +
                     " '" + prodetiq + "','" + especietext.Text + "','" + especie + "','" + txt_variedad_cod.Text + "','" + variedad + "','" + calibre + "'," +
                     " '" + txt_marca_cod.Text + "','" + marca + "','" + txt_embalaje_cod.Text + "','" + embalaje + "','" + txt_envase_cod.Text + "','" + envase + "','" + Peso.Text + "'," +
-                    " " + salida + ",'" + CodCaja.Text + "','" + clasificacion + "','" + txt_destino.Text + "',0, '" + aceptrecha + "')";
-
-                    string comando_2 = "INSERT INTO defecto (cptnumero,defcalbaj,defcalnor,defcalsob,defprecal,defdanotr,defescama,deffrutode,deffrutodo,defguatab,defherida," +
-                    " defmancha,defmedial,defpiella,defrusset,defsutura,deffaltoc,deframole,defsinped,defadhesi,defdesfru,defdesped,defblando,defherabi,defmachuc,defpartid," +
-                    " defparagu,defparcic,defpittin,defpudric,defmanpar,defdanopa,defdesgar,defcorsie,observac,pesoneto,defsutura_exp) VALUES ('" + numeroctrl + "','" + txtbajo.Text + "'," +
+                    " " + salida + ",'" + CodCaja.Text + "','" + clasificacion + "','" + txt_destino.Text + "',0, '" + aceptrecha + "','" + txtbajo.Text + "'," +
                     " '" + txtcalibreok.Text + "','" + txtsobre.Text + "','" + txtprecalibre.Text + "','" + txtdanotrip.Text + "','" + txtescama.Text + "'," +
                     " '" + txtfrutosdeformes.Text + "','" + txtfrutosdobles.Text + "','" + txtguatablanca.Text + "','" + txtherida.Text + "','" + txtmanchas.Text + "'," +
                     " '" + txtmedialuna.Text + "','" + txtpiellagarto.Text + "','" + txtrusset.Text + "','" + txtsutura.Text + "','" + txtfaltocolor.Text + "','" + txtramaleo.Text + "'," +
                     " '" + txtsinpedicelo.Text + "','" + txtadhesion.Text + "','" + txtdeshid.Text + "','" + txtdeshidpedi.Text + "','" + txtblandos.Text + "','" + txtheridasabiertas.Text + "'," +
                     " '" + txtmachucon.Text + "','" + txtpartiduras.Text + "','" + txtpartidurasagua.Text + "','" + txtpartiduracicatrizada.Text + "','" + txtpitting.Text + "'," +
                     " '" + txtpudricion.Text + "','" + txtmanchaspardas.Text + "','" + txtdanopajaro.Text + "','" + txtdesgarro.Text + "','" + txtcortesierra.Text + "'," +
-                    " '" + TextBox1obs.Text + "','" + txt_peso_neto.Text + "','" + txt_sut_exp.Text + "')";
+                    " '" + TextBox1obs.Text + "','" + txt_peso_neto.Text + "','" + txt_sut_exp.Text + "', " + txt_f1.Text + "," + txt_f2.Text + "," + txt_f3.Text + "," + txt_f4.Text + "," + txt_f5.Text + ")";
 
-                    string comando_soluble = "insert into solidossolubles (cptnumero,nroproceso,codcaja,nrolote,turno,usuario,calibresoluble,f1,f2,f3,f4,f5, nrolinea)" +
-                    " values ('" + numeroctrl + "','" + NroProceso.Text + "','" + CodCaja.Text + "','" + Lote.Text + "','" + turno + "','" + username + "'," +
-                    " '" + calibre + "', " + txt_f1.Text + "," + txt_f2.Text + "," + txt_f3.Text + "," + txt_f4.Text + "," + txt_f5.Text + ",'" + linea + "')";
                     conexion.Open();
                     using (SqlCommand sql = new SqlCommand(comando, conexion))
                     {
                         sql.ExecuteNonQuery();
                         conexion.Close();
                     }
-
-                    conexion.Open();
-                    using (SqlCommand sql = new SqlCommand(comando_2, conexion))
-                    {
-                        sql.ExecuteNonQuery();
-                        conexion.Close();
-
-                    }
-
-                    conexion.Open();
-                    using (SqlCommand sql = new SqlCommand(comando_soluble, conexion))
-                    {
-
-                        sql.ExecuteNonQuery();
-                        conexion.Close();
-
-                    }
-
-
                     CodCaja.Text = "";
-
-
 
                     NroProceso.Text = "";
 
@@ -273,7 +246,7 @@ namespace Mainsite.AppFiles
             }
             catch
             {
-
+                ScriptManager.RegisterStartupScript(this, this.GetType(), "scriptName", "alert(\"No se ha podido guardar el registro\");", true);
             }
 
             Grabar.Enabled = true;
@@ -287,12 +260,10 @@ namespace Mainsite.AppFiles
             //Response.Redirect("~/SisConPT/Ingreso_CC_PAC_005_satelite.aspx");
 
         }
-
         protected void btn_limpiar(object sender, EventArgs e)
         {
             Limpiar_Click();
         }
-
         private void Limpiar_Click()
         {
             CodCaja.Text = "";
@@ -359,7 +330,6 @@ namespace Mainsite.AppFiles
             TabPanel3.Enabled = false;
             TabContainer1.ActiveTab = TabPanel1;
         }
-
         private void DropTurno()
         {
             try
@@ -389,7 +359,6 @@ namespace Mainsite.AppFiles
 
             
         }
-
         private void DropSalida()
         {
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -409,7 +378,6 @@ namespace Mainsite.AppFiles
 
             con.Close();
         }
-
         private void DropAcept()
         {
             DDL_caja_d.DataSourceID = "";
@@ -426,7 +394,6 @@ namespace Mainsite.AppFiles
             }
 
         }
-
         private void DropEspecie()
         {
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -466,7 +433,6 @@ namespace Mainsite.AppFiles
             con.Close();
             txt_envase_cod.Text = envase;
         }
-
         protected void especie_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -477,7 +443,6 @@ namespace Mainsite.AppFiles
             DDL_embalaje(especie);
             DDL_linea_d.Focus();
         }
-
         protected void embalaje_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -486,7 +451,6 @@ namespace Mainsite.AppFiles
             Peso.Focus();
 
         }
-
         protected void envase_SelectedIndexChanged(object sender, EventArgs e)
         {
             string envase = Convert.ToString(DDL_envase_d.SelectedItem.Value);
@@ -631,7 +595,6 @@ namespace Mainsite.AppFiles
             con.Close();
 
         }
-
         private void DDL_prodreal()
         {
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -672,7 +635,6 @@ namespace Mainsite.AppFiles
             con.Close();
 
         }
-
         private void DDL_linea()
         {
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -692,7 +654,6 @@ namespace Mainsite.AppFiles
 
             con.Close();
         }
-
         private void DDL_clasi()
         {
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -712,7 +673,6 @@ namespace Mainsite.AppFiles
 
             con.Close();
         }
-
         private void DDL_calibre()
         {
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -732,7 +692,6 @@ namespace Mainsite.AppFiles
 
             con.Close();
         }
-
         protected void check_fecha_CheckedChanged(object sender, EventArgs e)
         {
             if (check_fecha.Checked == true)
