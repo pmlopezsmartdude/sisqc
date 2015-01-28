@@ -32,7 +32,7 @@
                 </asp:TreeNode>--%>
             </Nodes>
         </asp:TreeView>
-        <asp:TreeView ID="TreeViewAppsJefatura" runat="server" Font-Names="Century Gothic"
+    <%--   <asp:TreeView ID="TreeViewAppsJefatura" runat="server" Font-Names="Century Gothic"
             Font-Size="X-Small" ShowLines="true" LineImagesFolder="~/TreeLineImages" Visible="true">
             <Nodes>
             <asp:TreeNode SelectAction="Expand" Text="Menu Principal Aplicaciones"
@@ -42,7 +42,7 @@
                     <asp:TreeNode NavigateUrl="~/MainApp/SisConPT.aspx" Target="workingarea" 
                         Text="Cerezas" Value="Cerezas"></asp:TreeNode>
                 </asp:TreeNode>
-               <%-- <asp:TreeNode Text="Informes" Value="Aplicación 2" Expanded="False" 
+              <asp:TreeNode Text="Informes" Value="Aplicación 2" Expanded="False" 
                     SelectAction="Expand">
                   
 
@@ -50,16 +50,16 @@
                         Value="Control Calidad">
                         <asp:TreeNode Target="workingarea" Text="Cerezas" Value="Cerezas" 
                             NavigateUrl="~/MainApp/InformesCereza.aspx">
-                        </asp:TreeNode>--%>
+                        </asp:TreeNode>
                     </asp:TreeNode>
                
             </Nodes>
-            </asp:TreeView>
+            </asp:TreeView>--%>
            
            
            
            
-            <asp:TreeView ID="TreeViewPruebas" runat="server" Font-Names="Century Gothic"
+            <asp:TreeView ID="TreeViewAppsJefatura" runat="server" Font-Names="Century Gothic"
             Font-Size="X-Small" ShowLines="true" LineImagesFolder="~/TreeLineImages" Visible="true">
             <Nodes>
             <asp:TreeNode SelectAction="Expand" Text="Menu Principal Aplicaciones"
@@ -74,11 +74,11 @@
                   
 
                     <%--<asp:TreeNode Expanded="False" SelectAction="Expand" Text="Control Calidad" 
-                        Value="Control Calidad">--%>
+                        Value="Control Calidad">
                         <asp:TreeNode Target="workingarea" Text="Control Calidad Cerezas" Value="Cerezas" 
                             NavigateUrl="~/MainApp/InformesCereza.aspx">
-                        </asp:TreeNode>
-                        <asp:TreeNode Target="workingarea" Text="Prueba Filtros" Value="Cerezas" 
+                        </asp:TreeNode>--%>
+                        <asp:TreeNode Target="workingarea" Text="Producto Terminado Cerezas" Value="Cerezas" 
                             NavigateUrl="~/Reporte/GraficoProductoTerminado.aspx">
                         </asp:TreeNode>
                    <%-- </asp:TreeNode>--%>
@@ -86,6 +86,19 @@
                 </asp:TreeNode>
             </Nodes>
             </asp:TreeView>
+
+            
+
+
+
+
+
+
+
+
+
+
+
 
 
                     <asp:TreeView ID="TreeView1" runat="server" Font-Names="Century Gothic"

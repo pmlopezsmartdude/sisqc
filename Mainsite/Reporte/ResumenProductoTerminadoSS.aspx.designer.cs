@@ -7,10 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Mainsite.MainApp {
+namespace Mainsite.Reporte {
     
     
-    public partial class menuadmusr {
+    public partial class ResumenProductoTerminadoSS {
         
         /// <summary>
         /// Control form1.
@@ -22,30 +22,12 @@ namespace Mainsite.MainApp {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// Control TreeViewAdmUsr.
+        /// Control CrystalReportViewer1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TreeView TreeViewAdmUsr;
-        
-        /// <summary>
-        /// Control TreeViewAppsJefatura.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TreeView TreeViewAppsJefatura;
-        
-        /// <summary>
-        /// Control TreeView1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TreeView TreeView1;
+        protected global::CrystalDecisions.Web.CrystalReportViewer CrystalReportViewer1;
     }
 }

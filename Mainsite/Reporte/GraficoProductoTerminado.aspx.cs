@@ -817,7 +817,7 @@ namespace Mainsite.Reporte
             }
             if (lote == "Todos")
             {
-                sel_lote = " 'Todas los lote' AS LOTE, ";
+                sel_lote = " 'Todos los lote' AS LOTE, ";
                 whe_lote = "";
                 gro_lote = "";
             }
@@ -911,10 +911,178 @@ namespace Mainsite.Reporte
            " from controlpt as cl INNER JOIN planta AS  PL ON CL.placodigo=PL.placodigo "+where_cons+whe_planta+whe_linea+whe_turno+whe_proceso+whe_lote+whe_variedad+whe_productor+whe_acept +
                " "+ group_cons + gro_planta + gro_linea + gro_turno + gro_proceso + gro_lote + gro_variedad +gro_productor +gro_acept;
 
+            Session["consultapt01"] = consultatotal;
+            Response.Redirect("~/Reporte/ResumenProductoTerminado.aspx");
 
-            texto.Text = consultatotal;
         }
 
-      
+        protected void Click_005_v2(object sender, ImageClickEventArgs e)
+        {
+            string planta = ddl_planta_d.SelectedValue;
+            string linea = ddl_linea_d.SelectedValue;
+            string turno = ddl_turno_d.SelectedValue;
+            string proceso = ddl_proceso_d.SelectedValue;
+            string lote = ddl_lote_d.SelectedValue;
+            string variedad = ddl_variedad_d.SelectedValue;
+            string productor = ddl_productor_d.SelectedValue;
+            string acept = ddl_acep_d.SelectedValue;
+
+            string where_cons = "where (cptfechor>='" + txt_fechainicio.Text + "' and cptfechor<='" + txt_fechafin.Text + "') ";
+            string group_cons = "group by  cptcalibr";
+
+            string whe_planta = "";
+            string sel_planta = "";
+            string gro_planta = "";
+            if (planta != "Todas")
+            {
+                sel_planta = "select pl.pladescri as PLANTA,";
+                whe_planta = " and cl.placodigo='" + planta + "' ";
+                gro_planta = ", pl.pladescri";
+            }
+            if (planta == "Todas")
+            {
+                sel_planta = "select 'Todas las plantas' as PLANTA,";
+                whe_planta = "";
+                gro_planta = "";
+            }
+
+
+            string whe_linea = "";
+            string sel_linea = "";
+            string gro_linea = "";
+            if (linea != "Todas")
+            {
+                sel_linea = " CL.LINCODIGO AS LINEA, ";
+                whe_linea = " and cl.lincodigo='" + linea + "' ";
+                gro_linea = ", cl.lincodigo";
+            }
+            if (linea == "Todas")
+            {
+                sel_linea = " 'Todas las lineas' AS LINEA, ";
+                whe_linea = "";
+                gro_linea = "";
+            }
+
+
+            string whe_turno = "";
+            string sel_turno = "";
+            string gro_turno = "";
+            if (turno != "Todos")
+            {
+                sel_turno = " CL.turcodigo AS TURNO, ";
+                whe_turno = " and cl.turcodigo='" + turno + "' ";
+                gro_turno = ", cl.turcodigo";
+            }
+            if (turno == "Todos")
+            {
+                sel_turno = " 'Todas los turnos' AS TURNO, ";
+                whe_turno = "";
+                gro_turno = "";
+            }
+
+
+            string whe_proceso = "";
+            string sel_proceso = "";
+            string gro_proceso = "";
+            if (proceso != "Todos")
+            {
+                sel_proceso = " CL.cptproces AS PROCESO, ";
+                whe_proceso = " and cl.cptproces='" + proceso + "' ";
+                gro_proceso = ", cl.cptproces";
+            }
+            if (proceso == "Todos")
+            {
+                sel_proceso = " 'Todas los procesos' AS PROCESO, ";
+                whe_proceso = "";
+                gro_proceso = "";
+            }
+
+
+            string whe_lote = "";
+            string sel_lote = "";
+            string gro_lote = "";
+            if (lote != "Todos")
+            {
+                sel_lote = " CL.cptnulote AS LOTE, ";
+                whe_lote = " and cl.cptnulote='" + proceso + "' ";
+                gro_lote = ", cl.cptnulote";
+            }
+            if (lote == "Todos")
+            {
+                sel_lote = " 'Todos los lote' AS LOTE, ";
+                whe_lote = "";
+                gro_lote = "";
+            }
+
+
+            string whe_variedad = "";
+            string sel_variedad = "";
+            string gro_variedad = "";
+            if (variedad != "Todas")
+            {
+                sel_variedad = " CL.cptvarcod AS VARIEDAD_ID, CL.cptvardes AS VARIEDAD_NOMBRE, ";
+                whe_variedad = " and cl.cptvarcod='" + variedad + "' ";
+                gro_variedad = ", cl.cptvarcod";
+            }
+            if (variedad == "Todas")
+            {
+                sel_variedad = " '1' AS VARIEDAD_ID, 'Todas las variedades' AS VARIEDAD_NOMBRE, ";
+                whe_variedad = "";
+                gro_variedad = "";
+            }
+
+
+
+            string whe_productor = "";
+            string sel_productor = "";
+            string gro_productor = "";
+            if (productor != "Todos")
+            {
+                sel_productor = " CL.CPTRUTPRR AS PRODUCREAL_ID, CL.CPTNOMPRE AS PRODUCTOREAL_NOMBRE, ";
+                whe_productor = " and cl.CPTRUTPRR='" + productor + "' ";
+                gro_productor = ", cl.CPTRUTPRR";
+            }
+            if (productor == "Todos")
+            {
+                sel_productor = " '1' AS PRODUCREAL_ID, 'Todos los productores' AS PRODUCTOREAL_NOMBRE, ";
+                whe_productor = "";
+                gro_productor = "";
+            }
+
+
+            string whe_acept = "";
+            string sel_acept = "";
+            string gro_acept = "";
+            if (acept != "Todos")
+            {
+                sel_acept = " CL.ACEPTRECHA AS ACEPTRECHA, ";
+                whe_acept = " and cl.ACEPTRECHA='" + acept + "' ";
+                gro_acept = ", cl.ACEPTRECHA";
+            }
+            if (acept == "Todos")
+            {
+                sel_acept = " 'Aceptadas y Rechazadas' AS ACEPTRECHA, ";
+                whe_acept = "";
+                gro_acept = "";
+            }
+
+            string consultatotal = sel_planta + sel_turno + " 'fecha' AS FECHA, " + sel_linea + sel_proceso + sel_lote + sel_productor + "" +
+                " '1' AS PRODUCTORETIQUETADO_ID, '1' AS PRODUCTORETIQUETADO_NOMBRE, " + sel_variedad + " '1' AS MARCA_ID, '1' AS MARCA_NOMBRE, " +
+                " " + sel_acept + ""+
+                " cptcalibr AS CPTCALIBRE , "+
+" CONVERT(decimal(18,2),(iif(sum(case when ((f1+f2+f3+f4+f5)/5 )=0 then 0 else 1 end)>0,((sum(((f1+f2+f3+f4+f5)/5 )))/(sum(case when ((f1+f2+f3+f4+f5)/5 )=0 then 0 else 1 end))),0))) as PROMEDIO," +
+" count(1) as CASOS"+
+            " from controlpt as cl INNER JOIN planta AS  PL ON CL.placodigo=PL.placodigo " + where_cons + whe_planta + whe_linea + whe_turno + whe_proceso + whe_lote + whe_variedad + whe_productor + whe_acept +
+               " " + group_cons + gro_planta + gro_linea + gro_turno + gro_proceso + gro_lote + gro_variedad + gro_productor + gro_acept;
+
+
+
+         
+                Session["consultapt01"] = consultatotal;
+           Response.Redirect("~/Reporte/ResumenProductoTerminadoSS.aspx");
+
+        }
+
+
     }
 }

@@ -279,13 +279,41 @@ namespace Mainsite.xsd {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class SOLIDOSDataTable : global::System.Data.TypedTableBase<SOLIDOSRow> {
             
-            private global::System.Data.DataColumn columnID;
+            private global::System.Data.DataColumn columnPLANTA;
+            
+            private global::System.Data.DataColumn columnTURNO;
             
             private global::System.Data.DataColumn columnFECHA;
             
-            private global::System.Data.DataColumn columnCALIBRE;
+            private global::System.Data.DataColumn columnLINEA;
             
-            private global::System.Data.DataColumn columnPROMEDIO_SOLUBLE;
+            private global::System.Data.DataColumn columnPROCESO;
+            
+            private global::System.Data.DataColumn columnLOTE;
+            
+            private global::System.Data.DataColumn columnPRODUCREAL_ID;
+            
+            private global::System.Data.DataColumn columnPRODUCTOREAL_NOMBRE;
+            
+            private global::System.Data.DataColumn columnPRODUCTORETIQUETADO_ID;
+            
+            private global::System.Data.DataColumn columnPRODUCTORETIQUETADO_NOMBRE;
+            
+            private global::System.Data.DataColumn columnVARIEDAD_ID;
+            
+            private global::System.Data.DataColumn columnVARIEDAD_NOMBRE;
+            
+            private global::System.Data.DataColumn columnMARCA_ID;
+            
+            private global::System.Data.DataColumn columnMARCA_NOMBRE;
+            
+            private global::System.Data.DataColumn columnACEPTRECHA;
+            
+            private global::System.Data.DataColumn columnCPTCALIBRE;
+            
+            private global::System.Data.DataColumn columnPROMEDIO;
+            
+            private global::System.Data.DataColumn columnCASOS;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -322,9 +350,17 @@ namespace Mainsite.xsd {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn IDColumn {
+            public global::System.Data.DataColumn PLANTAColumn {
                 get {
-                    return this.columnID;
+                    return this.columnPLANTA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TURNOColumn {
+                get {
+                    return this.columnTURNO;
                 }
             }
             
@@ -338,17 +374,121 @@ namespace Mainsite.xsd {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CALIBREColumn {
+            public global::System.Data.DataColumn LINEAColumn {
                 get {
-                    return this.columnCALIBRE;
+                    return this.columnLINEA;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn PROMEDIO_SOLUBLEColumn {
+            public global::System.Data.DataColumn PROCESOColumn {
                 get {
-                    return this.columnPROMEDIO_SOLUBLE;
+                    return this.columnPROCESO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LOTEColumn {
+                get {
+                    return this.columnLOTE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PRODUCREAL_IDColumn {
+                get {
+                    return this.columnPRODUCREAL_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PRODUCTOREAL_NOMBREColumn {
+                get {
+                    return this.columnPRODUCTOREAL_NOMBRE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PRODUCTORETIQUETADO_IDColumn {
+                get {
+                    return this.columnPRODUCTORETIQUETADO_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PRODUCTORETIQUETADO_NOMBREColumn {
+                get {
+                    return this.columnPRODUCTORETIQUETADO_NOMBRE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn VARIEDAD_IDColumn {
+                get {
+                    return this.columnVARIEDAD_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn VARIEDAD_NOMBREColumn {
+                get {
+                    return this.columnVARIEDAD_NOMBRE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MARCA_IDColumn {
+                get {
+                    return this.columnMARCA_ID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn MARCA_NOMBREColumn {
+                get {
+                    return this.columnMARCA_NOMBRE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ACEPTRECHAColumn {
+                get {
+                    return this.columnACEPTRECHA;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CPTCALIBREColumn {
+                get {
+                    return this.columnCPTCALIBRE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PROMEDIOColumn {
+                get {
+                    return this.columnPROMEDIO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CASOSColumn {
+                get {
+                    return this.columnCASOS;
                 }
             }
             
@@ -389,13 +529,45 @@ namespace Mainsite.xsd {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public SOLIDOSRow AddSOLIDOSRow(string ID, string FECHA, string CALIBRE, decimal PROMEDIO_SOLUBLE) {
+            public SOLIDOSRow AddSOLIDOSRow(
+                        string PLANTA, 
+                        string TURNO, 
+                        string FECHA, 
+                        string LINEA, 
+                        string PROCESO, 
+                        string LOTE, 
+                        string PRODUCREAL_ID, 
+                        string PRODUCTOREAL_NOMBRE, 
+                        string PRODUCTORETIQUETADO_ID, 
+                        string PRODUCTORETIQUETADO_NOMBRE, 
+                        string VARIEDAD_ID, 
+                        string VARIEDAD_NOMBRE, 
+                        string MARCA_ID, 
+                        string MARCA_NOMBRE, 
+                        string ACEPTRECHA, 
+                        string CPTCALIBRE, 
+                        decimal PROMEDIO, 
+                        int CASOS) {
                 SOLIDOSRow rowSOLIDOSRow = ((SOLIDOSRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        ID,
+                        PLANTA,
+                        TURNO,
                         FECHA,
-                        CALIBRE,
-                        PROMEDIO_SOLUBLE};
+                        LINEA,
+                        PROCESO,
+                        LOTE,
+                        PRODUCREAL_ID,
+                        PRODUCTOREAL_NOMBRE,
+                        PRODUCTORETIQUETADO_ID,
+                        PRODUCTORETIQUETADO_NOMBRE,
+                        VARIEDAD_ID,
+                        VARIEDAD_NOMBRE,
+                        MARCA_ID,
+                        MARCA_NOMBRE,
+                        ACEPTRECHA,
+                        CPTCALIBRE,
+                        PROMEDIO,
+                        CASOS};
                 rowSOLIDOSRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowSOLIDOSRow);
                 return rowSOLIDOSRow;
@@ -418,23 +590,65 @@ namespace Mainsite.xsd {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             internal void InitVars() {
-                this.columnID = base.Columns["ID"];
+                this.columnPLANTA = base.Columns["PLANTA"];
+                this.columnTURNO = base.Columns["TURNO"];
                 this.columnFECHA = base.Columns["FECHA"];
-                this.columnCALIBRE = base.Columns["CALIBRE"];
-                this.columnPROMEDIO_SOLUBLE = base.Columns["PROMEDIO_SOLUBLE"];
+                this.columnLINEA = base.Columns["LINEA"];
+                this.columnPROCESO = base.Columns["PROCESO"];
+                this.columnLOTE = base.Columns["LOTE"];
+                this.columnPRODUCREAL_ID = base.Columns["PRODUCREAL_ID"];
+                this.columnPRODUCTOREAL_NOMBRE = base.Columns["PRODUCTOREAL_NOMBRE"];
+                this.columnPRODUCTORETIQUETADO_ID = base.Columns["PRODUCTORETIQUETADO_ID"];
+                this.columnPRODUCTORETIQUETADO_NOMBRE = base.Columns["PRODUCTORETIQUETADO_NOMBRE"];
+                this.columnVARIEDAD_ID = base.Columns["VARIEDAD_ID"];
+                this.columnVARIEDAD_NOMBRE = base.Columns["VARIEDAD_NOMBRE"];
+                this.columnMARCA_ID = base.Columns["MARCA_ID"];
+                this.columnMARCA_NOMBRE = base.Columns["MARCA_NOMBRE"];
+                this.columnACEPTRECHA = base.Columns["ACEPTRECHA"];
+                this.columnCPTCALIBRE = base.Columns["CPTCALIBRE"];
+                this.columnPROMEDIO = base.Columns["PROMEDIO"];
+                this.columnCASOS = base.Columns["CASOS"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             private void InitClass() {
-                this.columnID = new global::System.Data.DataColumn("ID", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnID);
+                this.columnPLANTA = new global::System.Data.DataColumn("PLANTA", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPLANTA);
+                this.columnTURNO = new global::System.Data.DataColumn("TURNO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTURNO);
                 this.columnFECHA = new global::System.Data.DataColumn("FECHA", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFECHA);
-                this.columnCALIBRE = new global::System.Data.DataColumn("CALIBRE", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCALIBRE);
-                this.columnPROMEDIO_SOLUBLE = new global::System.Data.DataColumn("PROMEDIO_SOLUBLE", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPROMEDIO_SOLUBLE);
+                this.columnLINEA = new global::System.Data.DataColumn("LINEA", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLINEA);
+                this.columnPROCESO = new global::System.Data.DataColumn("PROCESO", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPROCESO);
+                this.columnLOTE = new global::System.Data.DataColumn("LOTE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLOTE);
+                this.columnPRODUCREAL_ID = new global::System.Data.DataColumn("PRODUCREAL_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPRODUCREAL_ID);
+                this.columnPRODUCTOREAL_NOMBRE = new global::System.Data.DataColumn("PRODUCTOREAL_NOMBRE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPRODUCTOREAL_NOMBRE);
+                this.columnPRODUCTORETIQUETADO_ID = new global::System.Data.DataColumn("PRODUCTORETIQUETADO_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPRODUCTORETIQUETADO_ID);
+                this.columnPRODUCTORETIQUETADO_NOMBRE = new global::System.Data.DataColumn("PRODUCTORETIQUETADO_NOMBRE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPRODUCTORETIQUETADO_NOMBRE);
+                this.columnVARIEDAD_ID = new global::System.Data.DataColumn("VARIEDAD_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVARIEDAD_ID);
+                this.columnVARIEDAD_NOMBRE = new global::System.Data.DataColumn("VARIEDAD_NOMBRE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVARIEDAD_NOMBRE);
+                this.columnMARCA_ID = new global::System.Data.DataColumn("MARCA_ID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMARCA_ID);
+                this.columnMARCA_NOMBRE = new global::System.Data.DataColumn("MARCA_NOMBRE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMARCA_NOMBRE);
+                this.columnACEPTRECHA = new global::System.Data.DataColumn("ACEPTRECHA", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnACEPTRECHA);
+                this.columnCPTCALIBRE = new global::System.Data.DataColumn("CPTCALIBRE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCPTCALIBRE);
+                this.columnPROMEDIO = new global::System.Data.DataColumn("PROMEDIO", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPROMEDIO);
+                this.columnCASOS = new global::System.Data.DataColumn("CASOS", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCASOS);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -577,17 +791,33 @@ namespace Mainsite.xsd {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ID {
+            public string PLANTA {
                 get {
                     try {
-                        return ((string)(this[this.tableSOLIDOS.IDColumn]));
+                        return ((string)(this[this.tableSOLIDOS.PLANTAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ID\' de la tabla \'SOLIDOS\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PLANTA\' de la tabla \'SOLIDOS\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSOLIDOS.IDColumn] = value;
+                    this[this.tableSOLIDOS.PLANTAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string TURNO {
+                get {
+                    try {
+                        return ((string)(this[this.tableSOLIDOS.TURNOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'TURNO\' de la tabla \'SOLIDOS\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSOLIDOS.TURNOColumn] = value;
                 }
             }
             
@@ -609,46 +839,267 @@ namespace Mainsite.xsd {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string CALIBRE {
+            public string LINEA {
                 get {
                     try {
-                        return ((string)(this[this.tableSOLIDOS.CALIBREColumn]));
+                        return ((string)(this[this.tableSOLIDOS.LINEAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CALIBRE\' de la tabla \'SOLIDOS\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'LINEA\' de la tabla \'SOLIDOS\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSOLIDOS.CALIBREColumn] = value;
+                    this[this.tableSOLIDOS.LINEAColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal PROMEDIO_SOLUBLE {
+            public string PROCESO {
                 get {
                     try {
-                        return ((decimal)(this[this.tableSOLIDOS.PROMEDIO_SOLUBLEColumn]));
+                        return ((string)(this[this.tableSOLIDOS.PROCESOColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PROMEDIO_SOLUBLE\' de la tabla \'SOLIDOS\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PROCESO\' de la tabla \'SOLIDOS\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableSOLIDOS.PROMEDIO_SOLUBLEColumn] = value;
+                    this[this.tableSOLIDOS.PROCESOColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsIDNull() {
-                return this.IsNull(this.tableSOLIDOS.IDColumn);
+            public string LOTE {
+                get {
+                    try {
+                        return ((string)(this[this.tableSOLIDOS.LOTEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'LOTE\' de la tabla \'SOLIDOS\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSOLIDOS.LOTEColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetIDNull() {
-                this[this.tableSOLIDOS.IDColumn] = global::System.Convert.DBNull;
+            public string PRODUCREAL_ID {
+                get {
+                    try {
+                        return ((string)(this[this.tableSOLIDOS.PRODUCREAL_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PRODUCREAL_ID\' de la tabla \'SOLIDOS\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSOLIDOS.PRODUCREAL_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PRODUCTOREAL_NOMBRE {
+                get {
+                    try {
+                        return ((string)(this[this.tableSOLIDOS.PRODUCTOREAL_NOMBREColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PRODUCTOREAL_NOMBRE\' de la tabla \'SOLIDOS\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSOLIDOS.PRODUCTOREAL_NOMBREColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PRODUCTORETIQUETADO_ID {
+                get {
+                    try {
+                        return ((string)(this[this.tableSOLIDOS.PRODUCTORETIQUETADO_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PRODUCTORETIQUETADO_ID\' de la tabla \'SOLIDOS\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSOLIDOS.PRODUCTORETIQUETADO_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PRODUCTORETIQUETADO_NOMBRE {
+                get {
+                    try {
+                        return ((string)(this[this.tableSOLIDOS.PRODUCTORETIQUETADO_NOMBREColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PRODUCTORETIQUETADO_NOMBRE\' de la tabla \'SOLIDOS\' es DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableSOLIDOS.PRODUCTORETIQUETADO_NOMBREColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string VARIEDAD_ID {
+                get {
+                    try {
+                        return ((string)(this[this.tableSOLIDOS.VARIEDAD_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'VARIEDAD_ID\' de la tabla \'SOLIDOS\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSOLIDOS.VARIEDAD_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string VARIEDAD_NOMBRE {
+                get {
+                    try {
+                        return ((string)(this[this.tableSOLIDOS.VARIEDAD_NOMBREColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'VARIEDAD_NOMBRE\' de la tabla \'SOLIDOS\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSOLIDOS.VARIEDAD_NOMBREColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string MARCA_ID {
+                get {
+                    try {
+                        return ((string)(this[this.tableSOLIDOS.MARCA_IDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'MARCA_ID\' de la tabla \'SOLIDOS\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSOLIDOS.MARCA_IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string MARCA_NOMBRE {
+                get {
+                    try {
+                        return ((string)(this[this.tableSOLIDOS.MARCA_NOMBREColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'MARCA_NOMBRE\' de la tabla \'SOLIDOS\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSOLIDOS.MARCA_NOMBREColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ACEPTRECHA {
+                get {
+                    try {
+                        return ((string)(this[this.tableSOLIDOS.ACEPTRECHAColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ACEPTRECHA\' de la tabla \'SOLIDOS\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSOLIDOS.ACEPTRECHAColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CPTCALIBRE {
+                get {
+                    try {
+                        return ((string)(this[this.tableSOLIDOS.CPTCALIBREColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CPTCALIBRE\' de la tabla \'SOLIDOS\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSOLIDOS.CPTCALIBREColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PROMEDIO {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableSOLIDOS.PROMEDIOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PROMEDIO\' de la tabla \'SOLIDOS\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSOLIDOS.PROMEDIOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int CASOS {
+                get {
+                    try {
+                        return ((int)(this[this.tableSOLIDOS.CASOSColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CASOS\' de la tabla \'SOLIDOS\' es DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableSOLIDOS.CASOSColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPLANTANull() {
+                return this.IsNull(this.tableSOLIDOS.PLANTAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPLANTANull() {
+                this[this.tableSOLIDOS.PLANTAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTURNONull() {
+                return this.IsNull(this.tableSOLIDOS.TURNOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTURNONull() {
+                this[this.tableSOLIDOS.TURNOColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -665,26 +1116,182 @@ namespace Mainsite.xsd {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCALIBRENull() {
-                return this.IsNull(this.tableSOLIDOS.CALIBREColumn);
+            public bool IsLINEANull() {
+                return this.IsNull(this.tableSOLIDOS.LINEAColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCALIBRENull() {
-                this[this.tableSOLIDOS.CALIBREColumn] = global::System.Convert.DBNull;
+            public void SetLINEANull() {
+                this[this.tableSOLIDOS.LINEAColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsPROMEDIO_SOLUBLENull() {
-                return this.IsNull(this.tableSOLIDOS.PROMEDIO_SOLUBLEColumn);
+            public bool IsPROCESONull() {
+                return this.IsNull(this.tableSOLIDOS.PROCESOColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetPROMEDIO_SOLUBLENull() {
-                this[this.tableSOLIDOS.PROMEDIO_SOLUBLEColumn] = global::System.Convert.DBNull;
+            public void SetPROCESONull() {
+                this[this.tableSOLIDOS.PROCESOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsLOTENull() {
+                return this.IsNull(this.tableSOLIDOS.LOTEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetLOTENull() {
+                this[this.tableSOLIDOS.LOTEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPRODUCREAL_IDNull() {
+                return this.IsNull(this.tableSOLIDOS.PRODUCREAL_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPRODUCREAL_IDNull() {
+                this[this.tableSOLIDOS.PRODUCREAL_IDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPRODUCTOREAL_NOMBRENull() {
+                return this.IsNull(this.tableSOLIDOS.PRODUCTOREAL_NOMBREColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPRODUCTOREAL_NOMBRENull() {
+                this[this.tableSOLIDOS.PRODUCTOREAL_NOMBREColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPRODUCTORETIQUETADO_IDNull() {
+                return this.IsNull(this.tableSOLIDOS.PRODUCTORETIQUETADO_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPRODUCTORETIQUETADO_IDNull() {
+                this[this.tableSOLIDOS.PRODUCTORETIQUETADO_IDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPRODUCTORETIQUETADO_NOMBRENull() {
+                return this.IsNull(this.tableSOLIDOS.PRODUCTORETIQUETADO_NOMBREColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPRODUCTORETIQUETADO_NOMBRENull() {
+                this[this.tableSOLIDOS.PRODUCTORETIQUETADO_NOMBREColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsVARIEDAD_IDNull() {
+                return this.IsNull(this.tableSOLIDOS.VARIEDAD_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetVARIEDAD_IDNull() {
+                this[this.tableSOLIDOS.VARIEDAD_IDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsVARIEDAD_NOMBRENull() {
+                return this.IsNull(this.tableSOLIDOS.VARIEDAD_NOMBREColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetVARIEDAD_NOMBRENull() {
+                this[this.tableSOLIDOS.VARIEDAD_NOMBREColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMARCA_IDNull() {
+                return this.IsNull(this.tableSOLIDOS.MARCA_IDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMARCA_IDNull() {
+                this[this.tableSOLIDOS.MARCA_IDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsMARCA_NOMBRENull() {
+                return this.IsNull(this.tableSOLIDOS.MARCA_NOMBREColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetMARCA_NOMBRENull() {
+                this[this.tableSOLIDOS.MARCA_NOMBREColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsACEPTRECHANull() {
+                return this.IsNull(this.tableSOLIDOS.ACEPTRECHAColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetACEPTRECHANull() {
+                this[this.tableSOLIDOS.ACEPTRECHAColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCPTCALIBRENull() {
+                return this.IsNull(this.tableSOLIDOS.CPTCALIBREColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCPTCALIBRENull() {
+                this[this.tableSOLIDOS.CPTCALIBREColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPROMEDIONull() {
+                return this.IsNull(this.tableSOLIDOS.PROMEDIOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPROMEDIONull() {
+                this[this.tableSOLIDOS.PROMEDIOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCASOSNull() {
+                return this.IsNull(this.tableSOLIDOS.CASOSColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCASOSNull() {
+                this[this.tableSOLIDOS.CASOSColumn] = global::System.Convert.DBNull;
             }
         }
         

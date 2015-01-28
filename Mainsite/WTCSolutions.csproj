@@ -176,6 +176,7 @@
     <Content Include="Images\CCPAC003.png" />
     <Content Include="Images\CCPAC005.png" />
     <Content Include="Images\CCPAC075.png" />
+    <Content Include="Images\Def_cal_y_condicion.png" />
     <Content Include="Images\Descargar_Descarte_Comercial.png" />
     <Content Include="Images\Descargar_Mesa_de_seleccion.png" />
     <Content Include="Images\Descargar_Producto_Terminado.png" />
@@ -206,6 +207,7 @@
     <Content Include="Images\right2.png" />
     <Content Include="Images\search.png" />
     <Content Include="Images\SFG.png" />
+    <Content Include="Images\Solidos_Solubles.png" />
     <Content Include="Images\stars\1.png" />
     <Content Include="Images\stars\2.png" />
     <Content Include="Images\stars\3.png" />
@@ -226,6 +228,7 @@
     <Content Include="MainApp\Mainapp.aspx" />
     <Content Include="MainApp\menuadmusr.aspx" />
     <Content Include="MainApp\SisConPT.aspx" />
+    <Content Include="Reporte\ResumenProductoTerminadoSS.aspx" />
     <Content Include="Reporte\GraficoProductoTerminado.aspx" />
     <Content Include="Reporte\ReporteCCPAC075Prueba1.aspx" />
     <Content Include="Reporte\ResumenProductoTerminado.aspx" />
@@ -485,6 +488,13 @@
       <DependentUpon>SisConPT.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporte\ResumenProductoTerminadoSS.aspx.cs">
+      <DependentUpon>ResumenProductoTerminadoSS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\ResumenProductoTerminadoSS.aspx.designer.cs">
+      <DependentUpon>ResumenProductoTerminadoSS.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Reporte\GraficoProductoTerminado.aspx.cs">
       <DependentUpon>GraficoProductoTerminado.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -505,6 +515,12 @@
     </Compile>
     <Compile Include="Reporte\ResumenProductoTerminado.aspx.designer.cs">
       <DependentUpon>ResumenProductoTerminado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RPT\ProdTerminadoSolidosSolubles.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProdTerminadoSolidosSolubles.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="RPT\ProductoTerminadoReporteV3.cs">
       <DependentUpon>ProductoTerminadoReporteV3.rpt</DependentUpon>
@@ -528,12 +544,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RPTProductoTerminado.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="RPT\RPTSolidosSolubles.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RPTSolidosSolubles.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Site.Master.cs">
@@ -629,6 +639,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CC_PAC_075_prueba1rpt.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="RPT\ProdTerminadoSolidosSolubles.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProdTerminadoSolidosSolubles.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="RPT\ProductoTerminadoReporteV3.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ProductoTerminadoReporteV3.cs</LastGenOutput>
@@ -645,10 +659,6 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RPTProductoTerminado.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="RPT\RPTSolidosSolubles.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RPTSolidosSolubles.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
@@ -661,7 +671,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>61729</DevelopmentServerPort>
+          <DevelopmentServerPort>4576</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

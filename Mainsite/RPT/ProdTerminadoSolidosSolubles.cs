@@ -16,14 +16,14 @@ namespace Mainsite.RPT {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class RPTSolidosSolubles : ReportClass {
+    public class ProdTerminadoSolidosSolubles : ReportClass {
         
-        public RPTSolidosSolubles() {
+        public ProdTerminadoSolidosSolubles() {
         }
         
         public override string ResourceName {
             get {
-                return "RPTSolidosSolubles.rpt";
+                return "ProdTerminadoSolidosSolubles.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Mainsite.RPT {
         
         public override string FullResourceName {
             get {
-                return "Mainsite.RPT.RPTSolidosSolubles.rpt";
+                return "Mainsite.RPT.ProdTerminadoSolidosSolubles.rpt";
             }
             set {
                 // Do nothing
@@ -66,7 +66,7 @@ namespace Mainsite.RPT {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupHeaderSection2 {
             get {
                 return this.ReportDefinition.Sections[2];
             }
@@ -74,7 +74,7 @@ namespace Mainsite.RPT {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+        public CrystalDecisions.CrystalReports.Engine.Section Section3 {
             get {
                 return this.ReportDefinition.Sections[3];
             }
@@ -82,17 +82,41 @@ namespace Mainsite.RPT {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+        public CrystalDecisions.CrystalReports.Engine.Section GroupFooterSection2 {
             get {
                 return this.ReportDefinition.Sections[4];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section4 {
+            get {
+                return this.ReportDefinition.Sections[5];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section ReportFooterSection1 {
+            get {
+                return this.ReportDefinition.Sections[6];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.CrystalReports.Engine.Section Section5 {
+            get {
+                return this.ReportDefinition.Sections[7];
             }
         }
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedRPTSolidosSolubles : Component, ICachedReport {
+    public class CachedProdTerminadoSolidosSolubles : Component, ICachedReport {
         
-        public CachedRPTSolidosSolubles() {
+        public CachedProdTerminadoSolidosSolubles() {
         }
         
         [Browsable(false)]
@@ -129,7 +153,7 @@ namespace Mainsite.RPT {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            RPTSolidosSolubles rpt = new RPTSolidosSolubles();
+            ProdTerminadoSolidosSolubles rpt = new ProdTerminadoSolidosSolubles();
             rpt.Site = this.Site;
             return rpt;
         }

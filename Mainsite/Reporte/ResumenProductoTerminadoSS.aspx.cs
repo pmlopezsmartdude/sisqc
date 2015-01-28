@@ -13,19 +13,19 @@ using Mainsite.xsd;
 
 namespace Mainsite.Reporte
 {
-    public partial class ResumenProductoTerminado : System.Web.UI.Page
+    public partial class ResumenProductoTerminadoSS : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             ReportDocument rptDoc = new ReportDocument();
-            ProductoTerminado ds = new ProductoTerminado(); // .xsd file name
+            SolidosSolubles ds = new SolidosSolubles(); // .xsd file name
             DataTable dt = new DataTable();
             dt.TableName = "Producto Terminado";
             dt = ObtenerProductoTerminado(); //This function is located below this function
             ds.Tables[0].Merge(dt);
 
             // Your .rpt file path will be below
-            rptDoc.Load(Server.MapPath("../RPT/ProductoTerminadoReporte_V2.rpt"));
+            rptDoc.Load(Server.MapPath("../RPT/ProdTerminadoSolidosSolubles.rpt"));
 
             //set dataset to the report viewer.
             rptDoc.SetDataSource(ds);
@@ -37,8 +37,8 @@ namespace Mainsite.Reporte
 
         public DataTable ObtenerProductoTerminado()
         {
+            
 
-            string consulta = Session["consultapt01"].ToString();
             //Connection string replace 'databaseservername' with your db server name
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
             System.Configuration.ConnectionStringSettings connStringLM;
@@ -52,8 +52,8 @@ namespace Mainsite.Reporte
             //{
             Con.Open();
             //Stored procedure calling. It is already in sample db.
-            cmd.CommandText = consulta;
-            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "[SOLIDOS_SOLUBLES]";
+            cmd.CommandType = CommandType.StoredProcedure;
             cmd.Connection = Con;
             ds = new DataSet();
             adapter = new SqlDataAdapter(cmd);

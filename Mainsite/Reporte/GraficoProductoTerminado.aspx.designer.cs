@@ -283,6 +283,15 @@ namespace Mainsite.Reporte {
         protected global::System.Web.UI.WebControls.DropDownList ddl_acep_d;
         
         /// <summary>
+        /// Control Table3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table Table3;
+        
+        /// <summary>
         /// Control Reporte005.
         /// </summary>
         /// <remarks>
@@ -292,12 +301,12 @@ namespace Mainsite.Reporte {
         protected global::System.Web.UI.WebControls.ImageButton Reporte005;
         
         /// <summary>
-        /// Control texto.
+        /// Control Reporte6.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox texto;
+        protected global::System.Web.UI.WebControls.ImageButton Reporte6;
     }
 }
