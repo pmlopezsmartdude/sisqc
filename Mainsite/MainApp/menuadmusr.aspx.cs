@@ -26,7 +26,8 @@ namespace Mainsite.MainApp
                 if (r == "Administrador")
                 {
                     TreeViewAdmUsr.Visible = true;
-                    TreeViewPruebas.Visible = false;
+                    //TreeViewPruebas.Visible = false;
+                    TreeViewPruebas.Visible = true;
 
                     break;
                 }

@@ -73,12 +73,15 @@
                     SelectAction="Expand">
                   
 
-                    <asp:TreeNode Expanded="False" SelectAction="Expand" Text="Control Calidad" 
-                        Value="Control Calidad">
-                        <asp:TreeNode Target="workingarea" Text="Cerezas" Value="Cerezas" 
+                    <%--<asp:TreeNode Expanded="False" SelectAction="Expand" Text="Control Calidad" 
+                        Value="Control Calidad">--%>
+                        <asp:TreeNode Target="workingarea" Text="Control Calidad Cerezas" Value="Cerezas" 
                             NavigateUrl="~/MainApp/InformesCereza.aspx">
                         </asp:TreeNode>
-                    </asp:TreeNode>
+                        <asp:TreeNode Target="workingarea" Text="Prueba Filtros" Value="Cerezas" 
+                            NavigateUrl="~/Reporte/GraficoProductoTerminado.aspx">
+                        </asp:TreeNode>
+                   <%-- </asp:TreeNode>--%>
                 </asp:TreeNode>
                 </asp:TreeNode>
             </Nodes>

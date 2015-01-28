@@ -226,6 +226,7 @@
     <Content Include="MainApp\Mainapp.aspx" />
     <Content Include="MainApp\menuadmusr.aspx" />
     <Content Include="MainApp\SisConPT.aspx" />
+    <Content Include="Reporte\GraficoProductoTerminado.aspx" />
     <Content Include="Reporte\ReporteCCPAC075Prueba1.aspx" />
     <Content Include="Reporte\ResumenProductoTerminado.aspx" />
     <Content Include="Scripts\jquery-1.4.2.min.js" />
@@ -484,6 +485,13 @@
       <DependentUpon>SisConPT.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporte\GraficoProductoTerminado.aspx.cs">
+      <DependentUpon>GraficoProductoTerminado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\GraficoProductoTerminado.aspx.designer.cs">
+      <DependentUpon>GraficoProductoTerminado.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Reporte\ReporteCCPAC075Prueba1.aspx.cs">
       <DependentUpon>ReporteCCPAC075Prueba1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -498,6 +506,18 @@
     <Compile Include="Reporte\ResumenProductoTerminado.aspx.designer.cs">
       <DependentUpon>ResumenProductoTerminado.aspx</DependentUpon>
     </Compile>
+    <Compile Include="RPT\ProductoTerminadoReporteV3.cs">
+      <DependentUpon>ProductoTerminadoReporteV3.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RPT\ProductoTerminadoReporte_V2.cs">
+      <DependentUpon>ProductoTerminadoReporte_V2.rpt</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+    </Compile>
     <Compile Include="RPT\ProductoTerminadoReporte.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -510,6 +530,12 @@
       <DependentUpon>RPTProductoTerminado.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="RPT\RPTSolidosSolubles.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RPTSolidosSolubles.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -519,11 +545,17 @@
     </Compile>
     <Compile Include="xsd\ProductoTerminado.cs">
       <DependentUpon>ProductoTerminado.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="xsd\ProductoTerminado.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ProductoTerminado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="xsd\SolidosSolubles.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SolidosSolubles.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -563,6 +595,17 @@
     <None Include="xsd\ProductoTerminado.xss">
       <DependentUpon>ProductoTerminado.xsd</DependentUpon>
     </None>
+    <None Include="xsd\SolidosSolubles.xsc">
+      <DependentUpon>SolidosSolubles.xsd</DependentUpon>
+    </None>
+    <None Include="xsd\SolidosSolubles.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SolidosSolubles.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="xsd\SolidosSolubles.xss">
+      <DependentUpon>SolidosSolubles.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -586,6 +629,14 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CC_PAC_075_prueba1rpt.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="RPT\ProductoTerminadoReporteV3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProductoTerminadoReporteV3.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\ProductoTerminadoReporte_V2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProductoTerminadoReporte_V2.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="RPT\ProductoTerminadoReporte.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ProductoTerminadoReporte.cs</LastGenOutput>
@@ -593,6 +644,10 @@
     <EmbeddedResource Include="RPT\RPTProductoTerminado.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RPTProductoTerminado.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\RPTSolidosSolubles.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RPTSolidosSolubles.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

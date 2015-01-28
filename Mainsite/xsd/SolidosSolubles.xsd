@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SolidosSolubles" targetNamespace="http://tempuri.org/SolidosSolubles.xsd" xmlns:mstns="http://tempuri.org/SolidosSolubles.xsd" xmlns="http://tempuri.org/SolidosSolubles.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SolidosSolubles" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SolidosSolubles" msprop:Generator_UserDSName="SolidosSolubles">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SOLIDOS" msprop:Generator_TableClassName="SOLIDOSDataTable" msprop:Generator_TableVarName="tableSOLIDOS" msprop:Generator_TablePropName="SOLIDOS" msprop:Generator_RowDeletingName="SOLIDOSRowDeleting" msprop:Generator_RowChangingName="SOLIDOSRowChanging" msprop:Generator_RowEvHandlerName="SOLIDOSRowChangeEventHandler" msprop:Generator_RowDeletedName="SOLIDOSRowDeleted" msprop:Generator_UserTableName="SOLIDOS" msprop:Generator_RowChangedName="SOLIDOSRowChanged" msprop:Generator_RowEvArgName="SOLIDOSRowChangeEvent" msprop:Generator_RowClassName="SOLIDOSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:string" minOccurs="0" />
+              <xs:element name="FECHA" msprop:Generator_ColumnVarNameInTable="columnFECHA" msprop:Generator_ColumnPropNameInRow="FECHA" msprop:Generator_ColumnPropNameInTable="FECHAColumn" msprop:Generator_UserColumnName="FECHA" type="xs:string" minOccurs="0" />
+              <xs:element name="CALIBRE" msprop:Generator_ColumnVarNameInTable="columnCALIBRE" msprop:Generator_ColumnPropNameInRow="CALIBRE" msprop:Generator_ColumnPropNameInTable="CALIBREColumn" msprop:Generator_UserColumnName="CALIBRE" type="xs:string" minOccurs="0" />
+              <xs:element name="PROMEDIO_SOLUBLE" msprop:Generator_ColumnVarNameInTable="columnPROMEDIO_SOLUBLE" msprop:Generator_ColumnPropNameInRow="PROMEDIO_SOLUBLE" msprop:Generator_ColumnPropNameInTable="PROMEDIO_SOLUBLEColumn" msprop:Generator_UserColumnName="PROMEDIO_SOLUBLE" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
