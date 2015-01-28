@@ -37,7 +37,7 @@ namespace Mainsite.Reporte
 
         public DataTable ObtenerProductoTerminado()
         {
-            
+            string consulta = Session["consultapt2"].ToString();
 
             //Connection string replace 'databaseservername' with your db server name
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -52,8 +52,8 @@ namespace Mainsite.Reporte
             //{
             Con.Open();
             //Stored procedure calling. It is already in sample db.
-            cmd.CommandText = "[SOLIDOS_SOLUBLES]";
-            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandText = consulta;
+            cmd.CommandType = CommandType.Text;
             cmd.Connection = Con;
             ds = new DataSet();
             adapter = new SqlDataAdapter(cmd);

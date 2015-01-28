@@ -1078,7 +1078,7 @@ namespace Mainsite.Reporte
 
 
          
-                Session["consultapt01"] = consultatotal;
+                Session["consultapt2"] = consultatotal;
            Response.Redirect("~/Reporte/ResumenProductoTerminadoSS.aspx");
 
         }
