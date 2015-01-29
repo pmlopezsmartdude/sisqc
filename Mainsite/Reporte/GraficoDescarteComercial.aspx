@@ -106,6 +106,6 @@
         <asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="50">
       
         <asp:TableCell>
-       <asp:ImageButton ID="Reporte005" runat="server" ImageUrl="~/Images/Def_cal_y_condicion.png" CommandName="Select"  AlternateText="Seleccionar" Height="36px" ImageAlign="AbsMiddle" OnClick="Click_005" ValidationGroup="IngresoFechaGroup"/>
+       <asp:ImageButton ID="Reporte005" runat="server" ImageUrl="~/Images/rpt_descarte_comercial.png" CommandName="Select"  AlternateText="Seleccionar" Height="36px" ImageAlign="AbsMiddle" OnClick="Click_005" ValidationGroup="IngresoFechaGroup"/>
          
         </asp:TableCell></asp:TableRow></asp:Table></fieldset> </form></body></html>
