@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GraficoProductoTerminado.aspx.cs" Inherits="Mainsite.Reporte.GraficoProductoTerminado" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="GraficoDescarteComercial.aspx.cs" Inherits="Mainsite.Reporte.GraficoDescarteComercial" %>
 <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <%@ Register assembly="AjaxControlToolkit" namespace="AjaxControlToolkit" tagprefix="cc1" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -87,19 +87,17 @@
         </asp:TableCell><asp:TableCell Width="34%">
        <asp:Label ID="Label3" runat="server" Text="PRODUCTOR"></asp:Label>
         </asp:TableCell><asp:TableCell Width="34%">
-        <asp:Label ID="Label14" runat="server" Text="ACEPTADA/RECHAZADA"></asp:Label>
+        
         </asp:TableCell></asp:TableRow><asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle">
       
         <asp:TableCell >
-        <asp:DropDownList ID="ddl_variedad_d"  runat="server" Width="80" DataSourceID="ddl_variedad" DataTextField="variedad" DataValueField="variedad_id" Font-Names="Century Gothic" AutoPostBack="True" onselectedindexchanged="variedad_SelectedIndexChanged"> </asp:DropDownList>
+        <asp:DropDownList ID="ddl_variedad_d"  runat="server" Width="80" DataSourceID="ddl_variedad" DataTextField="variedad" DataValueField="variedad" Font-Names="Century Gothic" AutoPostBack="True" onselectedindexchanged="variedad_SelectedIndexChanged"> </asp:DropDownList>
         </asp:TableCell><asp:TableCell>
-        <asp:DropDownList ID="ddl_productor_d"  runat="server" Width="80" DataSourceID="ddl_productor" DataTextField="productor" DataValueField="productor_id" Font-Names="Century Gothic" AutoPostBack="True" onselectedindexchanged="productor_SelectedIndexChanged"> </asp:DropDownList>
+        <asp:DropDownList ID="ddl_productor_d"  runat="server" Width="80" DataSourceID="ddl_productor" DataTextField="productor" DataValueField="productor" Font-Names="Century Gothic" AutoPostBack="True" onselectedindexchanged="productor_SelectedIndexChanged"> </asp:DropDownList>
         
         </asp:TableCell><asp:TableCell>
-        <asp:DropDownList ID="ddl_acep_d"  runat="server" Width="80" DataSourceID="ddl_acep_d" DataTextField="tipo" DataValueField="tipo" Font-Names="Century Gothic"> </asp:DropDownList>
-        
-        </asp:TableCell></asp:TableRow></asp:Table>
-        <br />
+       
+        </asp:TableCell></asp:TableRow></asp:Table><br />
         <br />
     
         
@@ -108,11 +106,6 @@
         <asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="50">
       
         <asp:TableCell>
-       <asp:ImageButton ID="Reporte005" runat="server" ImageUrl="~/Images/Def_cal_y_condicion.png" CommandName="Select"  AlternateText="Seleccionar" Height="36px" ImageAlign="AbsMiddle" OnClick="Click_005" ValidationGroup="IngresoFechaGroup" />
+       <asp:ImageButton ID="Reporte005" runat="server" ImageUrl="~/Images/Def_cal_y_condicion.png" CommandName="Select"  AlternateText="Seleccionar" Height="36px" ImageAlign="AbsMiddle" OnClick="Click_005" ValidationGroup="IngresoFechaGroup"/>
          
-        </asp:TableCell><asp:TableCell>
-        <asp:ImageButton   ID="Reporte6" runat="server" ImageUrl="~/Images/Solidos_Solubles.png" CommandName="Select"  AlternateText="Seleccionar" Height="36px" ImageAlign="AbsMiddle" OnClick="Click_005_v2" ValidationGroup="IngresoFechaGroup" />
-        
-        </asp:TableCell></asp:TableRow></asp:Table>
-        
-        </fieldset> </form></body></html>
+        </asp:TableCell></asp:TableRow></asp:Table></fieldset> </form></body></html>

@@ -13,30 +13,30 @@ using Mainsite.xsd;
 
 namespace Mainsite.Reporte
 {
-    public partial class ResumenProductoTerminadoSS : System.Web.UI.Page
+    public partial class ResumenDescarteComercial : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             ReportDocument rptDoc = new ReportDocument();
-            SolidosSolubles ds = new SolidosSolubles(); // .xsd file name
+            DataSet1 ds = new DataSet1(); // .xsd file name
             DataTable dt = new DataTable();
             dt.TableName = "Producto Terminado";
             dt = ObtenerProductoTerminado(); //This function is located below this function
             ds.Tables[0].Merge(dt);
 
             // Your .rpt file path will be below
-            rptDoc.Load(Server.MapPath("../RPT/ProdTerminadoSolidosSolubles.rpt"));
+            rptDoc.Load(Server.MapPath("../RPT/RPTDescarteComercial.rpt"));
 
             //set dataset to the report viewer.
             rptDoc.SetDataSource(ds);
-
             
-            CRV.ReportSource = rptDoc;
+            CrystalReportViewer1.ReportSource = rptDoc;
+            
         }
 
         public DataTable ObtenerProductoTerminado()
         {
-            string consulta = Session["consultapt2"].ToString();
+            string consulta = Session["consultapt01"].ToString();
 
             //Connection string replace 'databaseservername' with your db server name
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");

@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Descartecomercial" targetNamespace="http://tempuri.org/Descartecomercial.xsd" xmlns:mstns="http://tempuri.org/Descartecomercial.xsd" xmlns="http://tempuri.org/Descartecomercial.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Descartecomercial" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Descartecomercial" msprop:Generator_UserDSName="Descartecomercial">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CC_PAC_075" msprop:Generator_TableClassName="CC_PAC_075DataTable" msprop:Generator_TableVarName="tableCC_PAC_075" msprop:Generator_TablePropName="CC_PAC_075" msprop:Generator_RowDeletingName="CC_PAC_075RowDeleting" msprop:Generator_RowChangingName="CC_PAC_075RowChanging" msprop:Generator_RowEvHandlerName="CC_PAC_075RowChangeEventHandler" msprop:Generator_RowDeletedName="CC_PAC_075RowDeleted" msprop:Generator_UserTableName="CC_PAC_075" msprop:Generator_RowChangedName="CC_PAC_075RowChanged" msprop:Generator_RowEvArgName="CC_PAC_075RowChangeEvent" msprop:Generator_RowClassName="CC_PAC_075Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PLANTA" msprop:Generator_ColumnVarNameInTable="columnPLANTA" msprop:Generator_ColumnPropNameInRow="PLANTA" msprop:Generator_ColumnPropNameInTable="PLANTAColumn" msprop:Generator_UserColumnName="PLANTA" type="xs:string" minOccurs="0" />
+              <xs:element name="TURNO" msprop:Generator_ColumnVarNameInTable="columnTURNO" msprop:Generator_ColumnPropNameInRow="TURNO" msprop:Generator_ColumnPropNameInTable="TURNOColumn" msprop:Generator_UserColumnName="TURNO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -10,7 +10,7 @@
 namespace Mainsite.Reporte {
     
     
-    public partial class ResumenProductoTerminadoSS {
+    public partial class ResumenDescarteComercial {
         
         /// <summary>
         /// Control form1.
@@ -31,12 +31,12 @@ namespace Mainsite.Reporte {
         protected global::System.Web.UI.WebControls.Button Button1;
         
         /// <summary>
-        /// Control CRV.
+        /// Control CrystalReportViewer1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::CrystalDecisions.Web.CrystalReportViewer CRV;
+        protected global::CrystalDecisions.Web.CrystalReportViewer CrystalReportViewer1;
     }
 }

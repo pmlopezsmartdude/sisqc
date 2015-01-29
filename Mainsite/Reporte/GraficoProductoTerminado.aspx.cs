@@ -783,7 +783,7 @@ namespace Mainsite.Reporte
             }
             if (turno == "Todos")
             {
-                sel_turno = " 'Todas los turnos' AS TURNO, ";
+                sel_turno = " 'Todos los turnos' AS TURNO, ";
                 whe_turno = "";
                 gro_turno = "";
             }
@@ -800,7 +800,7 @@ namespace Mainsite.Reporte
             }
             if (proceso == "Todos")
             {
-                sel_proceso = " 'Todas los procesos' AS PROCESO, ";
+                sel_proceso = " 'Todos los procesos' AS PROCESO, ";
                 whe_proceso = "";
                 gro_proceso = "";
             }
@@ -830,11 +830,11 @@ namespace Mainsite.Reporte
             {
                 sel_variedad = " CL.cptvarcod AS VARIEDAD_ID, CL.cptvardes AS VARIEDAD_NOMBRE, ";
                 whe_variedad = " and cl.cptvarcod='" + variedad + "' ";
-                gro_variedad = ", cl.cptvarcod";
+                gro_variedad = ", cl.cptvarcod,cl.cptvardes";
             }
             if (variedad == "Todas")
             {
-                sel_variedad = " '1' AS VARIEDAD_ID, 'Todas las variedades' AS VARIEDAD_NOMBRE, ";
+                sel_variedad = " ' ' AS VARIEDAD_ID, 'Todas las variedades' AS VARIEDAD_NOMBRE, ";
                 whe_variedad = "";
                 gro_variedad = "";
             }
@@ -848,11 +848,11 @@ namespace Mainsite.Reporte
             {
                 sel_productor = " CL.CPTRUTPRR AS PRODUCREAL_ID, CL.CPTNOMPRE AS PRODUCTOREAL_NOMBRE, ";
                 whe_productor = " and cl.CPTRUTPRR='" + productor + "' ";
-                gro_productor = ", cl.CPTRUTPRR";
+                gro_productor = ", cl.CPTNOMPRE,cl.CPTRUTPRR";
             }
             if (productor == "Todos")
             {
-                sel_productor = " '1' AS PRODUCREAL_ID, 'Todos los productores' AS PRODUCTOREAL_NOMBRE, ";
+                sel_productor = " ' ' AS PRODUCREAL_ID, 'Todos los productores' AS PRODUCTOREAL_NOMBRE, ";
                 whe_productor = "";
                 gro_productor = "";
             }
@@ -913,6 +913,9 @@ namespace Mainsite.Reporte
 
             Session["consultapt01"] = consultatotal;
             Response.Redirect("~/Reporte/ResumenProductoTerminado.aspx");
+
+
+            
 
         }
 
@@ -975,7 +978,7 @@ namespace Mainsite.Reporte
             }
             if (turno == "Todos")
             {
-                sel_turno = " 'Todas los turnos' AS TURNO, ";
+                sel_turno = " 'Todos los turnos' AS TURNO, ";
                 whe_turno = "";
                 gro_turno = "";
             }
@@ -992,7 +995,7 @@ namespace Mainsite.Reporte
             }
             if (proceso == "Todos")
             {
-                sel_proceso = " 'Todas los procesos' AS PROCESO, ";
+                sel_proceso = " 'Todos los procesos' AS PROCESO, ";
                 whe_proceso = "";
                 gro_proceso = "";
             }
@@ -1009,7 +1012,7 @@ namespace Mainsite.Reporte
             }
             if (lote == "Todos")
             {
-                sel_lote = " 'Todos los lote' AS LOTE, ";
+                sel_lote = " 'Todos los lotes' AS LOTE, ";
                 whe_lote = "";
                 gro_lote = "";
             }
@@ -1026,7 +1029,7 @@ namespace Mainsite.Reporte
             }
             if (variedad == "Todas")
             {
-                sel_variedad = " '1' AS VARIEDAD_ID, 'Todas las variedades' AS VARIEDAD_NOMBRE, ";
+                sel_variedad = " ' ' AS VARIEDAD_ID, 'Todas las variedades' AS VARIEDAD_NOMBRE, ";
                 whe_variedad = "";
                 gro_variedad = "";
             }
@@ -1044,7 +1047,7 @@ namespace Mainsite.Reporte
             }
             if (productor == "Todos")
             {
-                sel_productor = " '1' AS PRODUCREAL_ID, 'Todos los productores' AS PRODUCTOREAL_NOMBRE, ";
+                sel_productor = " ' ' AS PRODUCREAL_ID, 'Todos los productores' AS PRODUCTOREAL_NOMBRE, ";
                 whe_productor = "";
                 gro_productor = "";
             }
@@ -1084,5 +1087,8 @@ namespace Mainsite.Reporte
         }
 
 
+        
+        
+        
     }
 }

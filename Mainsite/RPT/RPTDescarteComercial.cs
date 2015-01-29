@@ -16,14 +16,14 @@ namespace Mainsite.RPT {
     using CrystalDecisions.CrystalReports.Engine;
     
     
-    public class ProductoTerminadoReporteV3 : ReportClass {
+    public class RPTDescarteComercial : ReportClass {
         
-        public ProductoTerminadoReporteV3() {
+        public RPTDescarteComercial() {
         }
         
         public override string ResourceName {
             get {
-                return "ProductoTerminadoReporteV3.rpt";
+                return "RPTDescarteComercial.rpt";
             }
             set {
                 // Do nothing
@@ -41,7 +41,7 @@ namespace Mainsite.RPT {
         
         public override string FullResourceName {
             get {
-                return "Mainsite.RPT.ProductoTerminadoReporteV3.rpt";
+                return "Mainsite.RPT.RPTDescarteComercial.rpt";
             }
             set {
                 // Do nothing
@@ -98,9 +98,9 @@ namespace Mainsite.RPT {
     }
     
     [System.Drawing.ToolboxBitmapAttribute(typeof(CrystalDecisions.Shared.ExportOptions), "report.bmp")]
-    public class CachedProductoTerminadoReporteV3 : Component, ICachedReport {
+    public class CachedRPTDescarteComercial : Component, ICachedReport {
         
-        public CachedProductoTerminadoReporteV3() {
+        public CachedRPTDescarteComercial() {
         }
         
         [Browsable(false)]
@@ -137,7 +137,7 @@ namespace Mainsite.RPT {
         }
         
         public virtual CrystalDecisions.CrystalReports.Engine.ReportDocument CreateReport() {
-            ProductoTerminadoReporteV3 rpt = new ProductoTerminadoReporteV3();
+            RPTDescarteComercial rpt = new RPTDescarteComercial();
             rpt.Site = this.Site;
             return rpt;
         }

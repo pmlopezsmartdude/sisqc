@@ -228,6 +228,8 @@
     <Content Include="MainApp\Mainapp.aspx" />
     <Content Include="MainApp\menuadmusr.aspx" />
     <Content Include="MainApp\SisConPT.aspx" />
+    <Content Include="Reporte\GraficoDescarteComercial.aspx" />
+    <Content Include="Reporte\ResumenDescarteComercial.aspx" />
     <Content Include="Reporte\ResumenProductoTerminadoSS.aspx" />
     <Content Include="Reporte\GraficoProductoTerminado.aspx" />
     <Content Include="Reporte\ReporteCCPAC075Prueba1.aspx" />
@@ -488,6 +490,20 @@
       <DependentUpon>SisConPT.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporte\GraficoDescarteComercial.aspx.cs">
+      <DependentUpon>GraficoDescarteComercial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\GraficoDescarteComercial.aspx.designer.cs">
+      <DependentUpon>GraficoDescarteComercial.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reporte\ResumenDescarteComercial.aspx.cs">
+      <DependentUpon>ResumenDescarteComercial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporte\ResumenDescarteComercial.aspx.designer.cs">
+      <DependentUpon>ResumenDescarteComercial.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Reporte\ResumenProductoTerminadoSS.aspx.cs">
       <DependentUpon>ResumenProductoTerminadoSS.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -522,28 +538,16 @@
       <DependentUpon>ProdTerminadoSolidosSolubles.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="RPT\ProductoTerminadoReporteV3.cs">
-      <DependentUpon>ProductoTerminadoReporteV3.rpt</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <SubType>Component</SubType>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <Compile Include="RPT\ProductoTerminadoReporte_V2.cs">
       <DependentUpon>ProductoTerminadoReporte_V2.rpt</DependentUpon>
       <AutoGen>True</AutoGen>
       <SubType>Component</SubType>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="RPT\ProductoTerminadoReporte.cs">
+    <Compile Include="RPT\RPTDescarteComercial.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ProductoTerminadoReporte.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="RPT\RPTProductoTerminado.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>RPTProductoTerminado.rpt</DependentUpon>
+      <DependentUpon>RPTDescarteComercial.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Site.Master.cs">
@@ -552,6 +556,16 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="xsd\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="xsd\Descartecomercial.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Descartecomercial.xsd</DependentUpon>
     </Compile>
     <Compile Include="xsd\ProductoTerminado.cs">
       <DependentUpon>ProductoTerminado.xsd</DependentUpon>
@@ -594,6 +608,28 @@
     </None>
     <None Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-2.1.1.min.map" />
+    <None Include="xsd\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="xsd\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="xsd\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="xsd\Descartecomercial.xsc">
+      <DependentUpon>Descartecomercial.xsd</DependentUpon>
+    </None>
+    <None Include="xsd\Descartecomercial.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Descartecomercial.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="xsd\Descartecomercial.xss">
+      <DependentUpon>Descartecomercial.xsd</DependentUpon>
+    </None>
     <None Include="xsd\ProductoTerminado.xsc">
       <DependentUpon>ProductoTerminado.xsd</DependentUpon>
     </None>
@@ -643,21 +679,13 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ProdTerminadoSolidosSolubles.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="RPT\ProductoTerminadoReporteV3.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ProductoTerminadoReporteV3.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="RPT\ProductoTerminadoReporte_V2.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ProductoTerminadoReporte_V2.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="RPT\ProductoTerminadoReporte.rpt">
+    <EmbeddedResource Include="RPT\RPTDescarteComercial.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ProductoTerminadoReporte.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RPT\RPTProductoTerminado.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>RPTProductoTerminado.cs</LastGenOutput>
+      <LastGenOutput>RPTDescarteComercial.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -671,7 +699,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>4576</DevelopmentServerPort>
+          <DevelopmentServerPort>40946</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

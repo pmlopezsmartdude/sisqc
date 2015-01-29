@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CC_PAC_075" msprop:Generator_TableClassName="CC_PAC_075DataTable" msprop:Generator_TableVarName="tableCC_PAC_075" msprop:Generator_TablePropName="CC_PAC_075" msprop:Generator_RowDeletingName="CC_PAC_075RowDeleting" msprop:Generator_RowChangingName="CC_PAC_075RowChanging" msprop:Generator_RowEvHandlerName="CC_PAC_075RowChangeEventHandler" msprop:Generator_RowDeletedName="CC_PAC_075RowDeleted" msprop:Generator_UserTableName="CC_PAC_075" msprop:Generator_RowChangedName="CC_PAC_075RowChanged" msprop:Generator_RowEvArgName="CC_PAC_075RowChangeEvent" msprop:Generator_RowClassName="CC_PAC_075Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PLANTA" msprop:Generator_ColumnVarNameInTable="columnPLANTA" msprop:Generator_ColumnPropNameInRow="PLANTA" msprop:Generator_ColumnPropNameInTable="PLANTAColumn" msprop:Generator_UserColumnName="PLANTA" type="xs:string" minOccurs="0" />
+              <xs:element name="TURNO" msprop:Generator_ColumnVarNameInTable="columnTURNO" msprop:Generator_ColumnPropNameInRow="TURNO" msprop:Generator_ColumnPropNameInTable="TURNOColumn" msprop:Generator_UserColumnName="TURNO" type="xs:string" minOccurs="0" />
+              <xs:element name="LINEA" msprop:Generator_ColumnVarNameInTable="columnLINEA" msprop:Generator_ColumnPropNameInRow="LINEA" msprop:Generator_ColumnPropNameInTable="LINEAColumn" msprop:Generator_UserColumnName="LINEA" type="xs:string" minOccurs="0" />
+              <xs:element name="PROCESO" msprop:Generator_ColumnVarNameInTable="columnPROCESO" msprop:Generator_ColumnPropNameInRow="PROCESO" msprop:Generator_ColumnPropNameInTable="PROCESOColumn" msprop:Generator_UserColumnName="PROCESO" type="xs:string" minOccurs="0" />
+              <xs:element name="LOTE" msprop:Generator_ColumnVarNameInTable="columnLOTE" msprop:Generator_ColumnPropNameInRow="LOTE" msprop:Generator_ColumnPropNameInTable="LOTEColumn" msprop:Generator_UserColumnName="LOTE" type="xs:string" minOccurs="0" />
+              <xs:element name="PRODUCTOR" msprop:Generator_ColumnVarNameInTable="columnPRODUCTOR" msprop:Generator_ColumnPropNameInRow="PRODUCTOR" msprop:Generator_ColumnPropNameInTable="PRODUCTORColumn" msprop:Generator_UserColumnName="PRODUCTOR" type="xs:string" minOccurs="0" />
+              <xs:element name="VARIEDAD" msprop:Generator_ColumnVarNameInTable="columnVARIEDAD" msprop:Generator_ColumnPropNameInRow="VARIEDAD" msprop:Generator_ColumnPropNameInTable="VARIEDADColumn" msprop:Generator_UserColumnName="VARIEDAD" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0025__x0020_Exportable_x0020_Estimado" msprop:Generator_ColumnVarNameInTable="_column__Exportable_Estimado" msprop:Generator_ColumnPropNameInRow="___Exportable_Estimado" msprop:Generator_ColumnPropNameInTable="___Exportable_EstimadoColumn" msprop:Generator_UserColumnName="% Exportable Estimado" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0025__x0020_Exportable_x0020_Descartador" msprop:Generator_ColumnVarNameInTable="_column__Exportable_Descartador" msprop:Generator_ColumnPropNameInRow="___Exportable_Descartador" msprop:Generator_ColumnPropNameInTable="___Exportable_DescartadorColumn" msprop:Generator_UserColumnName="% Exportable Descartador" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0025__x0020_Descarte_x0020_CAT_x0020_2" msdata:Caption="% Exportable Descartador" msprop:Generator_ColumnVarNameInTable="_column__Descarte_CAT_2" msprop:Generator_ColumnPropNameInRow="___Descarte_CAT_2" msprop:Generator_ColumnPropNameInTable="___Descarte_CAT_2Column" msprop:Generator_UserColumnName="% Descarte CAT 2" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0025__x0020_Descarte_x0020_CAT_x0020_3" msdata:Caption="% Exportable Descartador" msprop:Generator_ColumnVarNameInTable="_column__Descarte_CAT_3" msprop:Generator_ColumnPropNameInRow="___Descarte_CAT_3" msprop:Generator_ColumnPropNameInTable="___Descarte_CAT_3Column" msprop:Generator_UserColumnName="% Descarte CAT 3" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CAT_x0020_1_x0020__x0025__x0028_Desecho_x0029_" msdata:Caption="% Exportable Descartador" msprop:Generator_ColumnVarNameInTable="_columnCAT_1___Desecho_" msprop:Generator_ColumnPropNameInRow="_CAT_1___Desecho_" msprop:Generator_ColumnPropNameInTable="_CAT_1___Desecho_Column" msprop:Generator_UserColumnName="CAT 1 %(Desecho)" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CAT_x0020_2_x0020__x0025__x0028_Exportable_x0029_" msdata:Caption="% Exportable Descartador" msprop:Generator_ColumnVarNameInTable="_columnCAT_2___Exportable_" msprop:Generator_ColumnPropNameInRow="_CAT_2___Exportable_" msprop:Generator_ColumnPropNameInTable="_CAT_2___Exportable_Column" msprop:Generator_UserColumnName="CAT 2 %(Exportable)" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CAT_x0020_3_x0020__x0025__x0028_Exportable_x0029_" msdata:Caption="% Exportable Descartador" msprop:Generator_ColumnVarNameInTable="_columnCAT_3___Exportable_" msprop:Generator_ColumnPropNameInRow="_CAT_3___Exportable_" msprop:Generator_ColumnPropNameInTable="_CAT_3___Exportable_Column" msprop:Generator_UserColumnName="CAT 3 %(Exportable)" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0025__x0020_Exportable_x0020_Descarte_x0020_Mesa_x0020_de_x0020_Selección" msdata:Caption="% Exportable Descartador" msprop:Generator_ColumnVarNameInTable="_column__Exportable_Descarte_Mesa_de_Selección" msprop:Generator_ColumnPropNameInRow="___Exportable_Descarte_Mesa_de_Selección" msprop:Generator_ColumnPropNameInTable="___Exportable_Descarte_Mesa_de_SelecciónColumn" msprop:Generator_UserColumnName="% Exportable Descarte Mesa de Selección" type="xs:decimal" minOccurs="0" />
+              <xs:element name="_x0025__x0020_Exportable_x0020_Descarte_x0020_Manual_x0020_Linea" msdata:Caption="% Exportable Descartador" msprop:Generator_ColumnVarNameInTable="_column__Exportable_Descarte_Manual_Linea" msprop:Generator_ColumnPropNameInRow="___Exportable_Descarte_Manual_Linea" msprop:Generator_ColumnPropNameInTable="___Exportable_Descarte_Manual_LineaColumn" msprop:Generator_UserColumnName="% Exportable Descarte Manual Linea" type="xs:decimal" minOccurs="0" />
+              <xs:element name="CajasMedidas" msdata:Caption="% Exportable Descartador" msprop:Generator_ColumnVarNameInTable="columnCajasMedidas" msprop:Generator_ColumnPropNameInRow="CajasMedidas" msprop:Generator_ColumnPropNameInTable="CajasMedidasColumn" msprop:Generator_UserColumnName="CajasMedidas" type="xs:int" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
