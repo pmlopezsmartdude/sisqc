@@ -1025,7 +1025,7 @@ namespace Mainsite.Reporte
             {
                 sel_variedad = " CL.cptvarcod AS VARIEDAD_ID, CL.cptvardes AS VARIEDAD_NOMBRE, ";
                 whe_variedad = " and cl.cptvarcod='" + variedad + "' ";
-                gro_variedad = ", cl.cptvarcod";
+                gro_variedad = ", cl.cptvarcod, CL.cptvardes";
             }
             if (variedad == "Todas")
             {
@@ -1043,7 +1043,7 @@ namespace Mainsite.Reporte
             {
                 sel_productor = " CL.CPTRUTPRR AS PRODUCREAL_ID, CL.CPTNOMPRE AS PRODUCTOREAL_NOMBRE, ";
                 whe_productor = " and cl.CPTRUTPRR='" + productor + "' ";
-                gro_productor = ", cl.CPTRUTPRR";
+                gro_productor = ", cl.CPTRUTPRR, CL.CPTNOMPRE";
             }
             if (productor == "Todos")
             {
