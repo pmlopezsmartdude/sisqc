@@ -261,8 +261,8 @@ namespace Mainsite.AppFiles
             System.Configuration.ConnectionStringSettings connStringmain;
             connStringmain = rootWebConfig.ConnectionStrings.ConnectionStrings["CONTROLPTConnectionString"];
 
-            string comando = "insert into CC_PAC_075_V2 (cptnumero,	username,	planta,	CodProc,	Linea,	Turno,	Lote,	fecha,	hora,	productor,	variedad,	txt_exp_est,	txt_exp_desc,	txt_desc_2,	txt_desc_3,	txt_1desecho,	txt_2_exp,	txt_3_exp,	txt_desc_mesa,	txt_desc_manual,	txt_obser)" +
-            " values ('" + numeroctrl + "','" + username + "','" + planta + "','" + CodProc + "','" + Linea + "','" + Turno + "','" + Lote + "','" + fecha + "','" + hora + "','" + productor + "','" + variedad + "','" + txt_exp_est.Text + "','" + txt_exp_desc.Text + "','" + txt_desc_2.Text + "','" + txt_desc_3.Text + "','" + txt_1desecho.Text + "','" + txt_2_exp.Text + "','" + txt_3_exp.Text + "','" + txt_desc_mesa.Text + "','" + txt_desc_manual.Text + "','" + txt_obser.Text + "')";
+            string comando = "insert into CC_PAC_075_V2 (cptnumero,	username,	planta,	CodProc,	Linea,	Turno,	Lote,	fecha,	hora,	productor,	variedad,	txt_exp_est,	txt_exp_desc,	txt_desc_2,	txt_desc_3,	txt_1desecho,	txt_2_exp,	txt_3_exp,	txt_desc_mesa,	txt_desc_manual,	txt_obser, Comd)" +
+            " values ('" + numeroctrl + "','" + username + "','" + planta + "','" + CodProc + "','" + Linea + "','" + Turno + "','" + Lote + "','" + fecha + "','" + hora + "','" + productor + "','" + variedad + "','" + txt_exp_est.Text + "','" + txt_exp_desc.Text + "','" + txt_desc_2.Text + "','" + txt_desc_3.Text + "','" + txt_1desecho.Text + "','" + txt_2_exp.Text + "','" + txt_3_exp.Text + "','" + txt_desc_mesa.Text + "','" + txt_desc_manual.Text + "','" + txt_obser.Text + "','0')";
 
             try
             {
