@@ -472,7 +472,7 @@ namespace Mainsite.AppFiles
             SqlConnection con = new SqlConnection(connStringLM.ToString());
 
             con.Open();
-            SqlCommand sql_planta = new SqlCommand("select (CONVERT(varchar(15),CAPACIDAD)+' kg') as capacidad from envases where alias='" + envase + "'", con);
+            SqlCommand sql_planta = new SqlCommand("select (CONVERT(varchar(15),(case when CAPACIDAD is null then '0' else capacidad end))+' kg') as capacidad from envases where alias='" + envase + "'", con);
             SqlDataReader reader = sql_planta.ExecuteReader();
             reader.Read();
             Peso.Text = reader.GetString(0);
