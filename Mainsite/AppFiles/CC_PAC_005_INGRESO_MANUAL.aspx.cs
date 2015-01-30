@@ -348,6 +348,7 @@ namespace Mainsite.AppFiles
                 DDL_turno_d.DataSourceID = "";
                 DDL_turno_d.DataSource = ds_proc;
                 DDL_turno_d.DataBind();
+    
                 con.Close();
             }
             catch
@@ -411,6 +412,10 @@ namespace Mainsite.AppFiles
             DDL_cod_especie_d.DataSource = ds_proc;
             DDL_cod_especie_d.DataBind();
 
+            DDL_cod_especie_d.Items.Add(" ");
+            DDL_cod_especie_d.SelectedIndex = -1;
+            DDL_cod_especie_d.Items.FindByText(" ").Selected = true;
+
             con.Close();
             string especie = Convert.ToString(DDL_cod_especie_d.SelectedItem.Value);
             especietext.Text = especie;
@@ -428,8 +433,14 @@ namespace Mainsite.AppFiles
             con.Open();
             SqlCommand sql_planta = new SqlCommand("select CONVERT(varchar(15),CAPACIDAD)+' kg' as capacidad from envases where alias='" + envase + "'", con);
             SqlDataReader reader = sql_planta.ExecuteReader();
-            reader.Read();
-            Peso.Text = reader.GetString(0);
+            try
+            {
+                reader.Read();
+                Peso.Text = reader.GetString(0);
+            }
+            catch
+            {Peso.Text = "";
+            }
             con.Close();
             txt_envase_cod.Text = envase;
         }
@@ -518,121 +529,194 @@ namespace Mainsite.AppFiles
         }
         private void DropVariedad(string especie)
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
-            System.Configuration.ConnectionStringSettings connStringLM;
-            connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
-            SqlConnection con = new SqlConnection(connStringLM.ToString());
-            con.Open();
-            //linea
-            SqlCommand cmd_proc = new SqlCommand("select COD_VARIEDAD, VARDESC from VARIEDAD where CODESPECIE='" + especie + "' order by vardesc asc", con);
-            SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
-            DataSet ds_proc = new DataSet();
-            sda_proc.Fill(ds_proc);
+            try
+            {
 
-            DDL_variedad_d.DataSourceID = "";
-            DDL_variedad_d.DataSource = ds_proc;
-            DDL_variedad_d.DataBind();
-            con.Close();
+                System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
+                System.Configuration.ConnectionStringSettings connStringLM;
+                connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
+                SqlConnection con = new SqlConnection(connStringLM.ToString());
+                con.Open();
+                //linea
+                SqlCommand cmd_proc = new SqlCommand("select COD_VARIEDAD, VARDESC from VARIEDAD where CODESPECIE='" + especie + "' order by vardesc asc", con);
+                SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
+                DataSet ds_proc = new DataSet();
+                sda_proc.Fill(ds_proc);
+                con.Close();
+
+                DDL_variedad_d.DataSourceID = "";
+                DDL_variedad_d.DataSource = ds_proc;
+                DDL_variedad_d.DataBind();
+                DDL_variedad_d.Items.Add(" ");
+                DDL_variedad_d.SelectedIndex = -1;
+                DDL_variedad_d.Items.FindByText(" ").Selected = true;
+            }
+            catch
+            {
+                DDL_variedad_d.DataSourceID = "";
+                DDL_variedad_d.DataSource = "";
+                DDL_variedad_d.DataBind();
+            }
+       
 
 
 
         }
         private void DDL_embalaje(string especie)
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
-            System.Configuration.ConnectionStringSettings connStringLM;
-            connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
-            SqlConnection con = new SqlConnection(connStringLM.ToString());
-            con.Open();
-            //linea
-            SqlCommand cmd_proc = new SqlCommand("select emb.COD_EMBALAJE, emb.DESCRIPCION, emb_esp.CODESPECIE from embalaje as emb inner join EMBALAJE_ESPECIE as emb_esp on emb.COD_EMBALAJE=emb_esp.COD_EMBALAJE where codespecie='" + especie + "' order by descripcion asc", con);
-            SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
-            DataSet ds_proc = new DataSet();
-            sda_proc.Fill(ds_proc);
-
-            DDL_embalaje_d.DataSourceID = "";
-            DDL_embalaje_d.DataSource = ds_proc;
-            DDL_embalaje_d.DataBind();
-
-            con.Close();
+            try
+            {
+                System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
+                System.Configuration.ConnectionStringSettings connStringLM;
+                connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
+                SqlConnection con = new SqlConnection(connStringLM.ToString());
+                con.Open();
+                //linea
+                SqlCommand cmd_proc = new SqlCommand("select emb.COD_EMBALAJE, emb.DESCRIPCION, emb_esp.CODESPECIE from embalaje as emb inner join EMBALAJE_ESPECIE as emb_esp on emb.COD_EMBALAJE=emb_esp.COD_EMBALAJE where codespecie='" + especie + "' order by descripcion asc", con);
+                SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
+                DataSet ds_proc = new DataSet();
+                sda_proc.Fill(ds_proc);
+                con.Close();
+                DDL_embalaje_d.DataSourceID = "";
+                DDL_embalaje_d.DataSource = ds_proc;
+                DDL_embalaje_d.DataBind();
+                DDL_embalaje_d.Items.Add(" ");
+                DDL_embalaje_d.SelectedIndex = -1;
+                DDL_embalaje_d.Items.FindByText(" ").Selected = true;
+            }
+            catch
+            {
+                DDL_embalaje_d.DataSourceID = "";
+                DDL_embalaje_d.DataSource = "";
+                DDL_embalaje_d.DataBind();
+            }
+            
         }
         private void DDL_envase(string especie)
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
-            System.Configuration.ConnectionStringSettings connStringLM;
-            connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
-            SqlConnection con = new SqlConnection(connStringLM.ToString());
-            con.Open();
-            //linea
-            SqlCommand cmd_proc = new SqlCommand("select env.alias, env.nombre, env_esp.codespecie from envases as env inner join [ENVASES_ESPECIE] as env_esp on env.CODENVASE=env_esp.CODENVASE where codespecie='" + especie + "' order by nombre asc", con);
-            SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
-            DataSet ds_proc = new DataSet();
-            sda_proc.Fill(ds_proc);
+            try
+            {
 
-            DDL_envase_d.DataSourceID = "";
-            DDL_envase_d.DataSource = ds_proc;
-            DDL_envase_d.DataBind();
+                System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
+                System.Configuration.ConnectionStringSettings connStringLM;
+                connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
+                SqlConnection con = new SqlConnection(connStringLM.ToString());
+                con.Open();
+                //linea
+                SqlCommand cmd_proc = new SqlCommand("select env.alias, env.nombre, env_esp.codespecie from envases as env inner join [ENVASES_ESPECIE] as env_esp on env.CODENVASE=env_esp.CODENVASE where codespecie='" + especie + "' order by nombre asc", con);
+                SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
+                DataSet ds_proc = new DataSet();
+                sda_proc.Fill(ds_proc);
+                con.Close();
+                DDL_envase_d.DataSourceID = "";
+                DDL_envase_d.DataSource = ds_proc;
+                DDL_envase_d.DataBind();
+                DDL_envase_d.Items.Add(" ");
+                DDL_envase_d.SelectedIndex = -1;
+                DDL_envase_d.Items.FindByText(" ").Selected = true;
 
-            con.Close();
+
+            }
+            catch
+            {
+                DDL_envase_d.DataSourceID = "";
+                DDL_envase_d.DataSource = "";
+                DDL_envase_d.DataBind();
+            }
         }
         private void DDL_marca()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
-            System.Configuration.ConnectionStringSettings connStringLM;
-            connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
-            SqlConnection con = new SqlConnection(connStringLM.ToString());
-            con.Open();
-            //linea
-            SqlCommand cmd_proc = new SqlCommand("SELECT cod_etiqueta as MARCA_COD, descripcion as MARCA_NOMBRE FROM etiqueta order by marca_nombre asc", con);
-            SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
-            DataSet ds_proc = new DataSet();
-            sda_proc.Fill(ds_proc);
+            try
+            {
 
-            DDL_marca_d.DataSourceID = "";
-            DDL_marca_d.DataSource = ds_proc;
-            DDL_marca_d.DataBind();
-
-            con.Close();
+                System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
+                System.Configuration.ConnectionStringSettings connStringLM;
+                connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
+                SqlConnection con = new SqlConnection(connStringLM.ToString());
+                con.Open();
+                //linea
+                SqlCommand cmd_proc = new SqlCommand("SELECT cod_etiqueta as MARCA_COD, descripcion as MARCA_NOMBRE FROM etiqueta order by marca_nombre asc", con);
+                SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
+                DataSet ds_proc = new DataSet();
+                sda_proc.Fill(ds_proc);
+                
+                DDL_marca_d.DataSourceID = "";
+                DDL_marca_d.DataSource = ds_proc;
+                DDL_marca_d.DataBind();
+                DDL_marca_d.Items.Add(" ");
+                DDL_marca_d.SelectedIndex = -1;
+                DDL_marca_d.Items.FindByText(" ").Selected = true;
+                con.Close();
+            }
+            catch
+            {
+                DDL_marca_d.DataSourceID = "";
+                DDL_marca_d.DataSource = "";
+                DDL_marca_d.DataBind();
+            }
+            
 
         }
         private void DDL_prodreal()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
-            System.Configuration.ConnectionStringSettings connStringLM;
-            connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
-            SqlConnection con = new SqlConnection(connStringLM.ToString());
-            con.Open();
-            //linea
-            SqlCommand cmd_proc = new SqlCommand("select CODPRODUCTOR, ALIAS, DESCRIPCION from [dbo].[PRODUCTORES] group by CODPRODUCTOR, ALIAS, DESCRIPCION order by DESCRIPCION asc", con);
-            SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
-            DataSet ds_proc = new DataSet();
-            sda_proc.Fill(ds_proc);
-
-            DDL_prodreal_d.DataSourceID = "";
-            DDL_prodreal_d.DataSource = ds_proc;
-            DDL_prodreal_d.DataBind();
-
-            con.Close();
+            try
+            {
+                System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
+                System.Configuration.ConnectionStringSettings connStringLM;
+                connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
+                SqlConnection con = new SqlConnection(connStringLM.ToString());
+                con.Open();
+                //linea
+                SqlCommand cmd_proc = new SqlCommand("select CODPRODUCTOR, ALIAS, DESCRIPCION from [dbo].[PRODUCTORES] group by CODPRODUCTOR, ALIAS, DESCRIPCION order by DESCRIPCION asc", con);
+                SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
+                DataSet ds_proc = new DataSet();
+                sda_proc.Fill(ds_proc);
+                con.Close();
+                DDL_prodreal_d.DataSourceID = "";
+                DDL_prodreal_d.DataSource = ds_proc;
+                DDL_prodreal_d.DataBind();
+                DDL_prodreal_d.Items.Add(" ");
+                DDL_prodreal_d.SelectedIndex = -1;
+                DDL_prodreal_d.Items.FindByText(" ").Selected = true;
+            }
+            catch
+            {
+                DDL_prodreal_d.DataSourceID = "";
+                DDL_prodreal_d.DataSource = "";
+                DDL_prodreal_d.DataBind();
+            }
+            
 
         }
         private void DDL_prodetiq()
         {
-            System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
-            System.Configuration.ConnectionStringSettings connStringLM;
-            connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
-            SqlConnection con = new SqlConnection(connStringLM.ToString());
-            con.Open();
-            //linea
-            SqlCommand cmd_proc = new SqlCommand("select CODPRODUCTOR, ALIAS, DESCRIPCION from [dbo].[PRODUCTORES] group by CODPRODUCTOR, ALIAS, DESCRIPCION order by DESCRIPCION asc", con);
-            SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
-            DataSet ds_proc = new DataSet();
-            sda_proc.Fill(ds_proc);
-
-            DDL_prodetiq_d.DataSourceID = "";
-            DDL_prodetiq_d.DataSource = ds_proc;
-            DDL_prodetiq_d.DataBind();
-
-            con.Close();
+            try
+            {
+                System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
+                System.Configuration.ConnectionStringSettings connStringLM;
+                connStringLM = rootWebConfig.ConnectionStrings.ConnectionStrings["Agroweb_planta"];
+                SqlConnection con = new SqlConnection(connStringLM.ToString());
+                con.Open();
+                //linea
+                SqlCommand cmd_proc = new SqlCommand("select CODPRODUCTOR, ALIAS, DESCRIPCION from [dbo].[PRODUCTORES] group by CODPRODUCTOR, ALIAS, DESCRIPCION order by DESCRIPCION asc", con);
+                SqlDataAdapter sda_proc = new SqlDataAdapter(cmd_proc);
+                DataSet ds_proc = new DataSet();
+                sda_proc.Fill(ds_proc);
+                con.Close();
+                DDL_prodetiq_d.DataSourceID = "";
+                DDL_prodetiq_d.DataSource = ds_proc;
+                DDL_prodetiq_d.DataBind();
+                DDL_prodetiq_d.Items.Add(" ");
+                DDL_prodetiq_d.SelectedIndex = -1;
+                DDL_prodetiq_d.Items.FindByText(" ").Selected = true;
+            }
+            catch
+            {
+                DDL_prodetiq_d.DataSourceID = "";
+                DDL_prodetiq_d.DataSource = "";
+                DDL_prodetiq_d.DataBind();
+            }
+            
 
         }
         private void DDL_linea()
@@ -651,6 +735,7 @@ namespace Mainsite.AppFiles
             DDL_linea_d.DataSourceID = "";
             DDL_linea_d.DataSource = ds_proc;
             DDL_linea_d.DataBind();
+
 
             con.Close();
         }
