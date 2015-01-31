@@ -50,7 +50,10 @@
       <asp:TableCell></asp:TableCell></asp:TableRow><asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
         <asp:TableCell Width="60"><asp:Label ID="label_turno" runat="server" Text="Turno" Width="80" Height="20"></asp:Label></asp:TableCell><asp:TableCell Width="60"><asp:DropDownList ID="DDL_turno_d"  runat="server" Width="120" DataSourceID="DDL_turno" DataTextField="turno" DataValueField="turno" Height="26"  Font-Names="Century Gothic" AutoPostBack="True" onselectedindexchanged="turno_SelectedIndexChanged"> </asp:DropDownList>
             </asp:TableCell><asp:TableCell Width="60"></asp:TableCell><asp:TableCell Width="60"><asp:Label ID="label_especie" runat="server" Text="Especie" width="80" Height="20"></asp:Label></asp:TableCell><asp:TableCell Width="60"><asp:TextBox ID="especietext" runat="server"  Width="60" Height="20" ReadOnly="true" Enabled="true" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox></asp:TableCell><asp:TableCell Width="120"><asp:DropDownList ID="DDL_cod_especie_d"  runat="server" Width="180" DataSourceID="DDL_cod_especie" DataTextField="DESCESPECIE"  DataValueField="CODESPECIE" Height="26"  Font-Names="Century Gothic" AutoPostBack="True"  onselectedindexchanged="especie_SelectedIndexChanged"> </asp:DropDownList>
-                </asp:TableCell></asp:TableRow><asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
+                </asp:TableCell>
+                <asp:TableCell Width="50" >
+      <asp:RequiredFieldValidator ID="RequiredFieldValidator3"  Width="50" runat="server" ControlToValidate="especietext" CssClass="failureNotification" Font-Size="x-Small"  ErrorMessage="Seleccione Especie"  ValidationGroup="ChangeUserPasswordValidationGroup"/>
+        </asp:TableCell></asp:TableRow><asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
         <asp:TableCell Width="60">
                 <asp:Label ID="label_linea" runat="server" Text="Línea"  Width="80" Height="20"></asp:Label>
             </asp:TableCell><asp:TableCell Width="60">
@@ -61,7 +64,11 @@
             </asp:TableCell><asp:TableCell Width="60"><asp:TextBox ID="txt_variedad_cod" ReadOnly="True" runat="server"  Width="60" Height="20" Enabled="true" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox></asp:TableCell><asp:TableCell Width="120">
                 
                 <asp:DropDownList ID="DDL_variedad_d"  runat="server" Width="180" DataSourceID="DDL_variedad" DataTextField="VARDESC" DataValueField="COD_VARIEDAD" Height="26"  Font-Names="Century Gothic" AutoPostBack="True"  onselectedindexchanged="variedad_SelectedIndexChanged"> </asp:DropDownList>
-            </asp:TableCell></asp:TableRow><asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
+            </asp:TableCell>
+            <asp:TableCell Width="50" >
+      <asp:RequiredFieldValidator ID="RequiredFieldValidator1"  Width="50" runat="server" ControlToValidate="txt_variedad_cod" CssClass="failureNotification" Font-Size="x-Small"  ErrorMessage="Seleccione Variedad"  ValidationGroup="ChangeUserPasswordValidationGroup"/>
+        </asp:TableCell>
+            </asp:TableRow><asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
             <asp:TableCell Width="60">
                 <asp:Label ID="Label1" runat="server" Text="Proceso" width="80" Height="20"></asp:Label>
             </asp:TableCell><asp:TableCell Width="120">
@@ -74,7 +81,9 @@
             </asp:TableCell><asp:TableCell Width="60"><asp:TextBox ID="txt_marca_cod" ReadOnly="True" runat="server"  Width="60" Height="20" Enabled="true" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox></asp:TableCell><asp:TableCell Width="120">
                 
                 <asp:DropDownList ID="DDL_marca_d"  runat="server" Width="180" DataSourceID="DDL_marca" DataTextField="MARCA_NOMBRE" DataValueField="MARCA_COD" Height="26"  Font-Names="Century Gothic" AutoPostBack="True"  onselectedindexchanged="marca_SelectedIndexChanged"> </asp:DropDownList>
-            </asp:TableCell></asp:TableRow><asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
+            </asp:TableCell><asp:TableCell Width="50" >
+      <asp:RequiredFieldValidator ID="RequiredFieldValidator7"  Width="50" runat="server" ControlToValidate="txt_marca_cod" CssClass="failureNotification" Font-Size="x-Small"  ErrorMessage="Seleccione Marca"  ValidationGroup="ChangeUserPasswordValidationGroup"/>
+        </asp:TableCell></asp:TableRow><asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
             <asp:TableCell Width="60">
                 <asp:Label ID="Label3" runat="server" Text="Lote" Width="80" Height="20"></asp:Label>
             </asp:TableCell><asp:TableCell Width="120">
@@ -87,7 +96,9 @@
             </asp:TableCell><asp:TableCell Width="60"><asp:TextBox ID="txt_embalaje_cod" ReadOnly="True" runat="server"  Width="60" Height="20" Enabled="true" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox></asp:TableCell><asp:TableCell Width="120">
                 
                 <asp:DropDownList ID="DDL_embalaje_d"  runat="server" Width="180" DataSourceID="DDL_embalaje" DataTextField="DESCRIPCION" DataValueField="COD_EMBALAJE" Height="26"  Font-Names="Century Gothic" AutoPostBack="True"  onselectedindexchanged="embalaje_SelectedIndexChanged"> </asp:DropDownList>
-            </asp:TableCell></asp:TableRow><asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
+            </asp:TableCell><asp:TableCell Width="50" >
+      <asp:RequiredFieldValidator ID="RequiredFieldValidator8"  Width="50" runat="server" ControlToValidate="txt_embalaje_cod" CssClass="failureNotification" Font-Size="x-Small"  ErrorMessage="Seleccione Embalaje"  ValidationGroup="ChangeUserPasswordValidationGroup"/>
+        </asp:TableCell></asp:TableRow><asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
              
             <asp:TableCell Width="60">
                 <asp:Label ID="Label5" runat="server" Text="Peso" Width="80" Height="20"></asp:Label>
@@ -99,7 +110,9 @@
                 <asp:Label ID="Label_envase" runat="server" Text="Envase" Width="80" Height="20"></asp:Label>
             </asp:TableCell><asp:TableCell Width="60"><asp:TextBox ID="txt_envase_cod" ReadOnly="True" runat="server"  Width="60" Height="20" Enabled="true" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox></asp:TableCell><asp:TableCell Width="120">
                 <asp:DropDownList ID="DDL_envase_d"  runat="server" Width="180" DataSourceID="DDL_envase" DataTextField="nombre" DataValueField="alias" Height="26"  Font-Names="Century Gothic" AutoPostBack="True"  onselectedindexchanged="envase_SelectedIndexChanged"> </asp:DropDownList>
-            </asp:TableCell></asp:TableRow><asp:TableRow ID="TableRow2" runat="server" HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
+            </asp:TableCell><asp:TableCell Width="50" >
+      <asp:RequiredFieldValidator ID="RequiredFieldValidator9"  Width="50" runat="server" ControlToValidate="txt_envase_cod" CssClass="failureNotification" Font-Size="x-Small"  ErrorMessage="Seleccione Envase"  ValidationGroup="ChangeUserPasswordValidationGroup"/>
+        </asp:TableCell></asp:TableRow><asp:TableRow ID="TableRow2" runat="server" HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
            <asp:TableCell Width="60">
                 <asp:Label ID="Label7" runat="server" Text="Calibre" Width="80" Height="20"></asp:Label>
             </asp:TableCell><asp:TableCell Width="60">
@@ -109,7 +122,9 @@
                 <asp:Label ID="Label8" runat="server" Text="Prod. Real" Width="80" Height="20"></asp:Label>
             </asp:TableCell><asp:TableCell Width="60"><asp:TextBox ID="txt_prodreal_cod" ReadOnly="True" runat="server"  Width="60" Height="20" Enabled="true" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox></asp:TableCell><asp:TableCell Width="120">
                 <asp:DropDownList ID="DDL_prodreal_d"  runat="server" Width="180" DataSourceID="DDL_prodreal" DataTextField="DESCRIPCION" DataValueField="ALIAS" Height="26"  Font-Names="Century Gothic" AutoPostBack="True" onselectedindexchanged="prodreal_SelectedIndexChanged" > </asp:DropDownList>
-            </asp:TableCell></asp:TableRow><asp:TableRow ID="TableRow3" runat="server" HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
+            </asp:TableCell><asp:TableCell Width="50" >
+      <asp:RequiredFieldValidator ID="RequiredFieldValidator10"  Width="50" runat="server"  ControlToValidate="txt_prodreal_cod" CssClass="failureNotification" Font-Size="x-Small"  ErrorMessage="Prod. Real"  ValidationGroup="ChangeUserPasswordValidationGroup"/>
+        </asp:TableCell></asp:TableRow><asp:TableRow ID="TableRow3" runat="server" HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
            <asp:TableCell Width="60">
                 <asp:Label ID="Label9" runat="server" Text="Salida" Width="80" Height="20"></asp:Label>
             </asp:TableCell><asp:TableCell Width="120">
@@ -118,7 +133,12 @@
      
         </asp:TableCell><asp:TableCell Width="60">
                 <asp:Label ID="Label10" runat="server" Text="Prod. Etiquetado" Width="100" Height="20"></asp:Label>
-            </asp:TableCell><asp:TableCell Width="60"><asp:TextBox ID="txt_prodetiq_cod" ReadOnly="True" runat="server"  Width="60" Height="20" Enabled="true" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox></asp:TableCell><asp:TableCell Width="120"> <asp:DropDownList ID="DDL_prodetiq_d"  runat="server" Width="180" DataSourceID="DDL_prodetiq" DataTextField="DESCRIPCION" DataValueField="ALIAS" Height="26"  Font-Names="Century Gothic" AutoPostBack="True" onselectedindexchanged="prodetiq_SelectedIndexChanged"> </asp:DropDownList></asp:TableCell></asp:TableRow><asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
+            </asp:TableCell><asp:TableCell Width="60"><asp:TextBox ID="txt_prodetiq_cod" ReadOnly="True" runat="server"  Width="60" Height="20" Enabled="true" Font-Size="X-Small" Font-Names="Century Gothic"></asp:TextBox></asp:TableCell><asp:TableCell Width="120"> <asp:DropDownList ID="DDL_prodetiq_d"  runat="server" Width="180" DataSourceID="DDL_prodetiq" DataTextField="DESCRIPCION" DataValueField="ALIAS" Height="26"  Font-Names="Century Gothic" AutoPostBack="True" onselectedindexchanged="prodetiq_SelectedIndexChanged"> </asp:DropDownList></asp:TableCell>
+            
+            <asp:TableCell Width="50" >
+      <asp:RequiredFieldValidator ID="RequiredFieldValidator11"  Width="50" runat="server" ControlToValidate="txt_prodetiq_cod" CssClass="failureNotification" Font-Size="x-Small"  ErrorMessage="Prod. Etiquetado"  ValidationGroup="ChangeUserPasswordValidationGroup"/>
+        </asp:TableCell>
+        </asp:TableRow><asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
             </asp:TableRow>
             <asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="20">
              
