@@ -10,3 +10,7 @@ C:\Aplicaciones Proyectos\sisqc\AuxAdmTools\bin\Debug\AuxAdmTools.dll
 C:\Aplicaciones Proyectos\sisqc\AuxAdmTools\bin\Debug\AuxAdmTools.pdb
 C:\Aplicaciones Proyectos\sisqc\AuxAdmTools\obj\Debug\AuxAdmTools.dll
 C:\Aplicaciones Proyectos\sisqc\AuxAdmTools\obj\Debug\AuxAdmTools.pdb
+C:\desarrollos\sisqc\AuxAdmTools\bin\Debug\AuxAdmTools.dll
+C:\desarrollos\sisqc\AuxAdmTools\bin\Debug\AuxAdmTools.pdb
+C:\desarrollos\sisqc\AuxAdmTools\obj\Debug\AuxAdmTools.dll
+C:\desarrollos\sisqc\AuxAdmTools\obj\Debug\AuxAdmTools.pdb
