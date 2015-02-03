@@ -98,7 +98,7 @@ namespace Mainsite.AppFiles
 
             if (ds_existe_caja.Tables[0].Rows.Count.ToString() == "0")
             {
-                ScriptManager.RegisterStartupScript(this, this.GetType(), "scriptName", "alert(\"No se encuentra caja\");", true);
+                //ScriptManager.RegisterStartupScript(this, this.GetType(), "scriptName", "alert(\"No se encuentra caja\");", true);
               
             }
             else
@@ -166,6 +166,12 @@ namespace Mainsite.AppFiles
             " convert(varchar(15),solsolub) as solsolub,convert(varchar(15),defcalbaj)as defcalbaj ," +
             " convert(varchar(15),defcalnor) as defcalnor,convert(varchar(15),defcalsob) as defcalsob, observac, " +
             " cptclasificacion,cptdestino,convert(varchar(4),cptcajasvaciadas) as cptcajasvaciadas, convert(varchar(15),pesoneto) as pesoneto, convert(varchar(15),defsutura_exp) as defsutura_exp, cl.cptnumero as cptnumero , cl.AceptRecha as AceptRecha " +
+            " ,turcodigo, cptespcod, cptespdes, lincodigo, cptvarcod, cptvardes," +
+" cptproces, cptmarcod, cptmardes, cptnulote, cptembcod, cptembdes, cptpesone," +
+" cptenvcod, cptenvdes, cptcalibr, cptrutprr, cptnompre, convert(varchar(15),cptsalida) as salida, cptrutpet, cptnompet" +
+
+            
+            
             " from  controlpt as cl where cl.cptcodcja='" + CodCaja.Text + "'", con_existe_caja);
             SqlDataAdapter sda_existe = new SqlDataAdapter(cmd__existe);
             DataSet ds_existe = new DataSet();
@@ -264,9 +270,43 @@ namespace Mainsite.AppFiles
                     txt_peso_neto.Text = reader.GetString(38);
                     txt_sut_exp.Text = reader.GetString(39);
                     lbl_cptnumero.Text = reader.GetString(40);
+                    //string aceptada = "";
+                    if (reader.GetString(41) == "")
+                    {
+                        //aceptada = "";
+                    }
+                    else
+                    {
+
+                        DDL_caja_d.SelectedIndex = -1;
+
+                        DDL_caja_d.Items.FindByText(reader.GetString(41)).Selected = true;
+                    }
+
+                    Turno.Text = reader.GetString(42);
+                    especieid.Text = reader.GetString(43);
+                    especietext.Text = reader.GetString(44);
+                    Linea.Text = reader.GetString(45);
+                    Variedad.Text = reader.GetString(46);
+                    VariedadText.Text = reader.GetString(47);
+                    NroProceso.Text = reader.GetString(48);
+                    Marca.Text = reader.GetString(49);
+                    MarcaTxt.Text = reader.GetString(50);
+                    Lote.Text = reader.GetString(51);
+                    Embalaje.Text = reader.GetString(52);
+                    Embalajetx.Text = reader.GetString(53);
+                    Peso.Text = reader.GetString(54);
+                    Envase.Text = reader.GetString(55);
+                    Envasetxt.Text = reader.GetString(56);
+                    Calibre.Text = reader.GetString(57);
+                    ProdReal.Text = reader.GetString(58);
+                    ProdRealtxt.Text = reader.GetString(59);
+                    Salida.Text = reader.GetString(60);
+                    ProdEtiq.Text = reader.GetString(61);
+                    ProdEtiqtxt.Text = reader.GetString(62);
+                    lbl_calibre.Text = reader.GetString(57);
                     
-                    DDL_caja_d.SelectedIndex = -1;
-                    DDL_caja_d.Items.FindByText(reader.GetString(41)).Selected = true;
+
                     
                     txt_peso_neto.Enabled = false;
                     txtbajo.Enabled = false;

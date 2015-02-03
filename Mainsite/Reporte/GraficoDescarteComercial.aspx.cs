@@ -558,7 +558,7 @@ namespace Mainsite.Reporte
             }
             if (lote == "Todos")
             {
-                sel_lote = " 'Todos los lote' AS LOTE, ";
+                sel_lote = " 'Todos los lotes' AS LOTE, ";
                 whe_lote = "";
                 gro_lote = "";
             }

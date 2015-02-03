@@ -16,3 +16,8 @@ C:\Aplicaciones Proyectos\sisqc\Datos\bin\Debug\Datos.pdb
 C:\Aplicaciones Proyectos\sisqc\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
 C:\Aplicaciones Proyectos\sisqc\Datos\obj\Debug\Datos.dll
 C:\Aplicaciones Proyectos\sisqc\Datos\obj\Debug\Datos.pdb
+C:\desarrollos\sisqc\Datos\bin\Debug\Datos.dll
+C:\desarrollos\sisqc\Datos\bin\Debug\Datos.pdb
+C:\desarrollos\sisqc\Datos\obj\Debug\Datos.csprojResolveAssemblyReference.cache
+C:\desarrollos\sisqc\Datos\obj\Debug\Datos.dll
+C:\desarrollos\sisqc\Datos\obj\Debug\Datos.pdb
