@@ -311,67 +311,67 @@ namespace Mainsite.xsd {
             
             private global::System.Data.DataColumn columnCANT_CAJAS;
             
-            private global::System.Data.DataColumn columnCAL_PRECALIBRE;
+            private global::System.Data.DataColumn columnPRE_CALIBRE;
             
-            private global::System.Data.DataColumn columnCAL_DANOTRIPS;
+            private global::System.Data.DataColumn columnDAÑO_TRIPS;
             
-            private global::System.Data.DataColumn columnCAL_ESCAMA;
+            private global::System.Data.DataColumn columnESCAMA;
             
-            private global::System.Data.DataColumn columnCAL_FRUTODEFORME;
+            private global::System.Data.DataColumn columnFRUTOS_DEFORMES;
             
-            private global::System.Data.DataColumn columnCAL_FRUTODOBLE;
+            private global::System.Data.DataColumn columnFRUTOS_DOBLES;
             
-            private global::System.Data.DataColumn columnCAL_GUATABLANCA;
+            private global::System.Data.DataColumn columnGUATA_BLANCA;
             
-            private global::System.Data.DataColumn columnCAL_HERIDA;
+            private global::System.Data.DataColumn columnHERIDAS;
             
-            private global::System.Data.DataColumn columnCAL_MANCHA;
+            private global::System.Data.DataColumn columnMANCHAS;
             
-            private global::System.Data.DataColumn columnCAL_MEDIALUNA;
+            private global::System.Data.DataColumn columnMEDIA_LUNA;
             
-            private global::System.Data.DataColumn columnCAL_PIELLAGARTO;
+            private global::System.Data.DataColumn columnPIEL_DE_LAGARTO;
             
-            private global::System.Data.DataColumn columnCAL_RUSSET;
+            private global::System.Data.DataColumn columnRUSSET;
             
-            private global::System.Data.DataColumn columnCAL_SUTURA;
+            private global::System.Data.DataColumn columnSUTURAS;
             
-            private global::System.Data.DataColumn columnCAL_FALTOCOLOR;
+            private global::System.Data.DataColumn columnFALTO_COLOR;
             
-            private global::System.Data.DataColumn columnCAL_RAMOLEO;
+            private global::System.Data.DataColumn columnRAMOLEO;
             
-            private global::System.Data.DataColumn columnCAL_SINPEDICELO;
+            private global::System.Data.DataColumn columnSIN_PEDICELO;
             
-            private global::System.Data.DataColumn columnCOND_ADHESION;
+            private global::System.Data.DataColumn columnADHESION;
             
-            private global::System.Data.DataColumn columnCOND_DESHIDFRUTOS;
+            private global::System.Data.DataColumn columnDESHID_FRUTOS;
             
-            private global::System.Data.DataColumn columnCOND_DESHIDPEDICELAR;
+            private global::System.Data.DataColumn columnDESHID_PEDICELAR;
             
-            private global::System.Data.DataColumn columnCOND_BLANDOS;
+            private global::System.Data.DataColumn columnBLANDOS;
             
-            private global::System.Data.DataColumn columnCOND_HERIDAABIERTA;
+            private global::System.Data.DataColumn columnHERIDA_ABIERTA;
             
-            private global::System.Data.DataColumn columnCOND_MACHUCON;
+            private global::System.Data.DataColumn columnMACHUCON;
             
-            private global::System.Data.DataColumn columnCOND_PARTIDURAS;
+            private global::System.Data.DataColumn columnPARTIDURAS;
             
-            private global::System.Data.DataColumn columnCOND_PARTIDURAAGUA;
+            private global::System.Data.DataColumn columnPARTIDURAS_POR_AGUA;
             
-            private global::System.Data.DataColumn columnCOND_PARTIDURACICATRIZADA;
+            private global::System.Data.DataColumn columnPARTIDURAS_CICATRIZADAS;
             
-            private global::System.Data.DataColumn columnCOND_PITTING;
+            private global::System.Data.DataColumn columnPITTING;
             
-            private global::System.Data.DataColumn columnCOND_PUDRICION;
+            private global::System.Data.DataColumn columnPUDRICION;
             
-            private global::System.Data.DataColumn columnCOND_MANCHASPARDAS;
+            private global::System.Data.DataColumn columnMANCHAS_PARDAS;
             
-            private global::System.Data.DataColumn columnCOND_DANOPAJARO;
+            private global::System.Data.DataColumn columnDAÑO_PAJARO;
             
-            private global::System.Data.DataColumn columnCOND_DESGARROS;
+            private global::System.Data.DataColumn columnDESGARROS;
             
-            private global::System.Data.DataColumn columnCOND_CORTESIERRA;
+            private global::System.Data.DataColumn columnCORTES_SIERRA;
             
-            private global::System.Data.DataColumn columnCOND_SUTURAEXPUESTA;
+            private global::System.Data.DataColumn columnSUTURA_EXPUESTA;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -536,249 +536,249 @@ namespace Mainsite.xsd {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CAL_PRECALIBREColumn {
+            public global::System.Data.DataColumn PRE_CALIBREColumn {
                 get {
-                    return this.columnCAL_PRECALIBRE;
+                    return this.columnPRE_CALIBRE;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CAL_DANOTRIPSColumn {
+            public global::System.Data.DataColumn DAÑO_TRIPSColumn {
                 get {
-                    return this.columnCAL_DANOTRIPS;
+                    return this.columnDAÑO_TRIPS;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CAL_ESCAMAColumn {
+            public global::System.Data.DataColumn ESCAMAColumn {
                 get {
-                    return this.columnCAL_ESCAMA;
+                    return this.columnESCAMA;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CAL_FRUTODEFORMEColumn {
+            public global::System.Data.DataColumn FRUTOS_DEFORMESColumn {
                 get {
-                    return this.columnCAL_FRUTODEFORME;
+                    return this.columnFRUTOS_DEFORMES;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CAL_FRUTODOBLEColumn {
+            public global::System.Data.DataColumn FRUTOS_DOBLESColumn {
                 get {
-                    return this.columnCAL_FRUTODOBLE;
+                    return this.columnFRUTOS_DOBLES;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CAL_GUATABLANCAColumn {
+            public global::System.Data.DataColumn GUATA_BLANCAColumn {
                 get {
-                    return this.columnCAL_GUATABLANCA;
+                    return this.columnGUATA_BLANCA;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CAL_HERIDAColumn {
+            public global::System.Data.DataColumn HERIDASColumn {
                 get {
-                    return this.columnCAL_HERIDA;
+                    return this.columnHERIDAS;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CAL_MANCHAColumn {
+            public global::System.Data.DataColumn MANCHASColumn {
                 get {
-                    return this.columnCAL_MANCHA;
+                    return this.columnMANCHAS;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CAL_MEDIALUNAColumn {
+            public global::System.Data.DataColumn MEDIA_LUNAColumn {
                 get {
-                    return this.columnCAL_MEDIALUNA;
+                    return this.columnMEDIA_LUNA;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CAL_PIELLAGARTOColumn {
+            public global::System.Data.DataColumn PIEL_DE_LAGARTOColumn {
                 get {
-                    return this.columnCAL_PIELLAGARTO;
+                    return this.columnPIEL_DE_LAGARTO;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CAL_RUSSETColumn {
+            public global::System.Data.DataColumn RUSSETColumn {
                 get {
-                    return this.columnCAL_RUSSET;
+                    return this.columnRUSSET;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CAL_SUTURAColumn {
+            public global::System.Data.DataColumn SUTURASColumn {
                 get {
-                    return this.columnCAL_SUTURA;
+                    return this.columnSUTURAS;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CAL_FALTOCOLORColumn {
+            public global::System.Data.DataColumn FALTO_COLORColumn {
                 get {
-                    return this.columnCAL_FALTOCOLOR;
+                    return this.columnFALTO_COLOR;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CAL_RAMOLEOColumn {
+            public global::System.Data.DataColumn RAMOLEOColumn {
                 get {
-                    return this.columnCAL_RAMOLEO;
+                    return this.columnRAMOLEO;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CAL_SINPEDICELOColumn {
+            public global::System.Data.DataColumn SIN_PEDICELOColumn {
                 get {
-                    return this.columnCAL_SINPEDICELO;
+                    return this.columnSIN_PEDICELO;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn COND_ADHESIONColumn {
+            public global::System.Data.DataColumn ADHESIONColumn {
                 get {
-                    return this.columnCOND_ADHESION;
+                    return this.columnADHESION;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn COND_DESHIDFRUTOSColumn {
+            public global::System.Data.DataColumn DESHID_FRUTOSColumn {
                 get {
-                    return this.columnCOND_DESHIDFRUTOS;
+                    return this.columnDESHID_FRUTOS;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn COND_DESHIDPEDICELARColumn {
+            public global::System.Data.DataColumn DESHID_PEDICELARColumn {
                 get {
-                    return this.columnCOND_DESHIDPEDICELAR;
+                    return this.columnDESHID_PEDICELAR;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn COND_BLANDOSColumn {
+            public global::System.Data.DataColumn BLANDOSColumn {
                 get {
-                    return this.columnCOND_BLANDOS;
+                    return this.columnBLANDOS;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn COND_HERIDAABIERTAColumn {
+            public global::System.Data.DataColumn HERIDA_ABIERTAColumn {
                 get {
-                    return this.columnCOND_HERIDAABIERTA;
+                    return this.columnHERIDA_ABIERTA;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn COND_MACHUCONColumn {
+            public global::System.Data.DataColumn MACHUCONColumn {
                 get {
-                    return this.columnCOND_MACHUCON;
+                    return this.columnMACHUCON;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn COND_PARTIDURASColumn {
+            public global::System.Data.DataColumn PARTIDURASColumn {
                 get {
-                    return this.columnCOND_PARTIDURAS;
+                    return this.columnPARTIDURAS;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn COND_PARTIDURAAGUAColumn {
+            public global::System.Data.DataColumn PARTIDURAS_POR_AGUAColumn {
                 get {
-                    return this.columnCOND_PARTIDURAAGUA;
+                    return this.columnPARTIDURAS_POR_AGUA;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn COND_PARTIDURACICATRIZADAColumn {
+            public global::System.Data.DataColumn PARTIDURAS_CICATRIZADASColumn {
                 get {
-                    return this.columnCOND_PARTIDURACICATRIZADA;
+                    return this.columnPARTIDURAS_CICATRIZADAS;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn COND_PITTINGColumn {
+            public global::System.Data.DataColumn PITTINGColumn {
                 get {
-                    return this.columnCOND_PITTING;
+                    return this.columnPITTING;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn COND_PUDRICIONColumn {
+            public global::System.Data.DataColumn PUDRICIONColumn {
                 get {
-                    return this.columnCOND_PUDRICION;
+                    return this.columnPUDRICION;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn COND_MANCHASPARDASColumn {
+            public global::System.Data.DataColumn MANCHAS_PARDASColumn {
                 get {
-                    return this.columnCOND_MANCHASPARDAS;
+                    return this.columnMANCHAS_PARDAS;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn COND_DANOPAJAROColumn {
+            public global::System.Data.DataColumn DAÑO_PAJAROColumn {
                 get {
-                    return this.columnCOND_DANOPAJARO;
+                    return this.columnDAÑO_PAJARO;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn COND_DESGARROSColumn {
+            public global::System.Data.DataColumn DESGARROSColumn {
                 get {
-                    return this.columnCOND_DESGARROS;
+                    return this.columnDESGARROS;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn COND_CORTESIERRAColumn {
+            public global::System.Data.DataColumn CORTES_SIERRAColumn {
                 get {
-                    return this.columnCOND_CORTESIERRA;
+                    return this.columnCORTES_SIERRA;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn COND_SUTURAEXPUESTAColumn {
+            public global::System.Data.DataColumn SUTURA_EXPUESTAColumn {
                 get {
-                    return this.columnCOND_SUTURAEXPUESTA;
+                    return this.columnSUTURA_EXPUESTA;
                 }
             }
             
@@ -836,37 +836,37 @@ namespace Mainsite.xsd {
                         string MARCA_NOMBRE, 
                         string ACEPTRECHA, 
                         int CANT_CAJAS, 
-                        decimal CAL_PRECALIBRE, 
-                        decimal CAL_DANOTRIPS, 
-                        decimal CAL_ESCAMA, 
-                        decimal CAL_FRUTODEFORME, 
-                        decimal CAL_FRUTODOBLE, 
-                        decimal CAL_GUATABLANCA, 
-                        decimal CAL_HERIDA, 
-                        decimal CAL_MANCHA, 
-                        decimal CAL_MEDIALUNA, 
-                        decimal CAL_PIELLAGARTO, 
-                        decimal CAL_RUSSET, 
-                        decimal CAL_SUTURA, 
-                        decimal CAL_FALTOCOLOR, 
-                        decimal CAL_RAMOLEO, 
-                        decimal CAL_SINPEDICELO, 
-                        decimal COND_ADHESION, 
-                        decimal COND_DESHIDFRUTOS, 
-                        decimal COND_DESHIDPEDICELAR, 
-                        decimal COND_BLANDOS, 
-                        decimal COND_HERIDAABIERTA, 
-                        decimal COND_MACHUCON, 
-                        decimal COND_PARTIDURAS, 
-                        decimal COND_PARTIDURAAGUA, 
-                        decimal COND_PARTIDURACICATRIZADA, 
-                        decimal COND_PITTING, 
-                        decimal COND_PUDRICION, 
-                        decimal COND_MANCHASPARDAS, 
-                        decimal COND_DANOPAJARO, 
-                        decimal COND_DESGARROS, 
-                        decimal COND_CORTESIERRA, 
-                        decimal COND_SUTURAEXPUESTA) {
+                        decimal PRE_CALIBRE, 
+                        decimal DAÑO_TRIPS, 
+                        decimal ESCAMA, 
+                        decimal FRUTOS_DEFORMES, 
+                        decimal FRUTOS_DOBLES, 
+                        decimal GUATA_BLANCA, 
+                        decimal HERIDAS, 
+                        decimal MANCHAS, 
+                        decimal MEDIA_LUNA, 
+                        decimal PIEL_DE_LAGARTO, 
+                        decimal RUSSET, 
+                        decimal SUTURAS, 
+                        decimal FALTO_COLOR, 
+                        decimal RAMOLEO, 
+                        decimal SIN_PEDICELO, 
+                        decimal ADHESION, 
+                        decimal DESHID_FRUTOS, 
+                        decimal DESHID_PEDICELAR, 
+                        decimal BLANDOS, 
+                        decimal HERIDA_ABIERTA, 
+                        decimal MACHUCON, 
+                        decimal PARTIDURAS, 
+                        decimal PARTIDURAS_POR_AGUA, 
+                        decimal PARTIDURAS_CICATRIZADAS, 
+                        decimal PITTING, 
+                        decimal PUDRICION, 
+                        decimal MANCHAS_PARDAS, 
+                        decimal DAÑO_PAJARO, 
+                        decimal DESGARROS, 
+                        decimal CORTES_SIERRA, 
+                        decimal SUTURA_EXPUESTA) {
                 CC_PAC_005Row rowCC_PAC_005Row = ((CC_PAC_005Row)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         PLANTA,
@@ -885,37 +885,37 @@ namespace Mainsite.xsd {
                         MARCA_NOMBRE,
                         ACEPTRECHA,
                         CANT_CAJAS,
-                        CAL_PRECALIBRE,
-                        CAL_DANOTRIPS,
-                        CAL_ESCAMA,
-                        CAL_FRUTODEFORME,
-                        CAL_FRUTODOBLE,
-                        CAL_GUATABLANCA,
-                        CAL_HERIDA,
-                        CAL_MANCHA,
-                        CAL_MEDIALUNA,
-                        CAL_PIELLAGARTO,
-                        CAL_RUSSET,
-                        CAL_SUTURA,
-                        CAL_FALTOCOLOR,
-                        CAL_RAMOLEO,
-                        CAL_SINPEDICELO,
-                        COND_ADHESION,
-                        COND_DESHIDFRUTOS,
-                        COND_DESHIDPEDICELAR,
-                        COND_BLANDOS,
-                        COND_HERIDAABIERTA,
-                        COND_MACHUCON,
-                        COND_PARTIDURAS,
-                        COND_PARTIDURAAGUA,
-                        COND_PARTIDURACICATRIZADA,
-                        COND_PITTING,
-                        COND_PUDRICION,
-                        COND_MANCHASPARDAS,
-                        COND_DANOPAJARO,
-                        COND_DESGARROS,
-                        COND_CORTESIERRA,
-                        COND_SUTURAEXPUESTA};
+                        PRE_CALIBRE,
+                        DAÑO_TRIPS,
+                        ESCAMA,
+                        FRUTOS_DEFORMES,
+                        FRUTOS_DOBLES,
+                        GUATA_BLANCA,
+                        HERIDAS,
+                        MANCHAS,
+                        MEDIA_LUNA,
+                        PIEL_DE_LAGARTO,
+                        RUSSET,
+                        SUTURAS,
+                        FALTO_COLOR,
+                        RAMOLEO,
+                        SIN_PEDICELO,
+                        ADHESION,
+                        DESHID_FRUTOS,
+                        DESHID_PEDICELAR,
+                        BLANDOS,
+                        HERIDA_ABIERTA,
+                        MACHUCON,
+                        PARTIDURAS,
+                        PARTIDURAS_POR_AGUA,
+                        PARTIDURAS_CICATRIZADAS,
+                        PITTING,
+                        PUDRICION,
+                        MANCHAS_PARDAS,
+                        DAÑO_PAJARO,
+                        DESGARROS,
+                        CORTES_SIERRA,
+                        SUTURA_EXPUESTA};
                 rowCC_PAC_005Row.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCC_PAC_005Row);
                 return rowCC_PAC_005Row;
@@ -954,37 +954,37 @@ namespace Mainsite.xsd {
                 this.columnMARCA_NOMBRE = base.Columns["MARCA_NOMBRE"];
                 this.columnACEPTRECHA = base.Columns["ACEPTRECHA"];
                 this.columnCANT_CAJAS = base.Columns["CANT_CAJAS"];
-                this.columnCAL_PRECALIBRE = base.Columns["CAL_PRECALIBRE"];
-                this.columnCAL_DANOTRIPS = base.Columns["CAL_DANOTRIPS"];
-                this.columnCAL_ESCAMA = base.Columns["CAL_ESCAMA"];
-                this.columnCAL_FRUTODEFORME = base.Columns["CAL_FRUTODEFORME"];
-                this.columnCAL_FRUTODOBLE = base.Columns["CAL_FRUTODOBLE"];
-                this.columnCAL_GUATABLANCA = base.Columns["CAL_GUATABLANCA"];
-                this.columnCAL_HERIDA = base.Columns["CAL_HERIDA"];
-                this.columnCAL_MANCHA = base.Columns["CAL_MANCHA"];
-                this.columnCAL_MEDIALUNA = base.Columns["CAL_MEDIALUNA"];
-                this.columnCAL_PIELLAGARTO = base.Columns["CAL_PIELLAGARTO"];
-                this.columnCAL_RUSSET = base.Columns["CAL_RUSSET"];
-                this.columnCAL_SUTURA = base.Columns["CAL_SUTURA"];
-                this.columnCAL_FALTOCOLOR = base.Columns["CAL_FALTOCOLOR"];
-                this.columnCAL_RAMOLEO = base.Columns["CAL_RAMOLEO"];
-                this.columnCAL_SINPEDICELO = base.Columns["CAL_SINPEDICELO"];
-                this.columnCOND_ADHESION = base.Columns["COND_ADHESION"];
-                this.columnCOND_DESHIDFRUTOS = base.Columns["COND_DESHIDFRUTOS"];
-                this.columnCOND_DESHIDPEDICELAR = base.Columns["COND_DESHIDPEDICELAR"];
-                this.columnCOND_BLANDOS = base.Columns["COND_BLANDOS"];
-                this.columnCOND_HERIDAABIERTA = base.Columns["COND_HERIDAABIERTA"];
-                this.columnCOND_MACHUCON = base.Columns["COND_MACHUCON"];
-                this.columnCOND_PARTIDURAS = base.Columns["COND_PARTIDURAS"];
-                this.columnCOND_PARTIDURAAGUA = base.Columns["COND_PARTIDURAAGUA"];
-                this.columnCOND_PARTIDURACICATRIZADA = base.Columns["COND_PARTIDURACICATRIZADA"];
-                this.columnCOND_PITTING = base.Columns["COND_PITTING"];
-                this.columnCOND_PUDRICION = base.Columns["COND_PUDRICION"];
-                this.columnCOND_MANCHASPARDAS = base.Columns["COND_MANCHASPARDAS"];
-                this.columnCOND_DANOPAJARO = base.Columns["COND_DANOPAJARO"];
-                this.columnCOND_DESGARROS = base.Columns["COND_DESGARROS"];
-                this.columnCOND_CORTESIERRA = base.Columns["COND_CORTESIERRA"];
-                this.columnCOND_SUTURAEXPUESTA = base.Columns["COND_SUTURAEXPUESTA"];
+                this.columnPRE_CALIBRE = base.Columns["PRE CALIBRE"];
+                this.columnDAÑO_TRIPS = base.Columns["DAÑO TRIPS"];
+                this.columnESCAMA = base.Columns["ESCAMA"];
+                this.columnFRUTOS_DEFORMES = base.Columns["FRUTOS DEFORMES"];
+                this.columnFRUTOS_DOBLES = base.Columns["FRUTOS DOBLES"];
+                this.columnGUATA_BLANCA = base.Columns["GUATA BLANCA"];
+                this.columnHERIDAS = base.Columns["HERIDAS"];
+                this.columnMANCHAS = base.Columns["MANCHAS"];
+                this.columnMEDIA_LUNA = base.Columns["MEDIA LUNA"];
+                this.columnPIEL_DE_LAGARTO = base.Columns["PIEL DE LAGARTO"];
+                this.columnRUSSET = base.Columns["RUSSET"];
+                this.columnSUTURAS = base.Columns["SUTURAS"];
+                this.columnFALTO_COLOR = base.Columns["FALTO COLOR"];
+                this.columnRAMOLEO = base.Columns["RAMOLEO"];
+                this.columnSIN_PEDICELO = base.Columns["SIN PEDICELO"];
+                this.columnADHESION = base.Columns["ADHESION"];
+                this.columnDESHID_FRUTOS = base.Columns["DESHID FRUTOS"];
+                this.columnDESHID_PEDICELAR = base.Columns["DESHID PEDICELAR"];
+                this.columnBLANDOS = base.Columns["BLANDOS"];
+                this.columnHERIDA_ABIERTA = base.Columns["HERIDA ABIERTA"];
+                this.columnMACHUCON = base.Columns["MACHUCON"];
+                this.columnPARTIDURAS = base.Columns["PARTIDURAS"];
+                this.columnPARTIDURAS_POR_AGUA = base.Columns["PARTIDURAS POR AGUA"];
+                this.columnPARTIDURAS_CICATRIZADAS = base.Columns["PARTIDURAS CICATRIZADAS"];
+                this.columnPITTING = base.Columns["PITTING"];
+                this.columnPUDRICION = base.Columns["PUDRICION"];
+                this.columnMANCHAS_PARDAS = base.Columns["MANCHAS PARDAS"];
+                this.columnDAÑO_PAJARO = base.Columns["DAÑO PAJARO"];
+                this.columnDESGARROS = base.Columns["DESGARROS"];
+                this.columnCORTES_SIERRA = base.Columns["CORTES SIERRA"];
+                this.columnSUTURA_EXPUESTA = base.Columns["SUTURA EXPUESTA"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1022,98 +1022,98 @@ namespace Mainsite.xsd {
                 base.Columns.Add(this.columnACEPTRECHA);
                 this.columnCANT_CAJAS = new global::System.Data.DataColumn("CANT_CAJAS", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCANT_CAJAS);
-                this.columnCAL_PRECALIBRE = new global::System.Data.DataColumn("CAL_PRECALIBRE", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCAL_PRECALIBRE);
-                this.columnCAL_DANOTRIPS = new global::System.Data.DataColumn("CAL_DANOTRIPS", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCAL_DANOTRIPS);
-                this.columnCAL_ESCAMA = new global::System.Data.DataColumn("CAL_ESCAMA", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCAL_ESCAMA);
-                this.columnCAL_FRUTODEFORME = new global::System.Data.DataColumn("CAL_FRUTODEFORME", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCAL_FRUTODEFORME);
-                this.columnCAL_FRUTODOBLE = new global::System.Data.DataColumn("CAL_FRUTODOBLE", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCAL_FRUTODOBLE);
-                this.columnCAL_GUATABLANCA = new global::System.Data.DataColumn("CAL_GUATABLANCA", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCAL_GUATABLANCA);
-                this.columnCAL_HERIDA = new global::System.Data.DataColumn("CAL_HERIDA", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCAL_HERIDA);
-                this.columnCAL_MANCHA = new global::System.Data.DataColumn("CAL_MANCHA", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCAL_MANCHA);
-                this.columnCAL_MEDIALUNA = new global::System.Data.DataColumn("CAL_MEDIALUNA", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCAL_MEDIALUNA);
-                this.columnCAL_PIELLAGARTO = new global::System.Data.DataColumn("CAL_PIELLAGARTO", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCAL_PIELLAGARTO);
-                this.columnCAL_RUSSET = new global::System.Data.DataColumn("CAL_RUSSET", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCAL_RUSSET);
-                this.columnCAL_SUTURA = new global::System.Data.DataColumn("CAL_SUTURA", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCAL_SUTURA);
-                this.columnCAL_FALTOCOLOR = new global::System.Data.DataColumn("CAL_FALTOCOLOR", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCAL_FALTOCOLOR);
-                this.columnCAL_RAMOLEO = new global::System.Data.DataColumn("CAL_RAMOLEO", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCAL_RAMOLEO);
-                this.columnCAL_SINPEDICELO = new global::System.Data.DataColumn("CAL_SINPEDICELO", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCAL_SINPEDICELO);
-                this.columnCOND_ADHESION = new global::System.Data.DataColumn("COND_ADHESION", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCOND_ADHESION);
-                this.columnCOND_DESHIDFRUTOS = new global::System.Data.DataColumn("COND_DESHIDFRUTOS", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCOND_DESHIDFRUTOS);
-                this.columnCOND_DESHIDPEDICELAR = new global::System.Data.DataColumn("COND_DESHIDPEDICELAR", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCOND_DESHIDPEDICELAR);
-                this.columnCOND_BLANDOS = new global::System.Data.DataColumn("COND_BLANDOS", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCOND_BLANDOS);
-                this.columnCOND_HERIDAABIERTA = new global::System.Data.DataColumn("COND_HERIDAABIERTA", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCOND_HERIDAABIERTA);
-                this.columnCOND_MACHUCON = new global::System.Data.DataColumn("COND_MACHUCON", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCOND_MACHUCON);
-                this.columnCOND_PARTIDURAS = new global::System.Data.DataColumn("COND_PARTIDURAS", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCOND_PARTIDURAS);
-                this.columnCOND_PARTIDURAAGUA = new global::System.Data.DataColumn("COND_PARTIDURAAGUA", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCOND_PARTIDURAAGUA);
-                this.columnCOND_PARTIDURACICATRIZADA = new global::System.Data.DataColumn("COND_PARTIDURACICATRIZADA", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCOND_PARTIDURACICATRIZADA);
-                this.columnCOND_PITTING = new global::System.Data.DataColumn("COND_PITTING", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCOND_PITTING);
-                this.columnCOND_PUDRICION = new global::System.Data.DataColumn("COND_PUDRICION", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCOND_PUDRICION);
-                this.columnCOND_MANCHASPARDAS = new global::System.Data.DataColumn("COND_MANCHASPARDAS", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCOND_MANCHASPARDAS);
-                this.columnCOND_DANOPAJARO = new global::System.Data.DataColumn("COND_DANOPAJARO", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCOND_DANOPAJARO);
-                this.columnCOND_DESGARROS = new global::System.Data.DataColumn("COND_DESGARROS", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCOND_DESGARROS);
-                this.columnCOND_CORTESIERRA = new global::System.Data.DataColumn("COND_CORTESIERRA", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCOND_CORTESIERRA);
-                this.columnCOND_SUTURAEXPUESTA = new global::System.Data.DataColumn("COND_SUTURAEXPUESTA", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCOND_SUTURAEXPUESTA);
-                this.columnCAL_DANOTRIPS.Caption = "CAL_PRECALIBRE";
-                this.columnCAL_ESCAMA.Caption = "CAL_PRECALIBRE";
-                this.columnCAL_FRUTODEFORME.Caption = "CAL_PRECALIBRE";
-                this.columnCAL_FRUTODOBLE.Caption = "CAL_PRECALIBRE";
-                this.columnCAL_GUATABLANCA.Caption = "CAL_PRECALIBRE";
-                this.columnCAL_HERIDA.Caption = "CAL_PRECALIBRE";
-                this.columnCAL_MANCHA.Caption = "CAL_PRECALIBRE";
-                this.columnCAL_MEDIALUNA.Caption = "CAL_PRECALIBRE";
-                this.columnCAL_PIELLAGARTO.Caption = "CAL_PRECALIBRE";
-                this.columnCAL_RUSSET.Caption = "CAL_PRECALIBRE";
-                this.columnCAL_SUTURA.Caption = "CAL_PRECALIBRE";
-                this.columnCAL_FALTOCOLOR.Caption = "CAL_PRECALIBRE";
-                this.columnCAL_RAMOLEO.Caption = "CAL_PRECALIBRE";
-                this.columnCAL_SINPEDICELO.Caption = "CAL_PRECALIBRE";
-                this.columnCOND_ADHESION.Caption = "CAL_PRECALIBRE";
-                this.columnCOND_DESHIDFRUTOS.Caption = "CAL_PRECALIBRE";
-                this.columnCOND_DESHIDPEDICELAR.Caption = "CAL_PRECALIBRE";
-                this.columnCOND_BLANDOS.Caption = "CAL_PRECALIBRE";
-                this.columnCOND_HERIDAABIERTA.Caption = "CAL_PRECALIBRE";
-                this.columnCOND_MACHUCON.Caption = "CAL_PRECALIBRE";
-                this.columnCOND_PARTIDURAS.Caption = "CAL_PRECALIBRE";
-                this.columnCOND_PARTIDURAAGUA.Caption = "CAL_PRECALIBRE";
-                this.columnCOND_PARTIDURACICATRIZADA.Caption = "CAL_PRECALIBRE";
-                this.columnCOND_PITTING.Caption = "CAL_PRECALIBRE";
-                this.columnCOND_PUDRICION.Caption = "CAL_PRECALIBRE";
-                this.columnCOND_MANCHASPARDAS.Caption = "CAL_PRECALIBRE";
-                this.columnCOND_DANOPAJARO.Caption = "CAL_PRECALIBRE";
-                this.columnCOND_DESGARROS.Caption = "CAL_PRECALIBRE";
-                this.columnCOND_CORTESIERRA.Caption = "CAL_PRECALIBRE";
-                this.columnCOND_SUTURAEXPUESTA.Caption = "CAL_PRECALIBRE";
+                this.columnPRE_CALIBRE = new global::System.Data.DataColumn("PRE CALIBRE", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPRE_CALIBRE);
+                this.columnDAÑO_TRIPS = new global::System.Data.DataColumn("DAÑO TRIPS", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDAÑO_TRIPS);
+                this.columnESCAMA = new global::System.Data.DataColumn("ESCAMA", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnESCAMA);
+                this.columnFRUTOS_DEFORMES = new global::System.Data.DataColumn("FRUTOS DEFORMES", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFRUTOS_DEFORMES);
+                this.columnFRUTOS_DOBLES = new global::System.Data.DataColumn("FRUTOS DOBLES", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFRUTOS_DOBLES);
+                this.columnGUATA_BLANCA = new global::System.Data.DataColumn("GUATA BLANCA", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGUATA_BLANCA);
+                this.columnHERIDAS = new global::System.Data.DataColumn("HERIDAS", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHERIDAS);
+                this.columnMANCHAS = new global::System.Data.DataColumn("MANCHAS", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMANCHAS);
+                this.columnMEDIA_LUNA = new global::System.Data.DataColumn("MEDIA LUNA", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMEDIA_LUNA);
+                this.columnPIEL_DE_LAGARTO = new global::System.Data.DataColumn("PIEL DE LAGARTO", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPIEL_DE_LAGARTO);
+                this.columnRUSSET = new global::System.Data.DataColumn("RUSSET", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRUSSET);
+                this.columnSUTURAS = new global::System.Data.DataColumn("SUTURAS", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSUTURAS);
+                this.columnFALTO_COLOR = new global::System.Data.DataColumn("FALTO COLOR", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFALTO_COLOR);
+                this.columnRAMOLEO = new global::System.Data.DataColumn("RAMOLEO", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRAMOLEO);
+                this.columnSIN_PEDICELO = new global::System.Data.DataColumn("SIN PEDICELO", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSIN_PEDICELO);
+                this.columnADHESION = new global::System.Data.DataColumn("ADHESION", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnADHESION);
+                this.columnDESHID_FRUTOS = new global::System.Data.DataColumn("DESHID FRUTOS", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDESHID_FRUTOS);
+                this.columnDESHID_PEDICELAR = new global::System.Data.DataColumn("DESHID PEDICELAR", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDESHID_PEDICELAR);
+                this.columnBLANDOS = new global::System.Data.DataColumn("BLANDOS", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBLANDOS);
+                this.columnHERIDA_ABIERTA = new global::System.Data.DataColumn("HERIDA ABIERTA", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnHERIDA_ABIERTA);
+                this.columnMACHUCON = new global::System.Data.DataColumn("MACHUCON", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMACHUCON);
+                this.columnPARTIDURAS = new global::System.Data.DataColumn("PARTIDURAS", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPARTIDURAS);
+                this.columnPARTIDURAS_POR_AGUA = new global::System.Data.DataColumn("PARTIDURAS POR AGUA", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPARTIDURAS_POR_AGUA);
+                this.columnPARTIDURAS_CICATRIZADAS = new global::System.Data.DataColumn("PARTIDURAS CICATRIZADAS", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPARTIDURAS_CICATRIZADAS);
+                this.columnPITTING = new global::System.Data.DataColumn("PITTING", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPITTING);
+                this.columnPUDRICION = new global::System.Data.DataColumn("PUDRICION", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPUDRICION);
+                this.columnMANCHAS_PARDAS = new global::System.Data.DataColumn("MANCHAS PARDAS", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMANCHAS_PARDAS);
+                this.columnDAÑO_PAJARO = new global::System.Data.DataColumn("DAÑO PAJARO", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDAÑO_PAJARO);
+                this.columnDESGARROS = new global::System.Data.DataColumn("DESGARROS", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDESGARROS);
+                this.columnCORTES_SIERRA = new global::System.Data.DataColumn("CORTES SIERRA", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCORTES_SIERRA);
+                this.columnSUTURA_EXPUESTA = new global::System.Data.DataColumn("SUTURA EXPUESTA", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSUTURA_EXPUESTA);
+                this.columnDAÑO_TRIPS.Caption = "CAL_PRECALIBRE";
+                this.columnESCAMA.Caption = "CAL_PRECALIBRE";
+                this.columnFRUTOS_DEFORMES.Caption = "CAL_PRECALIBRE";
+                this.columnFRUTOS_DOBLES.Caption = "CAL_PRECALIBRE";
+                this.columnGUATA_BLANCA.Caption = "CAL_PRECALIBRE";
+                this.columnHERIDAS.Caption = "CAL_PRECALIBRE";
+                this.columnMANCHAS.Caption = "CAL_PRECALIBRE";
+                this.columnMEDIA_LUNA.Caption = "CAL_PRECALIBRE";
+                this.columnPIEL_DE_LAGARTO.Caption = "CAL_PRECALIBRE";
+                this.columnRUSSET.Caption = "CAL_PRECALIBRE";
+                this.columnSUTURAS.Caption = "CAL_PRECALIBRE";
+                this.columnFALTO_COLOR.Caption = "CAL_PRECALIBRE";
+                this.columnRAMOLEO.Caption = "CAL_PRECALIBRE";
+                this.columnSIN_PEDICELO.Caption = "CAL_PRECALIBRE";
+                this.columnADHESION.Caption = "CAL_PRECALIBRE";
+                this.columnDESHID_FRUTOS.Caption = "CAL_PRECALIBRE";
+                this.columnDESHID_PEDICELAR.Caption = "CAL_PRECALIBRE";
+                this.columnBLANDOS.Caption = "CAL_PRECALIBRE";
+                this.columnHERIDA_ABIERTA.Caption = "CAL_PRECALIBRE";
+                this.columnMACHUCON.Caption = "CAL_PRECALIBRE";
+                this.columnPARTIDURAS.Caption = "CAL_PRECALIBRE";
+                this.columnPARTIDURAS_POR_AGUA.Caption = "CAL_PRECALIBRE";
+                this.columnPARTIDURAS_CICATRIZADAS.Caption = "CAL_PRECALIBRE";
+                this.columnPITTING.Caption = "CAL_PRECALIBRE";
+                this.columnPUDRICION.Caption = "CAL_PRECALIBRE";
+                this.columnMANCHAS_PARDAS.Caption = "CAL_PRECALIBRE";
+                this.columnDAÑO_PAJARO.Caption = "CAL_PRECALIBRE";
+                this.columnDESGARROS.Caption = "CAL_PRECALIBRE";
+                this.columnCORTES_SIERRA.Caption = "CAL_PRECALIBRE";
+                this.columnSUTURA_EXPUESTA.Caption = "CAL_PRECALIBRE";
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1514,499 +1514,498 @@ namespace Mainsite.xsd {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CAL_PRECALIBRE {
+            public decimal PRE_CALIBRE {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.CAL_PRECALIBREColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.PRE_CALIBREColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CAL_PRECALIBRE\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PRE CALIBRE\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.CAL_PRECALIBREColumn] = value;
+                    this[this.tableCC_PAC_005.PRE_CALIBREColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CAL_DANOTRIPS {
+            public decimal DAÑO_TRIPS {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.CAL_DANOTRIPSColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.DAÑO_TRIPSColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CAL_DANOTRIPS\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DAÑO TRIPS\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.CAL_DANOTRIPSColumn] = value;
+                    this[this.tableCC_PAC_005.DAÑO_TRIPSColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CAL_ESCAMA {
+            public decimal ESCAMA {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.CAL_ESCAMAColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.ESCAMAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CAL_ESCAMA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ESCAMA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.CAL_ESCAMAColumn] = value;
+                    this[this.tableCC_PAC_005.ESCAMAColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CAL_FRUTODEFORME {
+            public decimal FRUTOS_DEFORMES {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.CAL_FRUTODEFORMEColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.FRUTOS_DEFORMESColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CAL_FRUTODEFORME\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'FRUTOS DEFORMES\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.CAL_FRUTODEFORMEColumn] = value;
+                    this[this.tableCC_PAC_005.FRUTOS_DEFORMESColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CAL_FRUTODOBLE {
+            public decimal FRUTOS_DOBLES {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.CAL_FRUTODOBLEColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.FRUTOS_DOBLESColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CAL_FRUTODOBLE\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'FRUTOS DOBLES\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.CAL_FRUTODOBLEColumn] = value;
+                    this[this.tableCC_PAC_005.FRUTOS_DOBLESColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CAL_GUATABLANCA {
+            public decimal GUATA_BLANCA {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.CAL_GUATABLANCAColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.GUATA_BLANCAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CAL_GUATABLANCA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'GUATA BLANCA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.CAL_GUATABLANCAColumn] = value;
+                    this[this.tableCC_PAC_005.GUATA_BLANCAColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CAL_HERIDA {
+            public decimal HERIDAS {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.CAL_HERIDAColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.HERIDASColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CAL_HERIDA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'HERIDAS\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.CAL_HERIDAColumn] = value;
+                    this[this.tableCC_PAC_005.HERIDASColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CAL_MANCHA {
+            public decimal MANCHAS {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.CAL_MANCHAColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.MANCHASColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CAL_MANCHA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'MANCHAS\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.CAL_MANCHAColumn] = value;
+                    this[this.tableCC_PAC_005.MANCHASColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CAL_MEDIALUNA {
+            public decimal MEDIA_LUNA {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.CAL_MEDIALUNAColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.MEDIA_LUNAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CAL_MEDIALUNA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'MEDIA LUNA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.CAL_MEDIALUNAColumn] = value;
+                    this[this.tableCC_PAC_005.MEDIA_LUNAColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CAL_PIELLAGARTO {
+            public decimal PIEL_DE_LAGARTO {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.CAL_PIELLAGARTOColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.PIEL_DE_LAGARTOColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CAL_PIELLAGARTO\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PIEL DE LAGARTO\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.CAL_PIELLAGARTOColumn] = value;
+                    this[this.tableCC_PAC_005.PIEL_DE_LAGARTOColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CAL_RUSSET {
+            public decimal RUSSET {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.CAL_RUSSETColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.RUSSETColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CAL_RUSSET\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'RUSSET\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.CAL_RUSSETColumn] = value;
+                    this[this.tableCC_PAC_005.RUSSETColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CAL_SUTURA {
+            public decimal SUTURAS {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.CAL_SUTURAColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.SUTURASColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CAL_SUTURA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'SUTURAS\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.CAL_SUTURAColumn] = value;
+                    this[this.tableCC_PAC_005.SUTURASColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CAL_FALTOCOLOR {
+            public decimal FALTO_COLOR {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.CAL_FALTOCOLORColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.FALTO_COLORColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CAL_FALTOCOLOR\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'FALTO COLOR\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.CAL_FALTOCOLORColumn] = value;
+                    this[this.tableCC_PAC_005.FALTO_COLORColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CAL_RAMOLEO {
+            public decimal RAMOLEO {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.CAL_RAMOLEOColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.RAMOLEOColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CAL_RAMOLEO\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'RAMOLEO\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.CAL_RAMOLEOColumn] = value;
+                    this[this.tableCC_PAC_005.RAMOLEOColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal CAL_SINPEDICELO {
+            public decimal SIN_PEDICELO {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.CAL_SINPEDICELOColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.SIN_PEDICELOColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CAL_SINPEDICELO\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'SIN PEDICELO\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.CAL_SINPEDICELOColumn] = value;
+                    this[this.tableCC_PAC_005.SIN_PEDICELOColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal COND_ADHESION {
+            public decimal ADHESION {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.COND_ADHESIONColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.ADHESIONColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'COND_ADHESION\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'ADHESION\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.COND_ADHESIONColumn] = value;
+                    this[this.tableCC_PAC_005.ADHESIONColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal COND_DESHIDFRUTOS {
+            public decimal DESHID_FRUTOS {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.COND_DESHIDFRUTOSColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.DESHID_FRUTOSColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'COND_DESHIDFRUTOS\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DESHID FRUTOS\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.COND_DESHIDFRUTOSColumn] = value;
+                    this[this.tableCC_PAC_005.DESHID_FRUTOSColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal COND_DESHIDPEDICELAR {
+            public decimal DESHID_PEDICELAR {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.COND_DESHIDPEDICELARColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.DESHID_PEDICELARColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'COND_DESHIDPEDICELAR\' de la tabla \'CC_PAC_005\' es DBNull." +
-                                "", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DESHID PEDICELAR\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.COND_DESHIDPEDICELARColumn] = value;
+                    this[this.tableCC_PAC_005.DESHID_PEDICELARColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal COND_BLANDOS {
+            public decimal BLANDOS {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.COND_BLANDOSColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.BLANDOSColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'COND_BLANDOS\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'BLANDOS\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.COND_BLANDOSColumn] = value;
+                    this[this.tableCC_PAC_005.BLANDOSColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal COND_HERIDAABIERTA {
+            public decimal HERIDA_ABIERTA {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.COND_HERIDAABIERTAColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.HERIDA_ABIERTAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'COND_HERIDAABIERTA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'HERIDA ABIERTA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.COND_HERIDAABIERTAColumn] = value;
+                    this[this.tableCC_PAC_005.HERIDA_ABIERTAColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal COND_MACHUCON {
+            public decimal MACHUCON {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.COND_MACHUCONColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.MACHUCONColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'COND_MACHUCON\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'MACHUCON\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.COND_MACHUCONColumn] = value;
+                    this[this.tableCC_PAC_005.MACHUCONColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal COND_PARTIDURAS {
+            public decimal PARTIDURAS {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.COND_PARTIDURASColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.PARTIDURASColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'COND_PARTIDURAS\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PARTIDURAS\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.COND_PARTIDURASColumn] = value;
+                    this[this.tableCC_PAC_005.PARTIDURASColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal COND_PARTIDURAAGUA {
+            public decimal PARTIDURAS_POR_AGUA {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.COND_PARTIDURAAGUAColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.PARTIDURAS_POR_AGUAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'COND_PARTIDURAAGUA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PARTIDURAS POR AGUA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.COND_PARTIDURAAGUAColumn] = value;
+                    this[this.tableCC_PAC_005.PARTIDURAS_POR_AGUAColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal COND_PARTIDURACICATRIZADA {
+            public decimal PARTIDURAS_CICATRIZADAS {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.COND_PARTIDURACICATRIZADAColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.PARTIDURAS_CICATRIZADASColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'COND_PARTIDURACICATRIZADA\' de la tabla \'CC_PAC_005\' es DB" +
-                                "Null.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PARTIDURAS CICATRIZADAS\' de la tabla \'CC_PAC_005\' es DBNu" +
+                                "ll.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.COND_PARTIDURACICATRIZADAColumn] = value;
+                    this[this.tableCC_PAC_005.PARTIDURAS_CICATRIZADASColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal COND_PITTING {
+            public decimal PITTING {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.COND_PITTINGColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.PITTINGColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'COND_PITTING\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PITTING\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.COND_PITTINGColumn] = value;
+                    this[this.tableCC_PAC_005.PITTINGColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal COND_PUDRICION {
+            public decimal PUDRICION {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.COND_PUDRICIONColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.PUDRICIONColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'COND_PUDRICION\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'PUDRICION\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.COND_PUDRICIONColumn] = value;
+                    this[this.tableCC_PAC_005.PUDRICIONColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal COND_MANCHASPARDAS {
+            public decimal MANCHAS_PARDAS {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.COND_MANCHASPARDASColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.MANCHAS_PARDASColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'COND_MANCHASPARDAS\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'MANCHAS PARDAS\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.COND_MANCHASPARDASColumn] = value;
+                    this[this.tableCC_PAC_005.MANCHAS_PARDASColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal COND_DANOPAJARO {
+            public decimal DAÑO_PAJARO {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.COND_DANOPAJAROColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.DAÑO_PAJAROColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'COND_DANOPAJARO\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DAÑO PAJARO\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.COND_DANOPAJAROColumn] = value;
+                    this[this.tableCC_PAC_005.DAÑO_PAJAROColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal COND_DESGARROS {
+            public decimal DESGARROS {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.COND_DESGARROSColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.DESGARROSColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'COND_DESGARROS\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'DESGARROS\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.COND_DESGARROSColumn] = value;
+                    this[this.tableCC_PAC_005.DESGARROSColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal COND_CORTESIERRA {
+            public decimal CORTES_SIERRA {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.COND_CORTESIERRAColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.CORTES_SIERRAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'COND_CORTESIERRA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'CORTES SIERRA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.COND_CORTESIERRAColumn] = value;
+                    this[this.tableCC_PAC_005.CORTES_SIERRAColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public decimal COND_SUTURAEXPUESTA {
+            public decimal SUTURA_EXPUESTA {
                 get {
                     try {
-                        return ((decimal)(this[this.tableCC_PAC_005.COND_SUTURAEXPUESTAColumn]));
+                        return ((decimal)(this[this.tableCC_PAC_005.SUTURA_EXPUESTAColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("El valor de la columna \'COND_SUTURAEXPUESTA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("El valor de la columna \'SUTURA EXPUESTA\' de la tabla \'CC_PAC_005\' es DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableCC_PAC_005.COND_SUTURAEXPUESTAColumn] = value;
+                    this[this.tableCC_PAC_005.SUTURA_EXPUESTAColumn] = value;
                 }
             }
             
@@ -2204,374 +2203,374 @@ namespace Mainsite.xsd {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCAL_PRECALIBRENull() {
-                return this.IsNull(this.tableCC_PAC_005.CAL_PRECALIBREColumn);
+            public bool IsPRE_CALIBRENull() {
+                return this.IsNull(this.tableCC_PAC_005.PRE_CALIBREColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCAL_PRECALIBRENull() {
-                this[this.tableCC_PAC_005.CAL_PRECALIBREColumn] = global::System.Convert.DBNull;
+            public void SetPRE_CALIBRENull() {
+                this[this.tableCC_PAC_005.PRE_CALIBREColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCAL_DANOTRIPSNull() {
-                return this.IsNull(this.tableCC_PAC_005.CAL_DANOTRIPSColumn);
+            public bool IsDAÑO_TRIPSNull() {
+                return this.IsNull(this.tableCC_PAC_005.DAÑO_TRIPSColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCAL_DANOTRIPSNull() {
-                this[this.tableCC_PAC_005.CAL_DANOTRIPSColumn] = global::System.Convert.DBNull;
+            public void SetDAÑO_TRIPSNull() {
+                this[this.tableCC_PAC_005.DAÑO_TRIPSColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCAL_ESCAMANull() {
-                return this.IsNull(this.tableCC_PAC_005.CAL_ESCAMAColumn);
+            public bool IsESCAMANull() {
+                return this.IsNull(this.tableCC_PAC_005.ESCAMAColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCAL_ESCAMANull() {
-                this[this.tableCC_PAC_005.CAL_ESCAMAColumn] = global::System.Convert.DBNull;
+            public void SetESCAMANull() {
+                this[this.tableCC_PAC_005.ESCAMAColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCAL_FRUTODEFORMENull() {
-                return this.IsNull(this.tableCC_PAC_005.CAL_FRUTODEFORMEColumn);
+            public bool IsFRUTOS_DEFORMESNull() {
+                return this.IsNull(this.tableCC_PAC_005.FRUTOS_DEFORMESColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCAL_FRUTODEFORMENull() {
-                this[this.tableCC_PAC_005.CAL_FRUTODEFORMEColumn] = global::System.Convert.DBNull;
+            public void SetFRUTOS_DEFORMESNull() {
+                this[this.tableCC_PAC_005.FRUTOS_DEFORMESColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCAL_FRUTODOBLENull() {
-                return this.IsNull(this.tableCC_PAC_005.CAL_FRUTODOBLEColumn);
+            public bool IsFRUTOS_DOBLESNull() {
+                return this.IsNull(this.tableCC_PAC_005.FRUTOS_DOBLESColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCAL_FRUTODOBLENull() {
-                this[this.tableCC_PAC_005.CAL_FRUTODOBLEColumn] = global::System.Convert.DBNull;
+            public void SetFRUTOS_DOBLESNull() {
+                this[this.tableCC_PAC_005.FRUTOS_DOBLESColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCAL_GUATABLANCANull() {
-                return this.IsNull(this.tableCC_PAC_005.CAL_GUATABLANCAColumn);
+            public bool IsGUATA_BLANCANull() {
+                return this.IsNull(this.tableCC_PAC_005.GUATA_BLANCAColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCAL_GUATABLANCANull() {
-                this[this.tableCC_PAC_005.CAL_GUATABLANCAColumn] = global::System.Convert.DBNull;
+            public void SetGUATA_BLANCANull() {
+                this[this.tableCC_PAC_005.GUATA_BLANCAColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCAL_HERIDANull() {
-                return this.IsNull(this.tableCC_PAC_005.CAL_HERIDAColumn);
+            public bool IsHERIDASNull() {
+                return this.IsNull(this.tableCC_PAC_005.HERIDASColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCAL_HERIDANull() {
-                this[this.tableCC_PAC_005.CAL_HERIDAColumn] = global::System.Convert.DBNull;
+            public void SetHERIDASNull() {
+                this[this.tableCC_PAC_005.HERIDASColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCAL_MANCHANull() {
-                return this.IsNull(this.tableCC_PAC_005.CAL_MANCHAColumn);
+            public bool IsMANCHASNull() {
+                return this.IsNull(this.tableCC_PAC_005.MANCHASColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCAL_MANCHANull() {
-                this[this.tableCC_PAC_005.CAL_MANCHAColumn] = global::System.Convert.DBNull;
+            public void SetMANCHASNull() {
+                this[this.tableCC_PAC_005.MANCHASColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCAL_MEDIALUNANull() {
-                return this.IsNull(this.tableCC_PAC_005.CAL_MEDIALUNAColumn);
+            public bool IsMEDIA_LUNANull() {
+                return this.IsNull(this.tableCC_PAC_005.MEDIA_LUNAColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCAL_MEDIALUNANull() {
-                this[this.tableCC_PAC_005.CAL_MEDIALUNAColumn] = global::System.Convert.DBNull;
+            public void SetMEDIA_LUNANull() {
+                this[this.tableCC_PAC_005.MEDIA_LUNAColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCAL_PIELLAGARTONull() {
-                return this.IsNull(this.tableCC_PAC_005.CAL_PIELLAGARTOColumn);
+            public bool IsPIEL_DE_LAGARTONull() {
+                return this.IsNull(this.tableCC_PAC_005.PIEL_DE_LAGARTOColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCAL_PIELLAGARTONull() {
-                this[this.tableCC_PAC_005.CAL_PIELLAGARTOColumn] = global::System.Convert.DBNull;
+            public void SetPIEL_DE_LAGARTONull() {
+                this[this.tableCC_PAC_005.PIEL_DE_LAGARTOColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCAL_RUSSETNull() {
-                return this.IsNull(this.tableCC_PAC_005.CAL_RUSSETColumn);
+            public bool IsRUSSETNull() {
+                return this.IsNull(this.tableCC_PAC_005.RUSSETColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCAL_RUSSETNull() {
-                this[this.tableCC_PAC_005.CAL_RUSSETColumn] = global::System.Convert.DBNull;
+            public void SetRUSSETNull() {
+                this[this.tableCC_PAC_005.RUSSETColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCAL_SUTURANull() {
-                return this.IsNull(this.tableCC_PAC_005.CAL_SUTURAColumn);
+            public bool IsSUTURASNull() {
+                return this.IsNull(this.tableCC_PAC_005.SUTURASColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCAL_SUTURANull() {
-                this[this.tableCC_PAC_005.CAL_SUTURAColumn] = global::System.Convert.DBNull;
+            public void SetSUTURASNull() {
+                this[this.tableCC_PAC_005.SUTURASColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCAL_FALTOCOLORNull() {
-                return this.IsNull(this.tableCC_PAC_005.CAL_FALTOCOLORColumn);
+            public bool IsFALTO_COLORNull() {
+                return this.IsNull(this.tableCC_PAC_005.FALTO_COLORColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCAL_FALTOCOLORNull() {
-                this[this.tableCC_PAC_005.CAL_FALTOCOLORColumn] = global::System.Convert.DBNull;
+            public void SetFALTO_COLORNull() {
+                this[this.tableCC_PAC_005.FALTO_COLORColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCAL_RAMOLEONull() {
-                return this.IsNull(this.tableCC_PAC_005.CAL_RAMOLEOColumn);
+            public bool IsRAMOLEONull() {
+                return this.IsNull(this.tableCC_PAC_005.RAMOLEOColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCAL_RAMOLEONull() {
-                this[this.tableCC_PAC_005.CAL_RAMOLEOColumn] = global::System.Convert.DBNull;
+            public void SetRAMOLEONull() {
+                this[this.tableCC_PAC_005.RAMOLEOColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCAL_SINPEDICELONull() {
-                return this.IsNull(this.tableCC_PAC_005.CAL_SINPEDICELOColumn);
+            public bool IsSIN_PEDICELONull() {
+                return this.IsNull(this.tableCC_PAC_005.SIN_PEDICELOColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCAL_SINPEDICELONull() {
-                this[this.tableCC_PAC_005.CAL_SINPEDICELOColumn] = global::System.Convert.DBNull;
+            public void SetSIN_PEDICELONull() {
+                this[this.tableCC_PAC_005.SIN_PEDICELOColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCOND_ADHESIONNull() {
-                return this.IsNull(this.tableCC_PAC_005.COND_ADHESIONColumn);
+            public bool IsADHESIONNull() {
+                return this.IsNull(this.tableCC_PAC_005.ADHESIONColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCOND_ADHESIONNull() {
-                this[this.tableCC_PAC_005.COND_ADHESIONColumn] = global::System.Convert.DBNull;
+            public void SetADHESIONNull() {
+                this[this.tableCC_PAC_005.ADHESIONColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCOND_DESHIDFRUTOSNull() {
-                return this.IsNull(this.tableCC_PAC_005.COND_DESHIDFRUTOSColumn);
+            public bool IsDESHID_FRUTOSNull() {
+                return this.IsNull(this.tableCC_PAC_005.DESHID_FRUTOSColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCOND_DESHIDFRUTOSNull() {
-                this[this.tableCC_PAC_005.COND_DESHIDFRUTOSColumn] = global::System.Convert.DBNull;
+            public void SetDESHID_FRUTOSNull() {
+                this[this.tableCC_PAC_005.DESHID_FRUTOSColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCOND_DESHIDPEDICELARNull() {
-                return this.IsNull(this.tableCC_PAC_005.COND_DESHIDPEDICELARColumn);
+            public bool IsDESHID_PEDICELARNull() {
+                return this.IsNull(this.tableCC_PAC_005.DESHID_PEDICELARColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCOND_DESHIDPEDICELARNull() {
-                this[this.tableCC_PAC_005.COND_DESHIDPEDICELARColumn] = global::System.Convert.DBNull;
+            public void SetDESHID_PEDICELARNull() {
+                this[this.tableCC_PAC_005.DESHID_PEDICELARColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCOND_BLANDOSNull() {
-                return this.IsNull(this.tableCC_PAC_005.COND_BLANDOSColumn);
+            public bool IsBLANDOSNull() {
+                return this.IsNull(this.tableCC_PAC_005.BLANDOSColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCOND_BLANDOSNull() {
-                this[this.tableCC_PAC_005.COND_BLANDOSColumn] = global::System.Convert.DBNull;
+            public void SetBLANDOSNull() {
+                this[this.tableCC_PAC_005.BLANDOSColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCOND_HERIDAABIERTANull() {
-                return this.IsNull(this.tableCC_PAC_005.COND_HERIDAABIERTAColumn);
+            public bool IsHERIDA_ABIERTANull() {
+                return this.IsNull(this.tableCC_PAC_005.HERIDA_ABIERTAColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCOND_HERIDAABIERTANull() {
-                this[this.tableCC_PAC_005.COND_HERIDAABIERTAColumn] = global::System.Convert.DBNull;
+            public void SetHERIDA_ABIERTANull() {
+                this[this.tableCC_PAC_005.HERIDA_ABIERTAColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCOND_MACHUCONNull() {
-                return this.IsNull(this.tableCC_PAC_005.COND_MACHUCONColumn);
+            public bool IsMACHUCONNull() {
+                return this.IsNull(this.tableCC_PAC_005.MACHUCONColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCOND_MACHUCONNull() {
-                this[this.tableCC_PAC_005.COND_MACHUCONColumn] = global::System.Convert.DBNull;
+            public void SetMACHUCONNull() {
+                this[this.tableCC_PAC_005.MACHUCONColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCOND_PARTIDURASNull() {
-                return this.IsNull(this.tableCC_PAC_005.COND_PARTIDURASColumn);
+            public bool IsPARTIDURASNull() {
+                return this.IsNull(this.tableCC_PAC_005.PARTIDURASColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCOND_PARTIDURASNull() {
-                this[this.tableCC_PAC_005.COND_PARTIDURASColumn] = global::System.Convert.DBNull;
+            public void SetPARTIDURASNull() {
+                this[this.tableCC_PAC_005.PARTIDURASColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCOND_PARTIDURAAGUANull() {
-                return this.IsNull(this.tableCC_PAC_005.COND_PARTIDURAAGUAColumn);
+            public bool IsPARTIDURAS_POR_AGUANull() {
+                return this.IsNull(this.tableCC_PAC_005.PARTIDURAS_POR_AGUAColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCOND_PARTIDURAAGUANull() {
-                this[this.tableCC_PAC_005.COND_PARTIDURAAGUAColumn] = global::System.Convert.DBNull;
+            public void SetPARTIDURAS_POR_AGUANull() {
+                this[this.tableCC_PAC_005.PARTIDURAS_POR_AGUAColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCOND_PARTIDURACICATRIZADANull() {
-                return this.IsNull(this.tableCC_PAC_005.COND_PARTIDURACICATRIZADAColumn);
+            public bool IsPARTIDURAS_CICATRIZADASNull() {
+                return this.IsNull(this.tableCC_PAC_005.PARTIDURAS_CICATRIZADASColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCOND_PARTIDURACICATRIZADANull() {
-                this[this.tableCC_PAC_005.COND_PARTIDURACICATRIZADAColumn] = global::System.Convert.DBNull;
+            public void SetPARTIDURAS_CICATRIZADASNull() {
+                this[this.tableCC_PAC_005.PARTIDURAS_CICATRIZADASColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCOND_PITTINGNull() {
-                return this.IsNull(this.tableCC_PAC_005.COND_PITTINGColumn);
+            public bool IsPITTINGNull() {
+                return this.IsNull(this.tableCC_PAC_005.PITTINGColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCOND_PITTINGNull() {
-                this[this.tableCC_PAC_005.COND_PITTINGColumn] = global::System.Convert.DBNull;
+            public void SetPITTINGNull() {
+                this[this.tableCC_PAC_005.PITTINGColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCOND_PUDRICIONNull() {
-                return this.IsNull(this.tableCC_PAC_005.COND_PUDRICIONColumn);
+            public bool IsPUDRICIONNull() {
+                return this.IsNull(this.tableCC_PAC_005.PUDRICIONColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCOND_PUDRICIONNull() {
-                this[this.tableCC_PAC_005.COND_PUDRICIONColumn] = global::System.Convert.DBNull;
+            public void SetPUDRICIONNull() {
+                this[this.tableCC_PAC_005.PUDRICIONColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCOND_MANCHASPARDASNull() {
-                return this.IsNull(this.tableCC_PAC_005.COND_MANCHASPARDASColumn);
+            public bool IsMANCHAS_PARDASNull() {
+                return this.IsNull(this.tableCC_PAC_005.MANCHAS_PARDASColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCOND_MANCHASPARDASNull() {
-                this[this.tableCC_PAC_005.COND_MANCHASPARDASColumn] = global::System.Convert.DBNull;
+            public void SetMANCHAS_PARDASNull() {
+                this[this.tableCC_PAC_005.MANCHAS_PARDASColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCOND_DANOPAJARONull() {
-                return this.IsNull(this.tableCC_PAC_005.COND_DANOPAJAROColumn);
+            public bool IsDAÑO_PAJARONull() {
+                return this.IsNull(this.tableCC_PAC_005.DAÑO_PAJAROColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCOND_DANOPAJARONull() {
-                this[this.tableCC_PAC_005.COND_DANOPAJAROColumn] = global::System.Convert.DBNull;
+            public void SetDAÑO_PAJARONull() {
+                this[this.tableCC_PAC_005.DAÑO_PAJAROColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCOND_DESGARROSNull() {
-                return this.IsNull(this.tableCC_PAC_005.COND_DESGARROSColumn);
+            public bool IsDESGARROSNull() {
+                return this.IsNull(this.tableCC_PAC_005.DESGARROSColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCOND_DESGARROSNull() {
-                this[this.tableCC_PAC_005.COND_DESGARROSColumn] = global::System.Convert.DBNull;
+            public void SetDESGARROSNull() {
+                this[this.tableCC_PAC_005.DESGARROSColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCOND_CORTESIERRANull() {
-                return this.IsNull(this.tableCC_PAC_005.COND_CORTESIERRAColumn);
+            public bool IsCORTES_SIERRANull() {
+                return this.IsNull(this.tableCC_PAC_005.CORTES_SIERRAColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCOND_CORTESIERRANull() {
-                this[this.tableCC_PAC_005.COND_CORTESIERRAColumn] = global::System.Convert.DBNull;
+            public void SetCORTES_SIERRANull() {
+                this[this.tableCC_PAC_005.CORTES_SIERRAColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCOND_SUTURAEXPUESTANull() {
-                return this.IsNull(this.tableCC_PAC_005.COND_SUTURAEXPUESTAColumn);
+            public bool IsSUTURA_EXPUESTANull() {
+                return this.IsNull(this.tableCC_PAC_005.SUTURA_EXPUESTAColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCOND_SUTURAEXPUESTANull() {
-                this[this.tableCC_PAC_005.COND_SUTURAEXPUESTAColumn] = global::System.Convert.DBNull;
+            public void SetSUTURA_EXPUESTANull() {
+                this[this.tableCC_PAC_005.SUTURA_EXPUESTAColumn] = global::System.Convert.DBNull;
             }
         }
         

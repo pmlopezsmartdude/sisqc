@@ -113,6 +113,10 @@
         </asp:TableCell><asp:TableCell>
         <asp:ImageButton   ID="Reporte6" runat="server" ImageUrl="~/Images/Solidos_Solubles.png" CommandName="Select"  AlternateText="Seleccionar" Height="36px" ImageAlign="AbsMiddle" OnClick="Click_005_v2" ValidationGroup="IngresoFechaGroup" />
         
-        </asp:TableCell></asp:TableRow></asp:Table>
+        </asp:TableCell>
+       <%-- <asp:TableCell>
+        <asp:ImageButton   ID="ImageButton1" runat="server" ImageUrl="~/Images/Solidos_Solubles.png" CommandName="Select"  AlternateText="Seleccionar" Height="36px" ImageAlign="AbsMiddle" OnClick="Click_005_prueba" ValidationGroup="IngresoFechaGroup" />
+        
+        </asp:TableCell>--%></asp:TableRow></asp:Table>
         
         </fieldset> </form></body></html>

@@ -167,11 +167,8 @@ namespace Mainsite.AppFiles
             " convert(varchar(15),defcalnor) as defcalnor,convert(varchar(15),defcalsob) as defcalsob, observac, " +
             " cptclasificacion,cptdestino,convert(varchar(4),cptcajasvaciadas) as cptcajasvaciadas, convert(varchar(15),pesoneto) as pesoneto, convert(varchar(15),defsutura_exp) as defsutura_exp, cl.cptnumero as cptnumero , cl.AceptRecha as AceptRecha " +
             " ,turcodigo, cptespcod, cptespdes, lincodigo, cptvarcod, cptvardes," +
-" cptproces, cptmarcod, cptmardes, cptnulote, cptembcod, cptembdes, cptpesone," +
-" cptenvcod, cptenvdes, cptcalibr, cptrutprr, cptnompre, convert(varchar(15),cptsalida) as salida, cptrutpet, cptnompet" +
-
-            
-            
+            " cptproces, cptmarcod, cptmardes, cptnulote, cptembcod, cptembdes, cptpesone," +
+            " cptenvcod, cptenvdes, cptcalibr, cptrutprr, cptnompre, convert(varchar(15),cptsalida) as salida, cptrutpet, cptnompet" +
             " from  controlpt as cl where cl.cptcodcja='" + CodCaja.Text + "'", con_existe_caja);
             SqlDataAdapter sda_existe = new SqlDataAdapter(cmd__existe);
             DataSet ds_existe = new DataSet();
