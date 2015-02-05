@@ -105,18 +105,18 @@
         
         
         <asp:Table ID="Table3" runat="server" Width="653px" Height="100%" Font-Names="Century Gothic" Font-Size="Small" HorizontalAlign="Center">
-        <asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle" Height="50">
+        <asp:TableRow HorizontalAlign="Center" VerticalAlign="Middle">
       
-        <asp:TableCell>
+        <%--<asp:TableCell>
        <asp:ImageButton ID="Reporte005" runat="server" ImageUrl="~/Images/Def_cal_y_condicion.png" CommandName="Select"  AlternateText="Seleccionar" Height="36px" ImageAlign="AbsMiddle" OnClick="Click_005" ValidationGroup="IngresoFechaGroup" />
          
         </asp:TableCell><asp:TableCell>
         <asp:ImageButton   ID="Reporte6" runat="server" ImageUrl="~/Images/Solidos_Solubles.png" CommandName="Select"  AlternateText="Seleccionar" Height="36px" ImageAlign="AbsMiddle" OnClick="Click_005_v2" ValidationGroup="IngresoFechaGroup" />
         
-        </asp:TableCell>
-       <%-- <asp:TableCell>
-        <asp:ImageButton   ID="ImageButton1" runat="server" ImageUrl="~/Images/Solidos_Solubles.png" CommandName="Select"  AlternateText="Seleccionar" Height="36px" ImageAlign="AbsMiddle" OnClick="Click_005_prueba" ValidationGroup="IngresoFechaGroup" />
+        </asp:TableCell>--%>
+        <asp:TableCell>
+        <asp:ImageButton   ID="ImageButton1" runat="server" ImageUrl="~/Images/informe.png" CommandName="Select"  AlternateText="Seleccionar" Height="60px" ImageAlign="AbsMiddle" OnClick="Click_005_prueba" ValidationGroup="IngresoFechaGroup" />
         
-        </asp:TableCell>--%></asp:TableRow></asp:Table>
+        </asp:TableCell></asp:TableRow></asp:Table>
         
         </fieldset> </form></body></html>

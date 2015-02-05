@@ -292,21 +292,12 @@ namespace Mainsite.Reporte {
         protected global::System.Web.UI.WebControls.Table Table3;
         
         /// <summary>
-        /// Control Reporte005.
+        /// Control ImageButton1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton Reporte005;
-        
-        /// <summary>
-        /// Control Reporte6.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ImageButton Reporte6;
+        protected global::System.Web.UI.WebControls.ImageButton ImageButton1;
     }
 }

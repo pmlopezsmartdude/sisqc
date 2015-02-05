@@ -185,6 +185,7 @@
     <Content Include="Images\exportar_excel.png" />
     <Content Include="Images\form-4.png" />
     <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\informe.png" />
     <Content Include="Images\INGRESOMANUAL.png" />
     <Content Include="Images\Ingreso_manualtxt.png" />
     <Content Include="Images\LogoWCTChico.png" />
@@ -559,6 +560,24 @@
       <DependentUpon>ProductoTerminado_juntos.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="RPT\ReporteTodoJunto.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteTodoJunto.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\ReporteTodoJunto_2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteTodoJunto_2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RPT\ReporteTodoJunto_3.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteTodoJunto_3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="RPT\RPTDescarteComercial.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -577,6 +596,24 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="xsd\ProductoTerminado_prueba2.cs">
+      <DependentUpon>ProductoTerminado_prueba2.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xsd\ProductoTerminado_prueba2.Designer.cs">
+      <DependentUpon>ProductoTerminado_prueba2.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="xsd\ProductoTerminado_prueba.cs">
+      <DependentUpon>ProductoTerminado_prueba.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="xsd\ProductoTerminado_prueba.Designer.cs">
+      <DependentUpon>ProductoTerminado_prueba.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
     </Compile>
     <Compile Include="xsd\DataSet1.cs">
       <DependentUpon>DataSet1.xsd</DependentUpon>
@@ -633,6 +670,28 @@
     </None>
     <None Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-2.1.1.min.map" />
+    <None Include="xsd\ProductoTerminado_prueba2.xsc">
+      <DependentUpon>ProductoTerminado_prueba2.xsd</DependentUpon>
+    </None>
+    <None Include="xsd\ProductoTerminado_prueba2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductoTerminado_prueba2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\ProductoTerminado_prueba2.xss">
+      <DependentUpon>ProductoTerminado_prueba2.xsd</DependentUpon>
+    </None>
+    <None Include="xsd\ProductoTerminado_prueba.xsc">
+      <DependentUpon>ProductoTerminado_prueba.xsd</DependentUpon>
+    </None>
+    <None Include="xsd\ProductoTerminado_prueba.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ProductoTerminado_prueba.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="xsd\ProductoTerminado_prueba.xss">
+      <DependentUpon>ProductoTerminado_prueba.xsd</DependentUpon>
+    </None>
     <None Include="xsd\DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
@@ -712,6 +771,18 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ProductoTerminado_juntos.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="RPT\ReporteTodoJunto.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteTodoJunto.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\ReporteTodoJunto_2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteTodoJunto_2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RPT\ReporteTodoJunto_3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteTodoJunto_3.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="RPT\RPTDescarteComercial.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RPTDescarteComercial.cs</LastGenOutput>
@@ -732,7 +803,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>40946</DevelopmentServerPort>
+          <DevelopmentServerPort>25717</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
