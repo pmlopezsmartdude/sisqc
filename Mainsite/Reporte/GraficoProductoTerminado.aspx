@@ -115,7 +115,7 @@
         
         </asp:TableCell>--%>
         <asp:TableCell>
-        <asp:ImageButton   ID="ImageButton1" runat="server" ImageUrl="~/Images/informe.png" CommandName="Select"  AlternateText="Seleccionar" Height="60px" ImageAlign="AbsMiddle" OnClick="Click_005_prueba" ValidationGroup="IngresoFechaGroup" />
+        <asp:ImageButton   ID="ImageButton1" runat="server" ImageUrl="~/Images/rpt_informe_resumen.png" CommandName="Select"  AlternateText="Seleccionar" Height="40px" ImageAlign="AbsMiddle" OnClick="Click_005_prueba" ValidationGroup="IngresoFechaGroup" />
         
         </asp:TableCell></asp:TableRow></asp:Table>
         
