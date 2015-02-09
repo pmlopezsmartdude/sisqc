@@ -75,20 +75,21 @@ namespace Mainsite.AppFiles
             string inicio = txt_fechainicio.Text;
             string fin = txt_fechafin.Text;
             string where = "";
+            string planta = Session["PlantaName"].ToString();
 
             if (turno == "Todos" && linea=="Todas")
             {
-                where = "where (SUBSTRING(ctrl_fechora,1,10))>='" + inicio + "' and (SUBSTRING(ctrl_fechora,1,10))<='" + fin + "'";
+                where = "where (SUBSTRING(ctrl_fechora,1,10))>='" + inicio + "' and (SUBSTRING(ctrl_fechora,1,10))<='" + fin + "' and pl.pladescri='" + planta + "'";
             }
 
             if (turno != "Todos" && linea == "Todas")
             {
-                where = "where ((SUBSTRING(ctrl_fechora,1,10))>='" + inicio + "' and (SUBSTRING(ctrl_fechora,1,10))<='" + fin + "') and Ctrl_Turno = '" + turno + "'";
+                where = "where ((SUBSTRING(ctrl_fechora,1,10))>='" + inicio + "' and (SUBSTRING(ctrl_fechora,1,10))<='" + fin + "') and Ctrl_Turno = '" + turno + "' and pl.pladescri='" + planta + "'";
             }
 
             if (linea != "Todas" && turno == "Todos")
             {
-                where = "where ((SUBSTRING(ctrl_fechora,1,10))>='" + inicio + "' and (SUBSTRING(ctrl_fechora,1,10))<='" + fin + "') and Ctrl_Lin = '" + linea + "'";
+                where = "where ((SUBSTRING(ctrl_fechora,1,10))>='" + inicio + "' and (SUBSTRING(ctrl_fechora,1,10))<='" + fin + "') and Ctrl_Lin = '" + linea + "' and pl.pladescri='" + planta + "'";
             }
 
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -148,7 +149,7 @@ namespace Mainsite.AppFiles
             " ,[txt_exportable_2] as [DESECHO EXPORTABLE < 2%]" +
             " ,[txt_comercial_5] as [DESECHO COMERCIAL < 5%]" +
             " ,[txt_obser] as [OBSERVACIONES]" +
-            "   FROM [CONTROLPT].[dbo].[CC_PAC_003]";
+            "   FROM [CONTROLPT].[dbo].[CC_PAC_003] as cc inner join planta as pl on cc.ctrl_codplan=pl.placodigo ";
 
 
             SqlCommand command = new SqlCommand(sql + where, con);
@@ -165,20 +166,21 @@ namespace Mainsite.AppFiles
             string inicio = txt_fechainicio.Text;
             string fin = txt_fechafin.Text;
             string where = "";
+            string planta = Session["PlantaName"].ToString();
 
             if (turno == "Todos" && linea == "Todas")
             {
-                where = "where cl.cptfechor>='" + inicio + "' and cl.cptfechor<='" + fin + "'";
+                where = "where cl.cptfechor>='" + inicio + "' and cl.cptfechor<='" + fin + "' and pl.pladescri='"+planta+"'";
             }
 
             if (turno != "Todos" && linea == "Todas")
             {
-                where = "where (cl.cptfechor>='" + inicio + "' and cl.cptfechor<='" + fin + "') and cl.turcodigo = '" + turno + "'";
+                where = "where (cl.cptfechor>='" + inicio + "' and cl.cptfechor<='" + fin + "') and cl.turcodigo = '" + turno + "' and pl.pladescri='" + planta + "'";
             }
 
             if (linea != "Todas" && turno == "Todos")
             {
-                where = "where (cl.cptfechor>='" + inicio + "' and cl.cptfechor<='" + fin + "') and cl.lincodigo = '" + linea + "'";
+                where = "where (cl.cptfechor>='" + inicio + "' and cl.cptfechor<='" + fin + "') and cl.lincodigo = '" + linea + "' and pl.pladescri='" + planta + "'";
             }
 
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -254,7 +256,7 @@ namespace Mainsite.AppFiles
                "  ,cl.observac as [OBSERVACIONES]" +
                "  ,CONVERT(VARCHAR(10),(defadhesi+defdesfru+defdesped+defblando+defherabi+defmachuc+defpartid+defparagu+defparcic+defpittin+defpudric+defmanpar+defdanopa+defdesgar+defcorsie+defsutura_exp)) as [SUMA CONDICIÓN]" +
                "  ,CONVERT(VARCHAR(10),CONVERT(decimal(18, 2),(f1+f2+f3+f4+f5)/5.0)) as [PROMEDIO SOLIDOS SOLUBLES]" +
-               "  from controlpt as cl ";
+               "  from controlpt as cl inner join planta as pl on cl.placodigo=pl.placodigo ";
 
             SqlCommand command = new SqlCommand(sql+where, con);
             con.Open();
@@ -270,20 +272,21 @@ namespace Mainsite.AppFiles
             string inicio = txt_fechainicio.Text;
             string fin = txt_fechafin.Text;
             string where = "";
+            string planta = Session["PlantaName"].ToString();
 
             if (turno == "Todos" && linea == "Todas")
             {
-                where = "where [fecha]>='" + inicio + "' and [fecha]<='" + fin + "'";
+                where = "where [fecha]>='" + inicio + "' and [fecha]<='" + fin + "'  and pl.pladescri='" + planta + "'";
             }
 
             if (turno != "Todos" && linea == "Todas")
             {
-                where = "where ([fecha]>='" + inicio + "' and [fecha]<='" + fin + "') and Turno = '" + turno + "'";
+                where = "where ([fecha]>='" + inicio + "' and [fecha]<='" + fin + "') and Turno = '" + turno + "' and pl.pladescri='" + planta + "'";
             }
 
             if (linea != "Todas" && turno == "Todos")
             {
-                where = "where ([fecha]>='" + inicio + "' and [fecha]<='" + fin + "') and Linea = '" + linea + "'";
+                where = "where ([fecha]>='" + inicio + "' and [fecha]<='" + fin + "') and Linea = '" + linea + "' and pl.pladescri='" + planta + "'";
             }
 
             System.Configuration.Configuration rootWebConfig = System.Web.Configuration.WebConfigurationManager.OpenWebConfiguration("/sisqc");
@@ -312,7 +315,7 @@ namespace Mainsite.AppFiles
                "       ,[txt_desc_mesa] as [% EXPORTABLE DESCARTE MESA DE SELECCIÓN]" +
                "       ,[txt_desc_manual] as [% EXPORTABLE DESCARTE MANUAL LINEA]" +
                "       ,[txt_obser] as [OBSERVACIONES]" +
-               "   FROM [CONTROLPT].[dbo].[CC_PAC_075_V2] ";
+               "   FROM [CONTROLPT].[dbo].[CC_PAC_075_V2] as cc inner join planta as pl on cc.planta=pl.placodigo  ";
 
 
 

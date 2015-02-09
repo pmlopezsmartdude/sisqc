@@ -414,12 +414,6 @@
     </Compile>
     <Compile Include="AppModules\impresion.cs" />
     <Compile Include="AppModules\ImpresorasDatos.cs" />
-    <Compile Include="Reporte\CC_PAC_075_prueba1rpt.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CC_PAC_075_prueba1rpt.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="CC_PAC_075_prueba1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -561,18 +555,6 @@
       <DependentUpon>ProductoTerminado_juntos.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="RPT\ReporteTodoJunto.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReporteTodoJunto.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="RPT\ReporteTodoJunto_2.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ReporteTodoJunto_2.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="RPT\ReporteTodoJunto_3.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -583,12 +565,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>RPTDescarteComercial.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="RPT\todojunto.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>todojunto.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Site.Master.cs">
@@ -756,10 +732,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Reporte\CC_PAC_075_prueba1rpt.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CC_PAC_075_prueba1rpt.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="RPT\ProdTerminadoSolidosSolubles.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ProdTerminadoSolidosSolubles.cs</LastGenOutput>
@@ -772,14 +744,6 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ProductoTerminado_juntos.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="RPT\ReporteTodoJunto.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ReporteTodoJunto.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RPT\ReporteTodoJunto_2.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>ReporteTodoJunto_2.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="RPT\ReporteTodoJunto_3.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>ReporteTodoJunto_3.cs</LastGenOutput>
@@ -787,10 +751,6 @@
     <EmbeddedResource Include="RPT\RPTDescarteComercial.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>RPTDescarteComercial.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="RPT\todojunto.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>todojunto.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -1086,37 +1086,37 @@ namespace Mainsite.Reporte
             string consultatotal = sel_planta + sel_turno + " 'fecha' AS FECHA, " + sel_linea + sel_proceso + sel_lote + sel_productor + "" +
                 " '1' AS PRODUCTORETIQUETADO_ID, '1' AS PRODUCTORETIQUETADO_NOMBRE, " + sel_variedad + " '1' AS MARCA_ID, '1' AS MARCA_NOMBRE, " +
                 " " + sel_acept + "convert(int,COUNT(1)) AS CANT_CAJAS, " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defprecal=0 then 0 else 1 end)>0,((sum(cl.defprecal))/(sum(case when cl.defprecal=0 then 0 else 1 end))),0))) as [PRE CALIBRE], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defdanotr=0 then 0 else 1 end)>0,((sum(cl.defdanotr))/(sum(case when cl.defdanotr=0 then 0 else 1 end))),0))) as [DAÑO TRIPS], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defescama=0 then 0 else 1 end)>0,((sum(cl.defescama))/(sum(case when cl.defescama=0 then 0 else 1 end))),0))) as [ESCAMA], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.deffrutode=0 then 0 else 1 end)>0,((sum(cl.deffrutode))/(sum(case when cl.deffrutode=0 then 0 else 1 end))),0))) as [FRUTOS DEFORMES], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.deffrutodo=0 then 0 else 1 end)>0,((sum(cl.deffrutodo))/(sum(case when cl.deffrutodo=0 then 0 else 1 end))),0))) as [FRUTOS DOBLES], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defguatab=0 then 0 else 1 end)>0,((sum(cl.defguatab))/(sum(case when cl.defguatab=0 then 0 else 1 end))),0))) as [GUATA BLANCA], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defherida=0 then 0 else 1 end)>0,((sum(cl.defherida))/(sum(case when cl.defherida=0 then 0 else 1 end))),0))) as [HERIDAS], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defmancha=0 then 0 else 1 end)>0,((sum(cl.defmancha))/(sum(case when cl.defmancha=0 then 0 else 1 end))),0))) as [MANCHAS], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defmedial=0 then 0 else 1 end)>0,((sum(cl.defmedial))/(sum(case when cl.defmedial=0 then 0 else 1 end))),0))) as [MEDIA LUNA], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defpiella=0 then 0 else 1 end)>0,((sum(cl.defpiella))/(sum(case when cl.defpiella=0 then 0 else 1 end))),0))) as [PIEL DE LAGARTO], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defrusset=0 then 0 else 1 end)>0,((sum(cl.defrusset))/(sum(case when cl.defrusset=0 then 0 else 1 end))),0))) as [RUSSET], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defsutura=0 then 0 else 1 end)>0,((sum(cl.defsutura))/(sum(case when cl.defsutura=0 then 0 else 1 end))),0))) as [SUTURAS], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.deffaltoc=0 then 0 else 1 end)>0,((sum(cl.deffaltoc))/(sum(case when cl.deffaltoc=0 then 0 else 1 end))),0))) as [FALTO COLOR], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.deframole=0 then 0 else 1 end)>0,((sum(cl.deframole))/(sum(case when cl.deframole=0 then 0 else 1 end))),0))) as [RAMOLEO], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defsinped=0 then 0 else 1 end)>0,((sum(cl.defsinped))/(sum(case when cl.defsinped=0 then 0 else 1 end))),0))) as [SIN PEDICELO]," +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defadhesi=0 then 0 else 1 end)>0,((sum(cl.defadhesi))/(sum(case when cl.defadhesi=0 then 0 else 1 end))),0))) as [ADHESION], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defdesfru=0 then 0 else 1 end)>0,((sum(cl.defdesfru))/(sum(case when cl.defdesfru=0 then 0 else 1 end))),0))) as [DESHID FRUTOS], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defdesped=0 then 0 else 1 end)>0,((sum(cl.defdesped))/(sum(case when cl.defdesped=0 then 0 else 1 end))),0))) as [DESHID PEDICELAR], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defblando=0 then 0 else 1 end)>0,((sum(cl.defblando))/(sum(case when cl.defblando=0 then 0 else 1 end))),0))) as [BLANDOS], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defherabi=0 then 0 else 1 end)>0,((sum(cl.defherabi))/(sum(case when cl.defherabi=0 then 0 else 1 end))),0))) as [HERIDA ABIERTA], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defmachuc=0 then 0 else 1 end)>0,((sum(cl.defmachuc))/(sum(case when cl.defmachuc=0 then 0 else 1 end))),0))) as [MACHUCON], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defpartid=0 then 0 else 1 end)>0,((sum(cl.defpartid))/(sum(case when cl.defpartid=0 then 0 else 1 end))),0))) as [PARTIDURAS], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defparagu=0 then 0 else 1 end)>0,((sum(cl.defparagu))/(sum(case when cl.defparagu=0 then 0 else 1 end))),0))) as [PARTIDURAS POR AGUA], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defparcic=0 then 0 else 1 end)>0,((sum(cl.defparcic))/(sum(case when cl.defparcic=0 then 0 else 1 end))),0))) as [PARTIDURAS CICATRIZADAS], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defpittin=0 then 0 else 1 end)>0,((sum(cl.defpittin))/(sum(case when cl.defpittin=0 then 0 else 1 end))),0))) as [PITTING], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defpudric=0 then 0 else 1 end)>0,((sum(cl.defpudric))/(sum(case when cl.defpudric=0 then 0 else 1 end))),0))) as [PUDRICION], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defmanpar=0 then 0 else 1 end)>0,((sum(cl.defmanpar))/(sum(case when cl.defmanpar=0 then 0 else 1 end))),0))) as [MANCHAS PARDAS], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defdanopa=0 then 0 else 1 end)>0,((sum(cl.defdanopa))/(sum(case when cl.defdanopa=0 then 0 else 1 end))),0))) as [DAÑO PAJARO], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defdesgar=0 then 0 else 1 end)>0,((sum(cl.defdesgar))/(sum(case when cl.defdesgar=0 then 0 else 1 end))),0))) as [DESGARROS], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defcorsie=0 then 0 else 1 end)>0,((sum(cl.defcorsie))/(sum(case when cl.defcorsie=0 then 0 else 1 end))),0))) as [CORTES SIERRA], " +
-           " CONVERT(decimal(18,2),(iif(sum(case when cl.defsutura_exp=0 then 0 else 1 end)>0,((sum(cl.defsutura_exp))/(sum(case when cl.defsutura_exp=0 then 0 else 1 end))),0))) as [SUTURA EXPUESTA]" +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defprecal=0 then 0 else 1 end)>0,((sum(cl.defprecal))*1.00/(sum(case when cl.defprecal=0 then 0 else 1 end))),0))) as [PRE CALIBRE], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defdanotr=0 then 0 else 1 end)>0,((sum(cl.defdanotr))*1.00/(sum(case when cl.defdanotr=0 then 0 else 1 end))),0))) as [DAÑO TRIPS], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defescama=0 then 0 else 1 end)>0,((sum(cl.defescama))*1.00/(sum(case when cl.defescama=0 then 0 else 1 end))),0))) as [ESCAMA], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.deffrutode=0 then 0 else 1 end)>0,((sum(cl.deffrutode))*1.00/(sum(case when cl.deffrutode=0 then 0 else 1 end))),0))) as [FRUTOS DEFORMES], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.deffrutodo=0 then 0 else 1 end)>0,((sum(cl.deffrutodo))*1.00/(sum(case when cl.deffrutodo=0 then 0 else 1 end))),0))) as [FRUTOS DOBLES], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defguatab=0 then 0 else 1 end)>0,((sum(cl.defguatab))*1.00/(sum(case when cl.defguatab=0 then 0 else 1 end))),0))) as [GUATA BLANCA], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defherida=0 then 0 else 1 end)>0,((sum(cl.defherida))*1.00/(sum(case when cl.defherida=0 then 0 else 1 end))),0))) as [HERIDAS], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defmancha=0 then 0 else 1 end)>0,((sum(cl.defmancha))*1.00/(sum(case when cl.defmancha=0 then 0 else 1 end))),0))) as [MANCHAS], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defmedial=0 then 0 else 1 end)>0,((sum(cl.defmedial))*1.00/(sum(case when cl.defmedial=0 then 0 else 1 end))),0))) as [MEDIA LUNA], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defpiella=0 then 0 else 1 end)>0,((sum(cl.defpiella))*1.00/(sum(case when cl.defpiella=0 then 0 else 1 end))),0))) as [PIEL DE LAGARTO], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defrusset=0 then 0 else 1 end)>0,((sum(cl.defrusset))*1.00/(sum(case when cl.defrusset=0 then 0 else 1 end))),0))) as [RUSSET], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defsutura=0 then 0 else 1 end)>0,((sum(cl.defsutura))*1.00/(sum(case when cl.defsutura=0 then 0 else 1 end))),0))) as [SUTURAS], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.deffaltoc=0 then 0 else 1 end)>0,((sum(cl.deffaltoc))*1.00/(sum(case when cl.deffaltoc=0 then 0 else 1 end))),0))) as [FALTO COLOR], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.deframole=0 then 0 else 1 end)>0,((sum(cl.deframole))*1.00/(sum(case when cl.deframole=0 then 0 else 1 end))),0))) as [RAMOLEO], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defsinped=0 then 0 else 1 end)>0,((sum(cl.defsinped))*1.00/(sum(case when cl.defsinped=0 then 0 else 1 end))),0))) as [SIN PEDICELO]," +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defadhesi=0 then 0 else 1 end)>0,((sum(cl.defadhesi))*1.00/(sum(case when cl.defadhesi=0 then 0 else 1 end))),0))) as [ADHESION], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defdesfru=0 then 0 else 1 end)>0,((sum(cl.defdesfru))*1.00/(sum(case when cl.defdesfru=0 then 0 else 1 end))),0))) as [DESHID FRUTOS], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defdesped=0 then 0 else 1 end)>0,((sum(cl.defdesped))*1.00/(sum(case when cl.defdesped=0 then 0 else 1 end))),0))) as [DESHID PEDICELAR], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defblando=0 then 0 else 1 end)>0,((sum(cl.defblando))*1.00/(sum(case when cl.defblando=0 then 0 else 1 end))),0))) as [BLANDOS], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defherabi=0 then 0 else 1 end)>0,((sum(cl.defherabi))*1.00/(sum(case when cl.defherabi=0 then 0 else 1 end))),0))) as [HERIDA ABIERTA], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defmachuc=0 then 0 else 1 end)>0,((sum(cl.defmachuc))*1.00/(sum(case when cl.defmachuc=0 then 0 else 1 end))),0))) as [MACHUCON], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defpartid=0 then 0 else 1 end)>0,((sum(cl.defpartid))*1.00/(sum(case when cl.defpartid=0 then 0 else 1 end))),0))) as [PARTIDURAS], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defparagu=0 then 0 else 1 end)>0,((sum(cl.defparagu))*1.00/(sum(case when cl.defparagu=0 then 0 else 1 end))),0))) as [PARTIDURAS POR AGUA], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defparcic=0 then 0 else 1 end)>0,((sum(cl.defparcic))*1.00/(sum(case when cl.defparcic=0 then 0 else 1 end))),0))) as [PARTIDURAS CICATRIZADAS], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defpittin=0 then 0 else 1 end)>0,((sum(cl.defpittin))*1.00/(sum(case when cl.defpittin=0 then 0 else 1 end))),0))) as [PITTING], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defpudric=0 then 0 else 1 end)>0,((sum(cl.defpudric))*1.00/(sum(case when cl.defpudric=0 then 0 else 1 end))),0))) as [PUDRICION], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defmanpar=0 then 0 else 1 end)>0,((sum(cl.defmanpar))*1.00/(sum(case when cl.defmanpar=0 then 0 else 1 end))),0))) as [MANCHAS PARDAS], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defdanopa=0 then 0 else 1 end)>0,((sum(cl.defdanopa))*1.00/(sum(case when cl.defdanopa=0 then 0 else 1 end))),0))) as [DAÑO PAJARO], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defdesgar=0 then 0 else 1 end)>0,((sum(cl.defdesgar))*1.00/(sum(case when cl.defdesgar=0 then 0 else 1 end))),0))) as [DESGARROS], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defcorsie=0 then 0 else 1 end)>0,((sum(cl.defcorsie))*1.00/(sum(case when cl.defcorsie=0 then 0 else 1 end))),0))) as [CORTES SIERRA], " +
+           " CONVERT(decimal(18,2),(iif(sum(case when cl.defsutura_exp=0 then 0 else 1 end)>0,((sum(cl.defsutura_exp))*1.00/(sum(case when cl.defsutura_exp=0 then 0 else 1 end))),0))) as [SUTURA EXPUESTA]" +
            " from controlpt as cl INNER JOIN planta AS  PL ON CL.placodigo=PL.placodigo " + where_cons + whe_planta + whe_linea + whe_turno + whe_proceso + whe_lote + whe_variedad + whe_productor + whe_acept +
            " " + group_cons + gro_planta + gro_linea + gro_turno + gro_proceso + gro_lote + gro_variedad + gro_productor + gro_acept;
 
