@@ -36,15 +36,15 @@
                     <asp:TreeNode NavigateUrl="~/MainApp/SisConPT.aspx" Target="workingarea" 
                         Text="Cerezas" Value="Cerezas"></asp:TreeNode>
                 </asp:TreeNode>
-                <asp:TreeNode Text="Informes" Value="Aplicación 2" Expanded="False" 
+                <asp:TreeNode Text="Informes - Cerezas" Value="Aplicación 2" Expanded="False" 
                     SelectAction="Expand">
                   
 
-                        <asp:TreeNode Target="_blank" Text="Producto Terminado Cerezas" Value="Cerezas" 
+                        <asp:TreeNode Target="_blank" Text="Producto Terminado" Value="Cerezas" 
                             NavigateUrl="~/Reporte/GraficoProductoTerminado.aspx">
                         </asp:TreeNode>
 
-                         <asp:TreeNode Target="_blank" Text="Descarte Comercial Cerezas" Value="Cerezas" 
+                         <asp:TreeNode Target="_blank" Text="Descarte Comercial" Value="Cerezas" 
                             NavigateUrl="~/Reporte/GraficoDescarteComercial.aspx">
                         </asp:TreeNode>
 
